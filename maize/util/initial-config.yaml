@@ -311,7 +311,7 @@ full_node:
       port: 8646
   introducer_peer:
       host: introducer.maize.farm  # Maize introducer IPv4/IPv6
-      port: 8644
+      port: 8645
   wallet_peer:
     host: *self_hostname
     port: 8649
@@ -395,7 +395,7 @@ wallet:
 
   introducer_peer:
     host: introducer.maize.farm # Maize introducer IPv4/IPv6
-    port: 8644
+    port: 8645
 
   ssl:
     private_crt:  "config/ssl/wallet/private_wallet.crt"
