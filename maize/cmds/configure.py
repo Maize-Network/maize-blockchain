@@ -110,7 +110,7 @@ def configure(
 
         elif testnet == "false" or testnet == "f":
             print("Setting Mainnet")
-            mainnet_port = "8444"
+            mainnet_port = "8644"
             mainnet_introducer = "introducer.maize.farm"
             net = "mainnet"
             config["full_node"]["port"] = int(mainnet_port)
