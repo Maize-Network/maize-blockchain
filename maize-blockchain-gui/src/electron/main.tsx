@@ -223,7 +223,7 @@ if (!handleSquirrelEvent()) {
       app.applicationMenu = createMenu();
       // if the daemon isn't local we aren't going to try to start/stop it
       if (maizeConfig.manageDaemonLifetime()) {
-        maizeEnvironment.startChiaDaemon();
+        maizeEnvironment.startMaizeDaemon();
       }
     };
 
