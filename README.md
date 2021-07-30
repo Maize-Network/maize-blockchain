@@ -1,6 +1,6 @@
 # maize-blockchain
 
-OUR DB https://drive.google.com/file/d/1rIBQuz8NaMJh48gh9M99jRtAHt31uP_H/view?usp=sharing
+OUR REALTIME DB https://drive.google.com/file/d/1rIBQuz8NaMJh48gh9M99jRtAHt31uP_H/view?usp=sharing
 
 Website https://maize.farm
 
