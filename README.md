@@ -1,6 +1,6 @@
 # maize-blockchain
 
-OUR REALTIME DB https://drive.google.com/file/d/1rIBQuz8NaMJh48gh9M99jRtAHt31uP_H/view?usp=sharing
+Our realtime blockchain database! Download and start farming instantly! https://chiaforksblockchain.com
 
 Website https://maize.farm
 
