@@ -1,7 +1,7 @@
 # maize-blockchain
 
 Hello! We are Maize! Fork of Chia.
-Every 20 petabytes of the network, we present 200 coins to 1 lucky!
+Every 25 petabytes of the network, we present 300 coins to 1 lucky!
 
 Soon the opening of the international exchange chia forks!
 If you want to make a small donation to support the developers, go to website! https://chiaforks.exchange
