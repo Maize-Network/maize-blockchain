@@ -19,3 +19,5 @@ Our maize discord https://discord.gg/2WHH7yGaT9
 Maize Telegram https://t.me/maizecoin
 
 Maize Twitter https://twitter.com/coinmaize
+
+Return 7/8 NFT Reward https://maize.farm/nft7-8
