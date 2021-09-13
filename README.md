@@ -20,4 +20,4 @@ Maize Telegram https://t.me/maizecoin
 
 Maize Twitter https://twitter.com/coinmaize
 
-Return 7/8 NFT Reward https://maize.farm/nft7-8
+Return 7/8 NFT Reward https://alltheblocks.net/nft-recovery
