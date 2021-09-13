@@ -3,14 +3,10 @@
 Hello! We are Maize! Fork of Chia.
 Every 25 petabytes of the network, we present 300 coins to 1 lucky!
 
-Soon the opening of the international exchange chia forks!
-If you want to make a small donation to support the developers, go to website! https://chiaforks.exchange
+We opened our own c2c exchanger! https://chiaforks.exchange
 Our Big thanks to dev Andrewfbd https://discord.gg/jksEDC56V7
 
-
-
 Our realtime blockchain database! Download and start farming instantly! https://chiaforksblockchain.com
-Also our big thanks to dev Andrewfbd https://discord.gg/PwhwjRTzH8
 
 Website https://maize.farm
 
