@@ -10,7 +10,7 @@ Warning! The new Tranzact fork has created a port conflict with Maize. If you in
 We opened our own c2c exchanger! https://chiaforks.exchange
 Our Big thanks to dev Andrewfbd https://discord.gg/jksEDC56V7
 
-Our realtime blockchain database! Download and start farming instantly! https://chiaforksblockchain.com
+Our project - realtime blockchain databases! Download and start farming instantly! https://chiaforksblockchain.com
 
 Website https://maize.farm
 
