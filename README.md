@@ -2,6 +2,7 @@
 
 Hello! We are Maize! Fork of Chia.
 Every 25 petabytes of the network, we present 300 coins to 1 lucky!
+We have updated our roadmap! Please see our website!
 
 Warning! The new Tranzact fork has created a port conflict with Maize. If you install Maize while Tranzact is running and Maize does not start. Change port 8655 to 8677 in the Maize config file.
 
