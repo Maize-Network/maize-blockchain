@@ -23,3 +23,5 @@ Maize Twitter https://twitter.com/coinmaize
 Return 7/8 NFT Reward https://alltheblocks.net/nft-recovery
 
 
+Maize recommends! Very useful app for all forks Forkfarmer
+https://github.com/ForkFarmer/ForkFarmer/releases
