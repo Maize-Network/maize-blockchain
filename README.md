@@ -4,8 +4,7 @@ Hello! We are Maize! Fork of Chia.
 Every 25 petabytes of the network, we present 300 coins to 1 lucky!
 We have updated our roadmap! Please see our website!
 
-Attention! New promotion from Maize! All
-newbies and those who have 0 coins will get 30 maize coins! Details in our discord channel: https://discord.gg/H5Rv8GgSsw
+Attention! New promotion from Maize! Allnewbies and those who have 0 coins will get 30 maize coins! Details in our discord channel: https://discord.gg/H5Rv8GgSsw
 
 Very soon, the opening of Maize online casino and we started development NFT-MAIZE game Hungry Birds!
 
