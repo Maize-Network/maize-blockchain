@@ -6,7 +6,9 @@ We have updated our roadmap! Please see our website!
 
 Attention! New promotion from Maize! Allnewbies and those who have 0 coins will get 30 maize coins! Details in our discord channel: https://discord.gg/H5Rv8GgSsw
 
-Very soon, the opening of Maize online casino and we have launched development NFT-MAIZE game Hungry Birds!
+ Maize online casino is launched! https://casino.maize.farm
+ 
+ We have launched development NFT-MAIZE game Hungry Birds!
 
 
 Warning! The new Tranzact fork has created a port conflict with Maize. If you install Maize while Tranzact is running and Maize does not start. Change port 8655 to 8677 in the Maize config file.
