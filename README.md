@@ -27,7 +27,7 @@ Maize Telegram https://t.me/maizecoin
 
 Maize Twitter https://twitter.com/coinmaize
 
-Return 7/8 NFT Reward https://alltheblocks.net/nft-recovery
+Return 7/8 NFT Reward https://chiaforksblockchain.com or https://maize.farm
 
 
 Maize recommends! Very useful app for all forks Forkfarmer
