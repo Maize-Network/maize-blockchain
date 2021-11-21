@@ -4,6 +4,6 @@ from typing import Dict
 # Only use these units for user facing interfaces.
 units: Dict[str, int] = {
     "maize": 10 ** 12,  # 1 maize (XMZ) is 1,000,000,000,000 mojo (1 trillion)
-    "mojo:": 1,
+    "mojo": 1,
     "colouredcoin": 10 ** 3,  # 1 coloured coin is 1000 colouredcoin mojos
 }

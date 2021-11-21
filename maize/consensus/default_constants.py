@@ -11,7 +11,7 @@ testnet_kwargs = {
     # DIFFICULTY_STARTING is the starting difficulty for the first epoch, which is then further
     # multiplied by another factor of DIFFICULTY_CONSTANT_FACTOR, to be used in the VDF iter calculation formula.
     "DIFFICULTY_CONSTANT_FACTOR": 2 ** 67,
-    "DIFFICULTY_STARTING": 1, # 7
+    "DIFFICULTY_STARTING": 1, #7,
     "DIFFICULTY_CHANGE_MAX_FACTOR": 3,  # The next difficulty is truncated to range [prev / FACTOR, prev * FACTOR]
     # These 3 constants must be changed at the same time
     "SUB_EPOCH_BLOCKS": 384,  # The number of blocks per sub-epoch, mainnet 384
@@ -38,8 +38,8 @@ testnet_kwargs = {
         "3d8765d3a597ec1d99663f6c9816d915b9f68613ac94009884c4addaefcce6af"
     ),
     "MAX_VDF_WITNESS_SIZE": 64,
-    # Size of mempool = 50x the size of block
-    "MEMPOOL_BLOCK_BUFFER": 50,
+    # Size of mempool = 50x the size of block # temporary change until #9125 gets in
+    "MEMPOOL_BLOCK_BUFFER": 10,
     # Max coin amount, fits into 64 bits
     "MAX_COIN_AMOUNT": uint64((1 << 64) - 1),
     # Max block cost in clvm cost units
@@ -50,7 +50,6 @@ testnet_kwargs = {
     "BLOCKS_CACHE_SIZE": 4608 + (128 * 4),
     "WEIGHT_PROOF_RECENT_BLOCKS": 1000,
     "MAX_BLOCK_COUNT_PER_REQUESTS": 32,  # Allow up to 32 blocks per request
-    "INITIAL_FREEZE_END_TIMESTAMP": 1620061200,  # Mon May 03 2021 17:00:00 GMT+0000
     "NETWORK_TYPE": 0,
     "MAX_GENERATOR_SIZE": 1000000,
     "MAX_GENERATOR_REF_LIST_SIZE": 512,  # Number of references allowed in the block generator ref list

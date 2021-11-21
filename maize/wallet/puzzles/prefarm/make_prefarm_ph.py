@@ -8,19 +8,11 @@ from maize.util.bech32m import decode_puzzle_hash, encode_puzzle_hash
 from maize.util.condition_tools import parse_sexp_to_conditions
 from maize.util.ints import uint32
 
-#address1 = "txch15gx26ndmacfaqlq8m0yajeggzceu7cvmaz4df0hahkukes695rss6lej7h"  # Gene wallet (m/12381/8444/2/42):
-#address2 = "txch1c2cguswhvmdyz9hr3q6hak2h6p9dw4rz82g4707k2xy2sarv705qcce4pn"  # Mariano address (m/12381/8444/2/0)
-address1 = "xmz15sjtarzr0h3xu58pu6yddyq3hu0ty0crdlyqpueg44nx4m5kxu2q3ntgl2"
-address2 = "xmz1fy4qz73tcewgue47a708zrz46mr78dh4zgd9vquuy5mrsrkhtygq2vf3fv"
+address1 = "txch15gx26ndmacfaqlq8m0yajeggzceu7cvmaz4df0hahkukes695rss6lej7h"  # Gene wallet (m/12381/8444/2/42):
+address2 = "txch1c2cguswhvmdyz9hr3q6hak2h6p9dw4rz82g4707k2xy2sarv705qcce4pn"  # Mariano address (m/12381/8444/2/0)
 
 ph1 = decode_puzzle_hash(address1)
 ph2 = decode_puzzle_hash(address2)
-
-print("ph1", ph1.hex())
-print("h1", encode_puzzle_hash(ph1, 'xmz'))
-print("ph2", ph2.hex())
-print("h2", encode_puzzle_hash(ph2, 'xmz'))
-
 
 pool_amounts = int(calculate_pool_reward(uint32(0)) / 2)
 farmer_amounts = int(calculate_base_farmer_reward(uint32(0)) / 2)
@@ -38,7 +30,7 @@ def make_puzzle(amount: int) -> int:
     puzzle_hash = puzzle_prog.get_tree_hash()
 
     solution = "()"
-    prefix = "xmz"
+    prefix = "xch"
     print("PH", puzzle_hash)
     print(f"Address: {encode_puzzle_hash(puzzle_hash, prefix)}")
 
@@ -62,8 +54,8 @@ def make_puzzle(amount: int) -> int:
 
 total_maize = 0
 print("Pool address: ")
-#total_maize += make_puzzle(pool_amounts)
+total_maize += make_puzzle(pool_amounts)
 print("\nFarmer address: ")
-#total_maize += make_puzzle(farmer_amounts)
+total_maize += make_puzzle(farmer_amounts)
 
-#assert total_maize == calculate_base_farmer_reward(uint32(0)) + calculate_pool_reward(uint32(0))
+assert total_maize == calculate_base_farmer_reward(uint32(0)) + calculate_pool_reward(uint32(0))

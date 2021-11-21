@@ -21,8 +21,9 @@ from maize.types.blockchain_format.sub_epoch_summary import SubEpochSummary
 from maize.types.full_block import FullBlock
 from maize.types.generator_types import BlockGenerator
 from maize.types.header_block import HeaderBlock
+from maize.types.unfinished_block import UnfinishedBlock
 from maize.util.block_cache import BlockCache
-from maize.util.errors import Err
+from maize.util.errors import Err, ValidationError
 from maize.util.generator_tools import get_block_header, tx_removals_and_additions
 from maize.util.ints import uint16, uint64, uint32
 from maize.util.streamable import Streamable, dataclass_from_dict, streamable
@@ -316,3 +317,34 @@ async def pre_validate_blocks_multiprocessing(
         for batch_result in (await asyncio.gather(*futures))
         for result in batch_result
     ]
+
+
+def _run_generator(
+    constants_dict: bytes,
+    unfinished_block_bytes: bytes,
+    block_generator_bytes: bytes,
+) -> Tuple[Optional[Err], Optional[bytes]]:
+    """
+    Runs the CLVM generator from bytes inputs. This is meant to be called under a ProcessPoolExecutor, in order to
+    validate the heavy parts of a block (clvm program) in a different process.
+    """
+    try:
+        constants: ConsensusConstants = dataclass_from_dict(ConsensusConstants, constants_dict)
+        unfinished_block: UnfinishedBlock = UnfinishedBlock.from_bytes(unfinished_block_bytes)
+        assert unfinished_block.transactions_info is not None
+        block_generator: BlockGenerator = BlockGenerator.from_bytes(block_generator_bytes)
+        assert block_generator.program == unfinished_block.transactions_generator
+        npc_result: NPCResult = get_name_puzzle_conditions(
+            block_generator,
+            min(constants.MAX_BLOCK_COST_CLVM, unfinished_block.transactions_info.cost),
+            cost_per_byte=constants.COST_PER_BYTE,
+            safe_mode=False,
+        )
+        if npc_result.error is not None:
+            return Err(npc_result.error), None
+    except ValidationError as e:
+        return e.code, None
+    except Exception:
+        return Err.UNKNOWN, None
+
+    return None, bytes(npc_result)

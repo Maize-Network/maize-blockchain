@@ -11,7 +11,7 @@ from maize.types.blockchain_format.coin import Coin
 from maize.types.blockchain_format.program import Program
 from maize.types.blockchain_format.sized_bytes import bytes32
 from maize.types.spend_bundle import SpendBundle
-from maize.types.coin_solution import CoinSolution
+from maize.types.coin_spend import CoinSpend
 from maize.util.byte_types import hexstr_to_bytes
 from maize.util.db_wrapper import DBWrapper
 from maize.util.hash import std_hash
@@ -323,7 +323,7 @@ class TradeManager:
         return get_discrepancies_for_spend_bundle(trade_offer.spend_bundle)
 
     async def get_inner_puzzle_for_puzzle_hash(self, puzzle_hash) -> Program:
-        info = await self.wallet_state_manager.puzzle_store.get_derivation_record_for_puzzle_hash(puzzle_hash.hex())
+        info = await self.wallet_state_manager.puzzle_store.get_derivation_record_for_puzzle_hash(puzzle_hash)
         assert info is not None
         puzzle = self.wallet_state_manager.main_wallet.puzzle_for_pk(bytes(info.pubkey))
         return puzzle
@@ -360,14 +360,14 @@ class TradeManager:
         if trade_offer is not None:
             offer_spend_bundle: SpendBundle = trade_offer.spend_bundle
 
-        coinsols: List[CoinSolution] = []  # [] of CoinSolutions
-        cc_coinsol_outamounts: Dict[bytes32, List[Tuple[CoinSolution, int]]] = dict()
+        coinsols: List[CoinSpend] = []  # [] of CoinSpends
+        cc_coinsol_outamounts: Dict[bytes32, List[Tuple[CoinSpend, int]]] = dict()
         aggsig = offer_spend_bundle.aggregated_signature
         cc_discrepancies: Dict[bytes32, int] = dict()
         maize_discrepancy = None
         wallets: Dict[bytes32, Any] = dict()  # colour to wallet dict
 
-        for coinsol in offer_spend_bundle.coin_solutions:
+        for coinsol in offer_spend_bundle.coin_spends:
             puzzle: Program = Program.from_bytes(bytes(coinsol.puzzle_reveal))
             solution: Program = Program.from_bytes(bytes(coinsol.solution))
 
@@ -414,7 +414,7 @@ class TradeManager:
             )
             if maize_spend_bundle is not None:
                 for coinsol in coinsols:
-                    maize_spend_bundle.coin_solutions.append(coinsol)
+                    maize_spend_bundle.coin_spends.append(coinsol)
 
         zero_spend_list: List[SpendBundle] = []
         spend_bundle = None

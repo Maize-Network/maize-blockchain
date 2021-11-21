@@ -3,10 +3,12 @@ import logging
 import ssl
 import time
 import traceback
+from collections import Counter
 from ipaddress import IPv6Address, ip_address, ip_network, IPv4Network, IPv6Network
 from pathlib import Path
 from secrets import token_bytes
 from typing import Any, Callable, Dict, List, Optional, Union, Set, Tuple
+from typing import Counter as typing_Counter
 
 from aiohttp import ClientSession, ClientTimeout, ServerDisconnectedError, WSCloseCode, client_exceptions, web
 from aiohttp.web_app import Application
@@ -16,6 +18,8 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes, serialization
 
 from maize.protocols.protocol_message_types import ProtocolMessageTypes
+from maize.protocols.protocol_state_machine import message_requires_reply
+from maize.protocols.protocol_timing import INVALID_PROTOCOL_BAN_SECONDS, API_EXCEPTION_BAN_SECONDS
 from maize.protocols.shared_protocol import protocol_version
 from maize.server.introducer_peers import IntroducerPeers
 from maize.server.outbound_message import Message, NodeType
@@ -26,11 +30,21 @@ from maize.types.peer_info import PeerInfo
 from maize.util.errors import Err, ProtocolError
 from maize.util.ints import uint16
 from maize.util.network import is_localhost, is_in_network
+from maize.util.ssl_check import verify_ssl_certs_and_keys
 
 
 def ssl_context_for_server(
-    ca_cert: Path, ca_key: Path, private_cert_path: Path, private_key_path: Path
+    ca_cert: Path,
+    ca_key: Path,
+    private_cert_path: Path,
+    private_key_path: Path,
+    *,
+    check_permissions: bool = True,
+    log: Optional[logging.Logger] = None,
 ) -> Optional[ssl.SSLContext]:
+    if check_permissions:
+        verify_ssl_certs_and_keys([ca_cert, private_cert_path], [ca_key, private_key_path], log)
+
     ssl_context = ssl._create_unverified_context(purpose=ssl.Purpose.SERVER_AUTH, cafile=str(ca_cert))
     ssl_context.check_hostname = False
     ssl_context.load_cert_chain(certfile=str(private_cert_path), keyfile=str(private_key_path))
@@ -39,8 +53,11 @@ def ssl_context_for_server(
 
 
 def ssl_context_for_root(
-    ca_cert_file: str,
+    ca_cert_file: str, *, check_permissions: bool = True, log: Optional[logging.Logger] = None
 ) -> Optional[ssl.SSLContext]:
+    if check_permissions:
+        verify_ssl_certs_and_keys([Path(ca_cert_file)], [], log)
+
     ssl_context = ssl.create_default_context(purpose=ssl.Purpose.SERVER_AUTH, cafile=ca_cert_file)
     return ssl_context
 
@@ -50,7 +67,13 @@ def ssl_context_for_client(
     ca_key: Path,
     private_cert_path: Path,
     private_key_path: Path,
+    *,
+    check_permissions: bool = True,
+    log: Optional[logging.Logger] = None,
 ) -> Optional[ssl.SSLContext]:
+    if check_permissions:
+        verify_ssl_certs_and_keys([ca_cert, private_cert_path], [ca_key, private_key_path], log)
+
     ssl_context = ssl._create_unverified_context(purpose=ssl.Purpose.SERVER_AUTH, cafile=str(ca_cert))
     ssl_context.check_hostname = False
     ssl_context.load_cert_chain(certfile=str(private_cert_path), keyfile=str(private_key_path))
@@ -140,8 +163,8 @@ class MaizeServer:
 
         self.tasks_from_peer: Dict[bytes32, Set[bytes32]] = {}
         self.banned_peers: Dict[str, float] = {}
-        self.invalid_protocol_ban_seconds = 10
-        self.api_exception_ban_seconds = 10
+        self.invalid_protocol_ban_seconds = INVALID_PROTOCOL_BAN_SECONDS
+        self.api_exception_ban_seconds = API_EXCEPTION_BAN_SECONDS
         self.exempt_peer_networks: List[Union[IPv4Network, IPv6Network]] = [
             ip_network(net, strict=False) for net in config.get("exempt_peer_networks", [])
         ]
@@ -198,12 +221,16 @@ class MaizeServer:
         authenticate = self._local_type not in (NodeType.FULL_NODE, NodeType.INTRODUCER)
         if authenticate:
             ssl_context = ssl_context_for_server(
-                self.ca_private_crt_path, self.ca_private_key_path, self._private_cert_path, self._private_key_path
+                self.ca_private_crt_path,
+                self.ca_private_key_path,
+                self._private_cert_path,
+                self._private_key_path,
+                log=self.log,
             )
         else:
             self.p2p_crt_path, self.p2p_key_path = public_ssl_paths(self.root_path, self.config)
             ssl_context = ssl_context_for_server(
-                self.maize_ca_crt_path, self.maize_ca_key_path, self.p2p_crt_path, self.p2p_key_path
+                self.maize_ca_crt_path, self.maize_ca_key_path, self.p2p_crt_path, self.p2p_key_path, log=self.log
             )
 
         self.site = web.TCPSite(
@@ -256,7 +283,9 @@ class MaizeServer:
             if not self.accept_inbound_connections(connection.connection_type) and not is_in_network(
                 connection.peer_host, self.exempt_peer_networks
             ):
-                self.log.info(f"Not accepting inbound connection: {connection.get_peer_info()}.Inbound limit reached.")
+                self.log.info(
+                    f"Not accepting inbound connection: {connection.get_peer_logging()}.Inbound limit reached."
+                )
                 await connection.close()
                 close_event.set()
             else:
@@ -278,6 +307,11 @@ class MaizeServer:
                 error_stack = traceback.format_exc()
                 self.log.error(f"Exception {e}, exception Stack: {error_stack}")
                 close_event.set()
+        except ValueError as e:
+            if connection is not None:
+                await connection.close(self.invalid_protocol_ban_seconds, WSCloseCode.PROTOCOL_ERROR, Err.UNKNOWN)
+            self.log.warning(f"{e} - closing connection")
+            close_event.set()
         except Exception as e:
             if connection is not None:
                 await connection.close(ws_close_code=WSCloseCode.PROTOCOL_ERROR, error=Err.UNKNOWN)
@@ -342,7 +376,11 @@ class MaizeServer:
         session = None
         connection: Optional[WSMaizeConnection] = None
         try:
-            timeout = ClientTimeout(total=30)
+            # Crawler/DNS introducer usually uses a lower timeout than the default
+            timeout_value = (
+                30 if "peer_connect_timeout" not in self.config else float(self.config["peer_connect_timeout"])
+            )
+            timeout = ClientTimeout(total=timeout_value)
             session = ClientSession(timeout=timeout)
 
             try:
@@ -457,11 +495,10 @@ class MaizeServer:
                 f"Invalid connection type for connection {connection.peer_host},"
                 f" while closing. Handshake never finished."
             )
+        self.cancel_tasks_from_peer(connection.peer_node_id)
         on_disconnect = getattr(self.node, "on_disconnect", None)
         if on_disconnect is not None:
             on_disconnect(connection)
-
-        self.cancel_tasks_from_peer(connection.peer_node_id)
 
     def cancel_tasks_from_peer(self, peer_id: bytes32):
         if peer_id not in self.tasks_from_peer:
@@ -476,13 +513,16 @@ class MaizeServer:
 
     async def incoming_api_task(self) -> None:
         self.tasks = set()
+        message_types: typing_Counter[str] = Counter()  # Used for debugging information.
         while True:
             payload_inc, connection_inc = await self.incoming_messages.get()
             if payload_inc is None or connection_inc is None:
                 continue
 
             async def api_call(full_message: Message, connection: WSMaizeConnection, task_id):
+                nonlocal message_types
                 start_time = time.time()
+                message_type = ""
                 try:
                     if self.received_message_callback is not None:
                         await self.received_message_callback(connection)
@@ -490,9 +530,12 @@ class MaizeServer:
                         f"<- {ProtocolMessageTypes(full_message.type).name} from peer "
                         f"{connection.peer_node_id} {connection.peer_host}"
                     )
-                    message_type: str = ProtocolMessageTypes(full_message.type).name
+                    message_type = ProtocolMessageTypes(full_message.type).name
+                    message_types[message_type] += 1
 
                     f = getattr(self.api, message_type, None)
+                    if len(message_types) % 100 == 0:
+                        self.log.debug(f"Message types: {[(m, n) for m, n in sorted(message_types.items()) if n != 0]}")
 
                     if f is None:
                         self.log.error(f"Non existing function: {message_type}")
@@ -526,7 +569,7 @@ class MaizeServer:
                             pass
                         except Exception as e:
                             tb = traceback.format_exc()
-                            connection.log.error(f"Exception: {e}, {connection.get_peer_info()}. {tb}")
+                            connection.log.error(f"Exception: {e}, {connection.get_peer_logging()}. {tb}")
                             raise e
                         return None
 
@@ -539,17 +582,20 @@ class MaizeServer:
                     if response is not None:
                         response_message = Message(response.type, full_message.id, response.data)
                         await connection.reply_to_request(response_message)
+                except TimeoutError:
+                    connection.log.error(f"Timeout error for: {message_type}")
                 except Exception as e:
                     if self.connection_close_task is None:
                         tb = traceback.format_exc()
                         connection.log.error(
-                            f"Exception: {e} {type(e)}, closing connection {connection.get_peer_info()}. {tb}"
+                            f"Exception: {e} {type(e)}, closing connection {connection.get_peer_logging()}. {tb}"
                         )
                     else:
                         connection.log.debug(f"Exception: {e} while closing connection")
                     # TODO: actually throw one of the errors from errors.py and pass this to close
                     await connection.close(self.api_exception_ban_seconds, WSCloseCode.PROTOCOL_ERROR, Err.UNKNOWN)
                 finally:
+                    message_types[message_type] -= 1
                     if task_id in self.api_tasks:
                         self.api_tasks.pop(task_id)
                     if task_id in self.tasks_from_peer[connection.peer_node_id]:
@@ -577,13 +623,29 @@ class MaizeServer:
                 for message in messages:
                     await connection.send_message(message)
 
+    async def validate_broadcast_message_type(self, messages: List[Message], node_type: NodeType):
+        for message in messages:
+            if message_requires_reply(ProtocolMessageTypes(message.type)):
+                # Internal protocol logic error - we will raise, blocking messages to all peers
+                self.log.error(f"Attempt to broadcast message requiring protocol response: {message.type}")
+                for _, connection in self.all_connections.items():
+                    if connection.connection_type is node_type:
+                        await connection.close(
+                            self.invalid_protocol_ban_seconds,
+                            WSCloseCode.INTERNAL_ERROR,
+                            Err.INTERNAL_PROTOCOL_ERROR,
+                        )
+                raise ProtocolError(Err.INTERNAL_PROTOCOL_ERROR, [message.type])
+
     async def send_to_all(self, messages: List[Message], node_type: NodeType):
+        await self.validate_broadcast_message_type(messages, node_type)
         for _, connection in self.all_connections.items():
             if connection.connection_type is node_type:
                 for message in messages:
                     await connection.send_message(message)
 
     async def send_to_all_except(self, messages: List[Message], node_type: NodeType, exclude: bytes32):
+        await self.validate_broadcast_message_type(messages, node_type)
         for _, connection in self.all_connections.items():
             if connection.connection_type is node_type and connection.peer_node_id != exclude:
                 for message in messages:
@@ -614,10 +676,11 @@ class MaizeServer:
     def get_full_node_connections(self) -> List[WSMaizeConnection]:
         return list(self.connection_by_type[NodeType.FULL_NODE].values())
 
-    def get_connections(self) -> List[WSMaizeConnection]:
+    def get_connections(self, node_type: Optional[NodeType] = None) -> List[WSMaizeConnection]:
         result = []
         for _, connection in self.all_connections.items():
-            result.append(connection)
+            if node_type is None or connection.connection_type == node_type:
+                result.append(connection)
         return result
 
     async def close_all_connections(self) -> None:
@@ -657,14 +720,28 @@ class MaizeServer:
         ip = None
         port = self._port
 
+        # Use maize's service first.
         try:
-            async with ClientSession() as session:
-                async with session.get("https://checkip.amazonaws.com/") as resp:
+            timeout = ClientTimeout(total=15)
+            async with ClientSession(timeout=timeout) as session:
+                async with session.get("https://ip.chia.net/") as resp:
                     if resp.status == 200:
                         ip = str(await resp.text())
                         ip = ip.rstrip()
         except Exception:
             ip = None
+
+        # Fallback to `checkip` from amazon.
+        if ip is None:
+            try:
+                timeout = ClientTimeout(total=15)
+                async with ClientSession(timeout=timeout) as session:
+                    async with session.get("https://checkip.amazonaws.com/") as resp:
+                        if resp.status == 200:
+                            ip = str(await resp.text())
+                            ip = ip.rstrip()
+            except Exception:
+                ip = None
         if ip is None:
             return None
         peer = PeerInfo(ip, uint16(port))

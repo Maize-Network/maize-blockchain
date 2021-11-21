@@ -12,9 +12,9 @@ from maize.wallet.transaction_record import TransactionRecord
 
 class WalletRpcClient(RpcClient):
     """
-    Client to Maize RPC, connects to a local wallet. Uses HTTP/JSON, and converts back from
+    Client to Chia RPC, connects to a local wallet. Uses HTTP/JSON, and converts back from
     JSON into native python objects before returning. All api calls use POST requests.
-    Note that this is not the same as the peer protocol, or wallet protocol (which run Maize's
+    Note that this is not the same as the peer protocol, or wallet protocol (which run Chia's
     protocol on top of TCP), it's a separate protocol on top of HTTP that provides easy access
     to the full node.
     """
@@ -175,6 +175,48 @@ class WalletRpcClient(RpcClient):
             response = await self.fetch("create_signed_transaction", {"additions": additions_hex, "fee": fee})
         return TransactionRecord.from_json_dict(response["signed_tx"])
 
+    async def create_new_did_wallet(self, amount):
+        request: Dict[str, Any] = {
+            "wallet_type": "did_wallet",
+            "did_type": "new",
+            "backup_dids": [],
+            "num_of_backup_ids_needed": 0,
+            "amount": amount,
+            "host": f"{self.hostname}:{self.port}",
+        }
+        response = await self.fetch("create_new_wallet", request)
+        return response
+
+    async def create_new_did_wallet_from_recovery(self, filename):
+        request: Dict[str, Any] = {
+            "wallet_type": "did_wallet",
+            "did_type": "recovery",
+            "filename": filename,
+            "host": f"{self.hostname}:{self.port}",
+        }
+        response = await self.fetch("create_new_wallet", request)
+        return response
+
+    async def did_create_attest(self, wallet_id, coin_name, pubkey, puzhash, file_name):
+        request: Dict[str, Any] = {
+            "wallet_id": wallet_id,
+            "coin_name": coin_name,
+            "pubkey": pubkey,
+            "puzhash": puzhash,
+            "filename": file_name,
+        }
+        response = await self.fetch("did_create_attest", request)
+        return response
+
+    async def did_recovery_spend(self, wallet_id, attest_filenames):
+        request: Dict[str, Any] = {
+            "wallet_id": wallet_id,
+            "attest_filenames": attest_filenames,
+        }
+        response = await self.fetch("did_recovery_spend", request)
+        return response
+
+    # TODO: test all invocations of create_new_pool_wallet with new fee arg.
     async def create_new_pool_wallet(
         self,
         target_puzzlehash: Optional[bytes32],
@@ -183,6 +225,7 @@ class WalletRpcClient(RpcClient):
         backup_host: str,
         mode: str,
         state: str,
+        fee: uint64,
         p2_singleton_delay_time: Optional[uint64] = None,
         p2_singleton_delayed_ph: Optional[bytes32] = None,
     ) -> TransactionRecord:
@@ -197,6 +240,7 @@ class WalletRpcClient(RpcClient):
                 "pool_url": pool_url,
                 "state": state,
             },
+            "fee": fee,
         }
         if p2_singleton_delay_time is not None:
             request["p2_singleton_delay_time"] = p2_singleton_delay_time
@@ -205,21 +249,24 @@ class WalletRpcClient(RpcClient):
         res = await self.fetch("create_new_wallet", request)
         return TransactionRecord.from_json_dict(res["transaction"])
 
-    async def pw_self_pool(self, wallet_id: str) -> TransactionRecord:
+    async def pw_self_pool(self, wallet_id: str, fee: uint64) -> TransactionRecord:
         return TransactionRecord.from_json_dict(
-            (await self.fetch("pw_self_pool", {"wallet_id": wallet_id}))["transaction"]
+            (await self.fetch("pw_self_pool", {"wallet_id": wallet_id, "fee": fee}))["transaction"]
         )
 
     async def pw_join_pool(
-        self, wallet_id: str, target_puzzlehash: bytes32, pool_url: str, relative_lock_height: uint32
+        self, wallet_id: str, target_puzzlehash: bytes32, pool_url: str, relative_lock_height: uint32, fee: uint64
     ) -> TransactionRecord:
         request = {
             "wallet_id": int(wallet_id),
             "target_puzzlehash": target_puzzlehash.hex(),
             "relative_lock_height": relative_lock_height,
             "pool_url": pool_url,
+            "fee": fee,
         }
-        return TransactionRecord.from_json_dict((await self.fetch("pw_join_pool", request))["transaction"])
+
+        join_reply = await self.fetch("pw_join_pool", request)
+        return TransactionRecord.from_json_dict(join_reply["transaction"])
 
     async def pw_absorb_rewards(self, wallet_id: str, fee: uint64 = uint64(0)) -> TransactionRecord:
         return TransactionRecord.from_json_dict(
