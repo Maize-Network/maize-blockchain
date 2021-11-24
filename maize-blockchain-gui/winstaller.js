@@ -16,14 +16,14 @@ function getInstallerConfig () {
   return Promise.resolve({
     appDirectory: path.join(rootPath, 'Maize-win32-x64'),
     authors: 'Maize Network',
-    version: process.env.MAIZE_INSTALLER_VERSION,
+    version: process.env.CHIA_INSTALLER_VERSION,
     noMsi: true,
     iconUrl: 'https://raw.githubusercontent.com/Chia-Network/chia-blockchain/master/electron-react/src/assets/img/chia.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
     exe: 'Maize.exe',
-    setupExe: 'MaizeSetup-' + process.env.MAIZE_INSTALLER_VERSION + '.exe',
-    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'chia.ico')
+    setupExe: 'MaizeSetup-' + process.env.CHIA_INSTALLER_VERSION + '.exe',
+    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'maize.ico')
   })
 }

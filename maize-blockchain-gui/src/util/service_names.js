@@ -4,7 +4,7 @@ export const service_farmer = 'maize_farmer';
 export const service_harvester = 'maize_harvester';
 export const service_simulator = 'maize_full_node_simulator';
 export const service_daemon = 'daemon';
-export const service_plotter = 'maize plots create';
+export const service_plotter = 'maize_plotter';
 
 // Corresponds with outbound_message.py NodeTypes
 export const service_connection_types = {

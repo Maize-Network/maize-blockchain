@@ -12,7 +12,7 @@ const aliases = {
 
 const display = {
   maize: {
-    format: '{amount} MZ',
+    format: '{amount} CH',
     fractionDigits: 12,
   },
   mojo: {

@@ -62,7 +62,7 @@ export default function FarmLatestBlockChallenges() {
       />
       <Typography variant="caption">
         <Trans>
-          *Want to explore Chia’s blocks further? Check out{' '}
+          *Want to explore Maize’s blocks further? Check out{' '}
           <Link
             color="primary"
             href="https://www.chiaexplorer.com/"

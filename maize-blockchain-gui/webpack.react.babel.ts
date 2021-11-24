@@ -52,12 +52,19 @@ export default {
   target: 'electron-renderer',
   stats: 'errors-only',
   devServer: DEV ? {
-    contentBase: path.join(__dirname, '../dist/renderer'),
+    client: {
+      overlay: false,
+    },
+    static: {
+      directory: path.join(__dirname, '../dist/renderer'),
+    },
     historyApiFallback: true,
     compress: true,
     hot: true,
     port: PORT,
-    publicPath: '/',
+    devMiddleware: {
+      publicPath: '/',
+    },
   } : undefined,
   output: {
     path: path.resolve(__dirname, './build/renderer'),
@@ -148,12 +155,15 @@ export default {
       use: ['style-loader', 'css-loader'],
     }, {
       test: /\.(woff|woff2?|ttf|eot)$/,
-      use: [{
-        loader: 'url-loader',
-        options: {
-          limit: 10000,
+      type: 'asset',
+      parser: {
+        dataUrlCondition: {
+          maxSize: 10000,
         },
-      }],
+      },
+      generator: {
+        filename: '[name]-[contenthash:8][ext]',
+      },
     }, {
       test: /\.svg$/,
       use: ['@svgr/webpack', 'url-loader'],

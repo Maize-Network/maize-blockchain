@@ -53,7 +53,6 @@ function MnemonicField(props: TextFieldProps & MnemonicFieldProps) {
             label={label}
             error={error}
             autoFocus={autoFocus}
-            defaultValue={props.value}
             onChange={(e) => onChangeValue(e.target.value)}
             {...params}
           />
@@ -146,7 +145,7 @@ export default function WalletImport() {
           <Typography variant="subtitle1" align="center">
             <Trans>
               Enter the 24 word mnemonic that you have saved in order to restore
-              your Chia wallet.
+              your Maize wallet.
             </Trans>
           </Typography>
           <Grid container spacing={2}>

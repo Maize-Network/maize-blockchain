@@ -18,12 +18,12 @@ describe('units', () => {
       expect(result).toBe(1e-9);
     });
     it('supports uppercase characters', () => {
-      const result = units.getUnit('MAIZE');
+      const result = units.getUnit('CHIA');
 
       expect(result).toBe(1);
     });
     it('gets unit of maize using alias', () => {
-      const result = units.getUnit('mz');
+      const result = units.getUnit('ch');
 
       expect(result).toBe(1);
     });

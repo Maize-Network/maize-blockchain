@@ -43,7 +43,7 @@ export default function LocaleToggle(props: Props) {
     handleClose();
 
     openExternal(
-      'https://github.com/Chia-Network/chia-blockchain-gui/tree/main/src/locales/README.md',
+      'https://github.com/Maize-Network/maize-blockchain/blob/main/maize-blockchain-gui/src/locales/README.md',
     );
   }
 
