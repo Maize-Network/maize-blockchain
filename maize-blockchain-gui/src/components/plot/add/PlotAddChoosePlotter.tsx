@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useWatch } from 'react-hook-form';
 import { t, Trans } from '@lingui/macro';
-import { CardStep, Select } from '@maiz/core';
+import { CardStep, Select } from '@maize/core';
 import {
   FormControl,
   FormHelperText,
