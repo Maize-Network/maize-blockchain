@@ -424,18 +424,6 @@ if (!handleSquirrelEvent()) {
               openExternal('https://chiaforksblockchain.com');
             },
           },
-          {
-            label: i18n._(/* i18n */ { id: 'Forks exchanger' }),
-            click: () => {
-              openExternal('https://forkschiaexchange.com');
-            },
-          },
-		  {
-            label: i18n._(/* i18n */ { id: 'Maize casino' }),
-            click: () => {
-              openExternal('https://casino.maize.farm');
-            },
-          },
         ],
       },
     ];

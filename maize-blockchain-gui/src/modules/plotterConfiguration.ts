@@ -4,7 +4,7 @@ import Plotter, { PlotterMap } from '../types/Plotter';
 
 export const defaultPlotter = (): Plotter => {
   return {
-    displayName: "Chia Proof of Space",
+    displayName: "Maize Proof of Space",
     options: optionsForPlotter(PlotterName.CHIAPOS),
     defaults: defaultsForPlotter(PlotterName.CHIAPOS),
     installInfo: { installed: true },

@@ -65,10 +65,10 @@ export default function FarmLatestBlockChallenges() {
           *Want to explore Maize’s blocks further? Check out{' '}
           <Link
             color="primary"
-            href="https://www.chiaexplorer.com/"
+            href="https://alltheblocks.net/maize"
             target="_blank"
           >
-            Chia Explorer
+            Maize Explorer
           </Link>{' '}
           built by an open source developer.
         </Trans>
