@@ -388,7 +388,7 @@ introducer:
 
 wallet:
   port: 8649
-  rpc_port: 9656
+  rpc_port: 8656
 
   enable_profiler: False
 
