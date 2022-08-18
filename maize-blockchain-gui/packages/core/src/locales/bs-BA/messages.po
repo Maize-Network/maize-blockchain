@@ -1,0 +1,366 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-02-08 18:51+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: bs_BA\n"
+"Project-Id-Version: maize-blockchain\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-07-27 18:41\n"
+"Last-Translator: \n"
+"Language-Team: Bosnian\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Crowdin-Project: maize-blockchain\n"
+"X-Crowdin-Project-ID: 440660\n"
+"X-Crowdin-Language: bs\n"
+"X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
+"X-Crowdin-File-ID: 1886\n"
+
+#: src/components/Amount/Amount.tsx:114
+msgid "Amount"
+msgstr "Iznos:"
+
+#: src/components/Settings/SettingsApp.tsx:76
+msgid "Appearance"
+msgstr ""
+
+#: src/components/FormBackButton/FormBackButton.tsx:47
+#: src/screens/SelectKey/SelectKey.tsx:79
+#: src/screens/SelectKey/SelectKeyItem.tsx:93
+msgid "Back"
+msgstr "Nazad"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:146
+msgid "Can be backed up to mnemonic seed"
+msgstr "Sigirno kopiranje u korijenu"
+
+#: src/components/ConfirmDialog/ConfirmDialog.tsx:105
+#: src/hooks/useKeyringMigrationPrompt.tsx:17
+msgid "Cancel"
+msgstr "Odustani"
+
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:51
+msgid "Connected"
+msgstr ""
+
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:41
+msgid "Copied"
+msgstr ""
+
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:43
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKey.tsx:179
+msgid "Create a new private key"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:161
+msgid "DANGER: permanently delete private key"
+msgstr ""
+
+#: src/components/Settings/SettingsApp.tsx:83
+msgid "Dark"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKey.tsx:78
+#: src/screens/SelectKey/SelectKeyItem.tsx:92
+msgid "Delete"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKey.tsx:199
+#: src/screens/SelectKey/SelectKey.tsx:77
+msgid "Delete all keys"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:91
+msgid "Delete key {fingerprint}"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKey.tsx:83
+msgid "Deleting all keys will permanently remove the keys from your computer, make sure you have backups. Are you sure you want to continue?"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:124
+msgid "Deleting the key will permanently remove the key from your computer, make sure you have backups. Are you sure you want to continue?"
+msgstr ""
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:51
+msgid "Disable"
+msgstr ""
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:50
+msgid "Disable Passphrase Protection"
+msgstr ""
+
+#: src/components/Back/Back.tsx:35
+#: src/components/FormBackButton/FormBackButton.tsx:27
+msgid "Discard"
+msgstr ""
+
+#: src/components/CardSimple/CardSimple.tsx:63
+#: src/hooks/useShowError.tsx:11
+msgid "Error"
+msgstr "GrEšKa"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:78
+msgid "Error:"
+msgstr ""
+
+#: src/components/LayoutMain/LayoutFooter.tsx:50
+msgid "FAQ"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:67
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:67
+msgid "Farmer public key:"
+msgstr ""
+
+#: src/components/Settings/SettingsApp.tsx:66
+msgid "Farming"
+msgstr ""
+
+#: src/components/Fee/Fee.tsx:52
+msgid "Fee"
+msgstr ""
+
+#: src/components/Settings/SettingsApp.tsx:105
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: src/components/Settings/SettingsApp.tsx:101
+msgid "Help"
+msgstr ""
+
+#: src/components/LocaleToggle/LocaleToggle.tsx:70
+msgid "Help translate"
+msgstr ""
+
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:75
+msgid "Hide Advanced Options"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKey.tsx:189
+msgid "Import from Mnemonics (24 words)"
+msgstr ""
+
+#: src/components/Fee/Fee.tsx:40
+msgid "Incorrect value"
+msgstr ""
+
+#: src/components/Settings/SettingsApp.tsx:90
+msgid "Language"
+msgstr ""
+
+#: src/components/Settings/SettingsApp.tsx:80
+msgid "Light"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKey.tsx:116
+msgid "Loading list of the keys"
+msgstr ""
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:128
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:150
+msgid "Log Out"
+msgstr ""
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:146
+msgid "Logout"
+msgstr ""
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:16
+msgid "Migrate"
+msgstr ""
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:15
+msgid "Migration required"
+msgstr ""
+
+#: src/components/Settings/SettingsApp.tsx:62
+msgid "Mode"
+msgstr ""
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:38
+msgid "New passphrase is the same as your current passphrase"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:93
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:93
+msgid "No 24 word seed, since this key is imported."
+msgstr ""
+
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:52
+msgid "Not connected"
+msgstr ""
+
+#: src/components/ConfirmDialog/ConfirmDialog.tsx:106
+msgid "OK"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:75
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:75
+msgid "Pool public key:"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:141
+msgid "Private key with public fingerprint {fingerprint}"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:28
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:40
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:28
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:40
+msgid "Private key {fingerprint}"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:51
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:51
+msgid "Private key:"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:59
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:59
+msgid "Public key:"
+msgstr ""
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:91
+msgid "Reload Application"
+msgstr ""
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:87
+msgid "Report an Issue"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:150
+msgid "See private key"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:85
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:85
+msgid "Seed:"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKey.tsx:135
+msgid "Select Key"
+msgstr ""
+
+#: src/components/Dropdown/Dropdown.tsx:85
+msgid "Select..."
+msgstr ""
+
+#: src/components/LayoutMain/LayoutFooter.tsx:53
+#: src/components/Settings/SettingsApp.tsx:108
+msgid "Send Feedback"
+msgstr ""
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:48
+msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
+msgstr ""
+
+#: src/components/Settings/Settings.tsx:48
+#: src/components/Settings/Settings.tsx:58
+msgid "Settings"
+msgstr ""
+
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:74
+msgid "Show Advanced Options"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKey.tsx:140
+msgid "Sign In"
+msgstr ""
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:47
+msgid "Skip"
+msgstr ""
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:46
+msgid "Skip Passphrase Protection"
+msgstr ""
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:73
+msgid "Something went wrong"
+msgstr ""
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:30
+msgid "The provided passphrase and confirmation do not match"
+msgstr ""
+
+#: src/utils/getTransactionResult.ts:15
+msgid "Transaction has not been sent to node yet"
+msgstr ""
+
+#: src/utils/getTransactionResult.ts:33
+msgid "Transaction has sent to a full node and is pending inclusion into the mempool. {0}"
+msgstr ""
+
+#: src/utils/getTransactionResult.ts:24
+msgid "Transaction has successfully been sent to a full node and included in the mempool."
+msgstr ""
+
+#: src/screens/SelectKey/SelectKey.tsx:123
+msgid "Try Again"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKey.tsx:127
+msgid "Unable to load the list of the keys"
+msgstr ""
+
+#: src/components/LocaleToggle/LocaleToggle.tsx:48
+msgid "Unknown"
+msgstr ""
+
+#: src/components/Back/Back.tsx:34
+#: src/components/FormBackButton/FormBackButton.tsx:26
+msgid "Unsaved Changes"
+msgstr ""
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:52
+msgid "Using a passphrase is strongly recommended to protect your keys. Are you sure you want to disable passphrase protection?"
+msgstr ""
+
+#: src/components/Fee/Fee.tsx:32
+msgid "Value seems high"
+msgstr ""
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/Settings/SettingsApp.tsx:69
+msgid "Wallet"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:117
+msgid "Warning: This key is used for a wallet that may have a non-zero balance. By deleting this key you may lose access to this wallet"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:99
+msgid "Warning: This key is used for your farming rewards address. By deleting this key you may lose access to any future farming rewards"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:108
+msgid "Warning: This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKey.tsx:143
+msgid "Welcome to Maize. Please log in with an existing key, or create a new key."
+msgstr ""
+
+#: src/components/Back/Back.tsx:38
+#: src/components/FormBackButton/FormBackButton.tsx:30
+msgid "You have made changes. Do you want to discard them?"
+msgstr ""
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:20
+msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
+msgstr ""
+
+#: src/components/Amount/Amount.tsx:96
+msgid "{0, plural, one {mojo} other {mojos}}"
+msgstr ""
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:33
+msgid "{minPassphraseLength, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
+msgstr ""
+

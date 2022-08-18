@@ -25,13 +25,13 @@ config/keys.yaml
 config/plots.yaml
 
 # Bundled code
-chia-blockchain.tar.gz.tar.gz
+maize-blockchain.tar.gz.tar.gz
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# *.manifest
+# *.spec
 build_scripts/*.dmg
 build_scripts/build
 
@@ -66,7 +66,7 @@ activate
 .idea
 
 # Packaging
-chia-blockchain.tar.gz
+maize-blockchain.tar.gz
 
 # Timelord utilities
 vdf_bench
@@ -90,7 +90,10 @@ main.sym
 build
 build_scripts/dist
 build_scripts/*.Dmg
-src/locales/_build
-src/locales/**/*.js
+packages/**/src/locales/_build
+packages/**/src/locales/**/*.js
 daemon/
 win_code_sign_cert.p12
+
+.env
+dist

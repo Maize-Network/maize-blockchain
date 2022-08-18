@@ -1,0 +1,365 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-02-08 18:51+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: sk_SK\n"
+"Project-Id-Version: maize-blockchain\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-07-27 18:39\n"
+"Last-Translator: \n"
+"Language-Team: Slovak\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Crowdin-Project: maize-blockchain\n"
+"X-Crowdin-Project-ID: 440660\n"
+"X-Crowdin-Language: sk\n"
+"X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
+"X-Crowdin-File-ID: 1886\n"
+
+#: src/components/Amount/Amount.tsx:116
+msgid "Amount"
+msgstr "Suma"
+
+#: src/components/Settings/SettingsApp.tsx:76
+msgid "Appearance"
+msgstr "Vzhľad"
+
+#: src/components/FormBackButton/FormBackButton.tsx:47
+#: src/screens/SelectKey/SelectKey.tsx:79
+#: src/screens/SelectKey/SelectKeyItem.tsx:93
+msgid "Back"
+msgstr "Späť"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:147
+msgid "Can be backed up to mnemonic seed"
+msgstr "Možnosť zálohovať pomocou mnemotechnickej pomôcky"
+
+#: src/components/ConfirmDialog/ConfirmDialog.tsx:105
+#: src/hooks/useKeyringMigrationPrompt.tsx:17
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:51
+msgid "Connected"
+msgstr "Pripojené"
+
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:42
+msgid "Copied"
+msgstr "Skopírované"
+
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:44
+msgid "Copy to Clipboard"
+msgstr "Skopírovať do schránky"
+
+#: src/screens/SelectKey/SelectKey.tsx:180
+msgid "Create a new private key"
+msgstr "Vytvoriť nový privátny kľúč"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:163
+msgid "DANGER: permanently delete private key"
+msgstr "POZOR: natrvalo odstrániť súkromný klúč"
+
+#: src/components/Settings/SettingsApp.tsx:83
+msgid "Dark"
+msgstr "Tmavý"
+
+#: src/screens/SelectKey/SelectKey.tsx:78
+#: src/screens/SelectKey/SelectKeyItem.tsx:92
+msgid "Delete"
+msgstr "Zmazať"
+
+#: src/screens/SelectKey/SelectKey.tsx:202
+#: src/screens/SelectKey/SelectKey.tsx:77
+msgid "Delete all keys"
+msgstr "Zmazať všetky kľúče"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:91
+msgid "Delete key {fingerprint}"
+msgstr "Odstrániť kľúč {fingerprint}"
+
+#: src/screens/SelectKey/SelectKey.tsx:83
+msgid "Deleting all keys will permanently remove the keys from your computer, make sure you have backups. Are you sure you want to continue?"
+msgstr "Po stlačení tlačidla zmazať odstránite natrvalo všetký kľúče z počítača. Uistite sa, že máte zálohu. Ste si istý, že chcete pokračovať?"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:124
+msgid "Deleting the key will permanently remove the key from your computer, make sure you have backups. Are you sure you want to continue?"
+msgstr "Odstránením kľúča natrvalo odstránite kľúč z počítača. Uistite sa, že máte zálohy. Ste si istý, že chcete pokračovať?"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:68
+msgid "Disable"
+msgstr "Deaktivovať"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:67
+msgid "Disable Passphrase Protection"
+msgstr "Deaktivovať ochranu prístupovou frázou"
+
+#: src/components/Back/Back.tsx:35
+#: src/components/FormBackButton/FormBackButton.tsx:27
+msgid "Discard"
+msgstr "Odstrániť"
+
+#: src/components/CardSimple/CardSimple.tsx:63
+#: src/hooks/useShowError.tsx:11
+msgid "Error"
+msgstr "Chyba"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:78
+msgid "Error:"
+msgstr "Chyba:"
+
+#: src/components/LayoutMain/LayoutFooter.tsx:50
+msgid "FAQ"
+msgstr "Často kladené otázky"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:67
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:67
+msgid "Farmer public key:"
+msgstr "Verejný kľúč farmára:"
+
+#: src/components/Settings/SettingsApp.tsx:66
+msgid "Farming"
+msgstr "Ťažba"
+
+#: src/components/Fee/Fee.tsx:52
+msgid "Fee"
+msgstr "Poplatok"
+
+#: src/components/Settings/SettingsApp.tsx:105
+msgid "Frequently Asked Questions"
+msgstr "Často kladené otázky (FAQ)"
+
+#: src/components/Settings/SettingsApp.tsx:101
+msgid "Help"
+msgstr "Pomoc"
+
+#: src/components/LocaleToggle/LocaleToggle.tsx:71
+msgid "Help translate"
+msgstr "Pomôcť s prekladom"
+
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:75
+msgid "Hide Advanced Options"
+msgstr "Skryť rozšírené možnosti"
+
+#: src/screens/SelectKey/SelectKey.tsx:191
+msgid "Import from Mnemonics (24 words)"
+msgstr "Obnoviť z mnemotechniky (24 slov)"
+
+#: src/components/Fee/Fee.tsx:40
+msgid "Incorrect value"
+msgstr "Nesprávna hodnota"
+
+#: src/components/Settings/SettingsApp.tsx:90
+msgid "Language"
+msgstr "Jazyk"
+
+#: src/components/Settings/SettingsApp.tsx:80
+msgid "Light"
+msgstr "Svetlý"
+
+#: src/screens/SelectKey/SelectKey.tsx:116
+msgid "Loading list of the keys"
+msgstr "Načítavanie zoznamu kľúčov"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+msgid "Log Out"
+msgstr "Odhlásiť sa"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+msgid "Logout"
+msgstr "Odhlásiť"
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:16
+msgid "Migrate"
+msgstr "Migrovať"
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:15
+msgid "Migration required"
+msgstr "Vyžaduje sa migrácia"
+
+#: src/components/Settings/SettingsApp.tsx:62
+msgid "Mode"
+msgstr "Režim"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:49
+msgid "New passphrase is the same as your current passphrase"
+msgstr "Nová prístupová fráza je rovnaká ako vaša aktuálna prístupová fráza"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:93
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:93
+msgid "No 24 word seed, since this key is imported."
+msgstr "Žiadny 24-slovný seed, pretože tento kľúč je importovaný."
+
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:52
+msgid "Not connected"
+msgstr "Nepripojené"
+
+#: src/components/ConfirmDialog/ConfirmDialog.tsx:106
+msgid "OK"
+msgstr "OK"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:75
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:75
+msgid "Pool public key:"
+msgstr "Verejný kľúč združenia:"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:142
+msgid "Private key with public fingerprint {fingerprint}"
+msgstr "Privátny kľúč s verejným odtlačkom {fingerprint}"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:28
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:40
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:28
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:40
+msgid "Private key {fingerprint}"
+msgstr "Súkromný kľúč {fingerprint}"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:51
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:51
+msgid "Private key:"
+msgstr "Privátny kľúč:"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:59
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:59
+msgid "Public key:"
+msgstr "Verejný kľúč:"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:91
+msgid "Reload Application"
+msgstr "Znova načítať aplikáciu"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:87
+msgid "Report an Issue"
+msgstr "Nahlásiť problém"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:151
+msgid "See private key"
+msgstr "Zobraziť privátny kľúč"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:85
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:85
+msgid "Seed:"
+msgstr "Zrnko:"
+
+#: src/screens/SelectKey/SelectKey.tsx:135
+msgid "Select Key"
+msgstr "Vyberte kľúč"
+
+#: src/components/Dropdown/Dropdown.tsx:85
+msgid "Select..."
+msgstr "Vybrať..."
+
+#: src/components/LayoutMain/LayoutFooter.tsx:53
+#: src/components/Settings/SettingsApp.tsx:108
+msgid "Send Feedback"
+msgstr "Odoslať spätnú väzbu"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:61
+msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
+msgstr "Na ochranu vašich kľúčov sa dôrazne odporúča nastaviť prístupovú frázu. Naozaj chcete preskočiť nastavenie prístupovej frázy?"
+
+#: src/components/Settings/Settings.tsx:48
+#: src/components/Settings/Settings.tsx:58
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:74
+msgid "Show Advanced Options"
+msgstr "Zobraziť rozšírené možnosti"
+
+#: src/screens/SelectKey/SelectKey.tsx:140
+msgid "Sign In"
+msgstr "Prihlásiť sa"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:59
+msgid "Skip"
+msgstr "Preskočiť"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:58
+msgid "Skip Passphrase Protection"
+msgstr "Preskočiť ochranu prístupovou frázou"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:73
+msgid "Something went wrong"
+msgstr "Niečo sa pokazilo"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:31
+msgid "The provided passphrase and confirmation do not match"
+msgstr "Poskytnutá prístupová fráza a potvrdenie sa nezhodujú"
+
+#: src/utils/getTransactionResult.ts:15
+msgid "Transaction has not been sent to node yet"
+msgstr "Transakcia ešte nebola odoslaná uzlu"
+
+#: src/utils/getTransactionResult.ts:33
+msgid "Transaction has sent to a full node and is pending inclusion into the mempool. {0}"
+msgstr "Transakcia bola odoslaná úplnému uzlu a čaká na zahrnutie do pamäťového fondu. {0}"
+
+#: src/utils/getTransactionResult.ts:24
+msgid "Transaction has successfully been sent to a full node and included in the mempool."
+msgstr "Transakcia bola úspešne odoslaná úplnému uzlu a zahrnutá do pamäťového fondu."
+
+#: src/screens/SelectKey/SelectKey.tsx:123
+msgid "Try Again"
+msgstr "Skúsiť znova"
+
+#: src/screens/SelectKey/SelectKey.tsx:127
+msgid "Unable to load the list of the keys"
+msgstr "Nie je možné načítať zoznam kľúčov"
+
+#: src/components/LocaleToggle/LocaleToggle.tsx:48
+msgid "Unknown"
+msgstr "Neznáme"
+
+#: src/components/Back/Back.tsx:34
+#: src/components/FormBackButton/FormBackButton.tsx:26
+msgid "Unsaved Changes"
+msgstr "Neuložené zmeny"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:70
+msgid "Using a passphrase is strongly recommended to protect your keys. Are you sure you want to disable passphrase protection?"
+msgstr "Na ochranu vašich kľúčov sa dôrazne odporúča používať prístupovú frázu. Naozaj chcete deaktivovať ochranu prístupovou frázou?"
+
+#: src/components/Fee/Fee.tsx:32
+msgid "Value seems high"
+msgstr "Hodnota sa zdá byť vysoká"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/Settings/SettingsApp.tsx:69
+msgid "Wallet"
+msgstr "Peňaženka"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:117
+msgid "Warning: This key is used for a wallet that may have a non-zero balance. By deleting this key you may lose access to this wallet"
+msgstr "Varovanie: Tento kľúč sa používa pre peňaženku, ktorá môže mať nenulový zostatok. Odstránením tohto kľúča môžete stratiť prístup k tejto peňaženke"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:99
+msgid "Warning: This key is used for your farming rewards address. By deleting this key you may lose access to any future farming rewards"
+msgstr "Varovanie: Tento kľúč sa používa pre vašu adresu farmárskych odmien. Odstránením tohto kľúča môžete stratiť prístup k budúcim farmárskym odmenám"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:108
+msgid "Warning: This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
+msgstr "Varovanie: Tento kľúč sa používa pre vašu adresu odmien združenia. Odstránením tohto kľúča môžete stratiť prístup k budúcim odmenám združenia"
+
+#: src/screens/SelectKey/SelectKey.tsx:143
+msgid "Welcome to Maize. Please log in with an existing key, or create a new key."
+msgstr "Vitajte v Maize. Prosím prihláste sa s existujúcim kľúčom, alebo si vytvorte nový."
+
+#: src/components/Back/Back.tsx:38
+#: src/components/FormBackButton/FormBackButton.tsx:30
+msgid "You have made changes. Do you want to discard them?"
+msgstr "Urobili ste zmeny. Chcete ich zrušiť?"
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:20
+msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
+msgstr "Vaše kľúče zatiaľ neboli migrované do nového zväzku kľúčov. Kým sa migrácia nedokončí, nebudete môcť vytvárať nové kľúče ani odstraňovať existujúce kľúče. Chcete teraz migrovať svoje kľúče?"
+
+#: src/components/Amount/Amount.tsx:98
+msgid "{0, plural, one {mojo} other {mojos}}"
+msgstr "{0, plural, one {mojo} few {mojos} many {mojos} other {mojos}}"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:39
+msgid "{minPassphraseLength, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
+msgstr "{minPassphraseLength, plural, one {Prístupové frázy musia mať dĺžku aspoň # znak} few {Prístupové frázy musia mať dĺžku aspoň # znaky} many {Prístupové frázy musia mať dĺžku aspoň # znakov} other {Prístupové frázy musia mať dĺžku aspoň # znakov}}"

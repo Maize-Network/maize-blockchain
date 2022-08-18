@@ -1,0 +1,3048 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-02-08 18:51+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: fa_IR\n"
+"Project-Id-Version: maize-blockchain\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-07-27 18:41\n"
+"Last-Translator: \n"
+"Language-Team: Persian\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: maize-blockchain\n"
+"X-Crowdin-Project-ID: 440660\n"
+"X-Crowdin-Language: fa\n"
+"X-Crowdin-File: /main/packages/gui/src/locales/en-US/messages.po\n"
+"X-Crowdin-File-ID: 1888\n"
+
+#: src/components/plot/add/PlotAddChoosePlotter.tsx:74
+msgid "(Not Installed)"
+msgstr ""
+
+#: src/components/plot/add/PlotAddChoosePlotter.tsx:71
+msgid "(Not Supported)"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNFT.tsx:67
+msgid "(Optional)"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNFT.tsx:128
+msgid "+ Add New Plot NFT"
+msgstr "+ افزودن پلات NFT جدید"
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:39
+msgid "+ Add a Plot"
+msgstr ""
+
+#: src/components/settings/ProfileAdd.tsx:91
+msgid "<0>Need some XMZ?</0>"
+msgstr ""
+
+#: src/components/settings/ProfileAdd.tsx:99
+msgid "<0>Use one (1) mojo to create a Profile.</0>"
+msgstr ""
+
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:96
+msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
+msgstr ""
+"دروگر (Harvester) یک سرویس در حال اجرا بر روی ماشینی است که پلات (ها) در عمل آنجا ذخیره شده اند. مزرعه دار (Farmer) و دروگر برای دیدن وضعیت رشته (Chain) با گره کامل در تعامل هستند. شبکه دروگر های متصل خود را در زیر ببینید. \n"
+"بیشتر فرار بگیرید"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:155
+msgid "A value of {0} is recommended"
+msgstr ""
+
+#: src/electron/main.tsx:607
+#: src/electron/main.tsx:694
+msgid "About Maize Blockchain"
+msgstr "درباره بلاکچین چیـا"
+
+#: src/components/offers/NFTOfferViewer.tsx:750
+#: src/components/offers/OfferAcceptConfirmationDialog.tsx:23
+#: src/components/offers/OfferViewer.tsx:321
+msgid "Accept Offer"
+msgstr ""
+
+#: src/components/offers/OfferViewer.tsx:161
+msgid "Accepted on Date"
+msgstr ""
+
+#: src/components/plot/PlotHarvesterPlots.tsx:79
+#: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:18
+#: src/components/plot/PlotHarvesterPlotsFailed.tsx:18
+#: src/components/plot/PlotHarvesterPlotsNotFound.tsx:18
+#: src/components/plot/PlotPlotting.tsx:32
+msgid "Action"
+msgstr "عملیات"
+
+#: src/components/farm/FarmFullNodeConnections.tsx:66
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:66
+#: src/components/nfts/NFTContextualActions.tsx:634
+msgid "Actions"
+msgstr "عملیات"
+
+#: src/components/offers/OfferAssetSelector.tsx:165
+msgid "Add CAT wallets to have more options"
+msgstr ""
+
+#: src/components/plot/PlotHeader.tsx:88
+#: src/components/plot/overview/PlotOverviewPlots.tsx:55
+msgid "Add Plot Directory"
+msgstr "افزودن پوشه حاوی پلات"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:70
+msgid "Add Plot to Queue"
+msgstr "افزودن پلات به صف"
+
+#: src/components/farm/FarmHero.tsx:40
+#: src/components/plot/PlotHeader.tsx:60
+#: src/components/plot/add/PlotAddForm.tsx:188
+#: src/components/plot/overview/PlotOverviewHero.tsx:51
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:229
+#: src/components/plotNFT/PlotNFTCard.tsx:268
+msgid "Add a Plot"
+msgstr "افزودن پلات"
+
+#: src/components/plotNFT/PlotNFTAdd.tsx:55
+msgid "Add a Plot NFT"
+msgstr "افزودن پلات NFT"
+
+#: src/components/plot/PlotAddDirectoryDialog.tsx:84
+msgid "Add a plot"
+msgstr "افزودن پلات"
+
+#: src/components/plot/PlotAddDirectoryDialog.tsx:123
+msgid "Add plot directory"
+msgstr "افزودن پوشه قرارگیری پلات"
+
+#: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:41
+msgid "Add {currencyCode} from the Faucet"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:259
+msgid "After your keys are successfully migrated to the new keyring, you may choose to have your keys removed from the old keyring."
+msgstr ""
+
+#: src/components/nfts/gallery/NFTGallerySidebar.tsx:44
+#: src/components/nfts/gallery/NFTGallerySidebar.tsx:73
+#: src/components/nfts/gallery/NFTGallerySidebar.tsx:86
+msgid "All"
+msgstr ""
+
+#: src/components/nfts/NFTProfileDropdown.tsx:119
+#: src/components/nfts/NFTProfileDropdown.tsx:154
+msgid "All NFTs"
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:97
+msgid "All Profiles"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:238
+msgid "Alternate tmpdir/tmpdir2"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:261
+#: src/components/offers/OfferEditorConditionsPanel.tsx:148
+#: src/components/offers/OfferViewer.tsx:198
+msgid "Amount"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:710
+#: src/components/offers/OfferEditor.tsx:138
+msgid "Amount exceeds spendable balance"
+msgstr ""
+
+#: src/components/offers/NFTOfferPreview.tsx:164
+msgid "An NFT's provenance is a complete record of its ownership history. It provides a direct lineage that connects everyone who has owned the NFT, all the way back to the original artist. This helps to verify that the NFT is authentic."
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:124
+msgid "Are you sure you want to cancel your offer?"
+msgstr ""
+
+#: src/components/plot/PlotAction.tsx:29
+#: src/components/plot/queue/PlotQueueActions.tsx:47
+msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
+msgstr "آیا مطمئنید می‌خواهید این پلات را حذف کنید؟ پلات نمی‌تواند بازیابی شود."
+
+#: src/components/plotNFT/PlotNFTCard.tsx:127
+msgid "Are you sure you want to delete unconfirmed transactions?"
+msgstr ""
+
+#: src/components/fullNode/FullNodeCloseConnection.tsx:26
+msgid "Are you sure you want to disconnect?"
+msgstr "آیا از قطع ارتباط اطمینان دارید؟"
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:72
+msgid "Are you sure you want to move this NFT to the specified profile?"
+msgstr ""
+
+#: src/electron/main.tsx:366
+msgid "Are you sure you want to quit?"
+msgstr ""
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:51
+msgid "Are you sure you want to use k={plotSize}?"
+msgstr "آیا مطمئنید که میخواهید از مقدار k= {plotSize} استفاده کنید؟"
+
+#: src/components/offers/NFTOfferTokenSelector.tsx:99
+#: src/components/offers/OfferAssetSelector.tsx:160
+msgid "Asset Type"
+msgstr ""
+
+#: src/components/app/AppState.tsx:178
+msgid "Attempt {attempt}"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTName.tsx:39
+msgid "Autogenerated name from pool contract address"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:741
+#: src/components/offers/OfferViewer.tsx:312
+msgid "Back"
+msgstr ""
+
+#: src/components/backup/BackupCreate.tsx:46
+msgid "Backup file is used to restore smart wallets."
+msgstr "فایل های پشتیبان برای بازگردانی کیف پول هوشمند استفاده می شوند."
+
+#: src/components/settings/ProfileAdd.tsx:103
+msgid "Balance: {standardBalance} XMZ"
+msgstr ""
+
+#: src/components/block/Block.jsx:277
+msgid "Base Farmer Reward Amount"
+msgstr "مقدار پایه جایزه‌ِ مزرعه دار"
+
+#: src/components/offers/OfferShareDialog.tsx:1066
+msgid "Before posting an offer in Keybase to the #{channelName} channel, you must first join the {teamName} team. Please note that it might take a few moments to join the channel."
+msgstr ""
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:39
+msgid "Below are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
+msgstr ""
+"در پایین چالش های بلوک کنونی را می‌بینید. ممکن است شما گواهی حجمی برای این چالش ها داشته باشید یا نداشته باشید.\n"
+" این بلاک ها در حال حاضر گواه زمانی ندارند."
+
+#: src/components/farm/card/FarmCardTotalNetworkSpace.tsx:14
+msgid "Best estimate over last 24 hours"
+msgstr "بهترین ارزیابی بر اساس 24 ساعت اخیر"
+
+#: src/components/block/Block.jsx:136
+msgid "Block"
+msgstr "بلوک"
+
+#: src/components/farm/card/FarmCardBlockRewards.tsx:31
+msgid "Block Rewards"
+msgstr ""
+
+#: src/components/block/Block.jsx:213
+msgid "Block VDF Iterations"
+msgstr "تکرار VDF بلوک"
+
+#: src/components/block/Block.jsx:296
+msgid "Block at height {0} in the Maize blockchain"
+msgstr "بلوک در ارتفاع {0} در زنجیره بلوکی چیـا"
+
+#: src/components/block/Block.jsx:122
+msgid "Block with hash {headerHash}"
+msgstr "بلوک با هش {headerHash}"
+
+#: src/components/block/Block.jsx:141
+msgid "Block with hash {headerHash} does not exist."
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:121
+msgid "Blocks"
+msgstr "بلوک ها"
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:73
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:92
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:124
+msgid "Browse"
+msgstr "مرور کردن"
+
+#: src/components/nfts/NFTBurnDialog.tsx:84
+#: src/components/nfts/NFTBurnDialog.tsx:170
+#: src/components/nfts/NFTContextualActions.tsx:616
+msgid "Burn"
+msgstr ""
+
+#: src/components/nfts/NFTBurnDialog.tsx:77
+msgid "Burn NFT confirmation"
+msgstr ""
+
+#: src/components/nfts/NFTBurnDialog.tsx:122
+msgid "Burning a non-fungible token means destroying it. Burned NFTs are sent to a verifiably un-spendable address, eliminating your NFT from the blockchain. However, transactions leading up to the burn will remain on the blockchain ledger."
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:362
+msgid "Buy an NFT"
+msgstr ""
+
+#: src/components/app/AppPassPrompt.tsx:184
+#: src/components/backup/BackupCreate.tsx:51
+#: src/components/block/FarmManageFarmingRewards.tsx:175
+#: src/components/block/FullNodeAddConnection.tsx:85
+#: src/components/farm/FarmManageFarmingRewards.tsx:188
+#: src/components/fullNode/FullNodeAddConnection.tsx:84
+#: src/components/nfts/NFTBurnDialog.tsx:160
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:67
+#: src/components/nfts/NFTTransferConfirmationDialog.tsx:58
+#: src/components/offers/OfferAcceptConfirmationDialog.tsx:26
+#: src/components/offers/OfferDataEntryDialog.tsx:67
+#: src/components/offers/OfferEditorConfirmationDialog.tsx:18
+#: src/components/offers/OfferShareDialog.tsx:1098
+#: src/components/offers/OfferShareDialog.tsx:1271
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
+#: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
+#: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
+#: src/components/settings/ChangePassphrasePrompt.tsx:283
+#: src/components/settings/RemovePassphrasePrompt.tsx:167
+#: src/components/settings/SetPassphrasePrompt.tsx:255
+#: src/hooks/useOpenUnsafeLink.tsx:45
+msgid "Cancel"
+msgstr "انصراف"
+
+#: src/components/offers/OfferManager.tsx:117
+#: src/components/offers/OfferManager.tsx:201
+#: src/components/offers/OfferManager.tsx:498
+msgid "Cancel Offer"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:347
+msgid "Cancel Unconfirmed Transaction"
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:151
+msgid "Cancel on blockchain"
+msgstr ""
+
+#: src/components/offers/utils.ts:171
+msgid "Cancelled"
+msgstr ""
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:14
+msgid "Challenge"
+msgstr "چالش"
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:15
+msgid "Challenge Hash"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTChangePool.tsx:122
+msgid "Change"
+msgstr ""
+
+#: src/components/settings/ChangePassphrasePrompt.tsx:291
+#: src/components/settings/SettingsPanel.tsx:131
+msgid "Change Passphrase"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTCard.tsx:404
+#: src/components/plotNFT/PlotNFTChangePool.tsx:121
+msgid "Change Pool"
+msgstr ""
+
+#: src/electron/main.tsx:586
+msgid "Chat on KeyBase"
+msgstr "در اپلیکیشن KeyBase صبحت کنید"
+
+#: src/components/offers/NFTOfferPreview.tsx:179
+msgid "Check Provenance on MintGarden"
+msgstr ""
+
+#: src/components/offers/NFTOfferPreview.tsx:189
+msgid "Check Provenance on SkyNFT"
+msgstr ""
+
+#: src/components/offers/NFTOfferPreview.tsx:199
+msgid "Check Provenance on Spacescan.io"
+msgstr ""
+
+#: src/electron/main.tsx:604
+msgid "Maize"
+msgstr "چیـا"
+
+#: src/electron/main.tsx:543
+msgid "Maize Blockchain Wiki"
+msgstr "ویکی زنجیره بلوکی چیـا"
+
+#: src/components/app/AppSelectMode.tsx:155
+msgid "Choose Farming Mode"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:34
+msgid "Choose Number of Plots"
+msgstr "تعداد پلات ها را انتخاب کنید"
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:74
+msgid "Choose Plot Size"
+msgstr "مقدار فضای پلات را انتخاب کنید"
+
+#: src/components/plot/add/PlotAddChoosePlotter.tsx:90
+msgid "Choose Plotter"
+msgstr ""
+
+#: src/components/app/AppSelectMode.tsx:102
+msgid "Choose Wallet Mode"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:136
+#: src/components/plotNFT/PlotNFTCard.tsx:380
+msgid "Claim Rewards"
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:458
+#: src/components/nfts/NFTTransferAction.tsx:162
+#: src/components/offers/OfferManager.tsx:194
+#: src/components/offers/OfferShareDialog.tsx:575
+#: src/components/offers/OfferShareDialog.tsx:656
+#: src/components/offers/OfferShareDialog.tsx:738
+#: src/components/offers/OfferShareDialog.tsx:840
+#: src/components/offers/OfferShareDialog.tsx:1031
+#: src/components/offers/OfferShareDialog.tsx:1163
+#: src/components/offers/OfferShareDialog.tsx:1453
+#: src/components/plot/PlotAddDirectoryDialog.tsx:130
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:81
+msgid "Close"
+msgstr "بستن"
+
+#: src/components/app/AppState.tsx:116
+msgid "Closing down services"
+msgstr ""
+
+#: src/components/offers/OfferViewer.tsx:354
+msgid "Coins"
+msgstr ""
+
+#: src/components/nfts/NFTSummary.tsx:59
+#: src/components/nfts/detail/NFTDetail.tsx:83
+#: src/components/nfts/detail/NFTDetailV2.tsx:132
+msgid "Collection"
+msgstr ""
+
+#: src/components/nfts/gallery/NFTGallerySidebar.tsx:81
+#: src/components/nfts/gallery/NFTGallerySidebar.tsx:83
+msgid "Collections"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:180
+#: src/electron/main.tsx:364
+#: src/hooks/useAbsorbRewards.tsx:44
+msgid "Confirm"
+msgstr ""
+
+#: src/components/fullNode/FullNodeCloseConnection.tsx:19
+msgid "Confirm Disconnect"
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:64
+msgid "Confirm Move"
+msgstr ""
+
+#: src/components/nfts/NFTTransferConfirmationDialog.tsx:39
+msgid "Confirm NFT Transfer"
+msgstr ""
+
+#: src/components/settings/ChangePassphrasePrompt.tsx:229
+msgid "Confirm New Passphrase"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:188
+#: src/components/app/AppKeyringMigrator.tsx:189
+#: src/components/settings/SetPassphrasePrompt.tsx:195
+msgid "Confirm Passphrase"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTCard.tsx:120
+msgid "Confirmation"
+msgstr ""
+
+#: src/components/offers/utils.ts:173
+msgid "Confirmed"
+msgstr ""
+
+#: src/components/offers/OfferViewer.tsx:155
+msgid "Confirmed at Height"
+msgstr ""
+
+#: src/components/block/FullNodeAddConnection.tsx:88
+#: src/components/fullNode/FullNodeAddConnection.tsx:87
+msgid "Connect"
+msgstr "اتصال"
+
+#: src/components/block/FullNodeAddConnection.tsx:64
+#: src/components/fullNode/FullNodeAddConnection.tsx:63
+msgid "Connect to other peers"
+msgstr "اتصال به سایر همسان‌ ها"
+
+#: src/components/plotNFT/select/PlotNFTSelectBase.tsx:115
+msgid "Connect to pool"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:20
+msgid "Connected"
+msgstr "متصل شد"
+
+#: src/components/app/AppState.tsx:171
+#: src/components/app/AppState.tsx:175
+msgid "Connecting to daemon"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:18
+msgid "Connection Status"
+msgstr "وضعیت اتصال"
+
+#: src/components/farm/FarmFullNodeConnections.tsx:109
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:107
+msgid "Connection Status:"
+msgstr "وضعیت اتصال:"
+
+#: src/components/fullNode/FullNodeConnections.tsx:64
+msgid "Connection type"
+msgstr "نوع اتصال"
+
+#: src/components/fullNode/FullNodeConnections.tsx:106
+#~ msgid "Connections"
+#~ msgstr "اتصال ها"
+
+#: src/electron/main.tsx:567
+msgid "Contribute on GitHub"
+msgstr "مشارکت در GitHub"
+
+#: src/components/nfts/NFTContextualActions.tsx:437
+msgid "Copy Media URL"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:110
+msgid "Copy NFT ID"
+msgstr ""
+
+#: src/components/backup/BackupCreate.tsx:59
+#: src/components/plot/add/PlotAddForm.tsx:205
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:204
+#: src/components/settings/ProfileAdd.tsx:128
+msgid "Create"
+msgstr "ایجاد"
+
+#: src/components/app/AppSelectMode.tsx:137
+msgid "Create & Manage plots"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:157
+#: src/components/offers/NFTOfferEditor.tsx:541
+#: src/components/offers/OfferEditor.tsx:221
+#: src/components/offers/OfferEditorConfirmationDialog.tsx:15
+msgid "Create Offer"
+msgstr ""
+
+#: src/components/backup/BackupCreate.tsx:42
+msgid "Create a Backup"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNFT.tsx:47
+msgid "Create a Plot NFT"
+msgstr ""
+
+#: src/components/settings/ProfileAdd.tsx:86
+msgid "Create a new profile"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:866
+msgid "Create an NFT Offer"
+msgstr ""
+
+#: src/components/offers/OfferEditor.tsx:243
+#: src/components/offers/OfferManager.tsx:584
+msgid "Create an Offer"
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:576
+msgid "Create an offer to exchange assets including XMZ, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:153
+msgid "Creates and submits a transaction on the blockchain that cancels the offer"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:59
+msgid "Creating Plot NFT and Joining the Pool"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:57
+msgid "Creating Plot NFT for Self Pooling"
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:408
+#: src/components/offers/OfferViewer.tsx:171
+msgid "Creation Date"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:578
+msgid "Creator Fee ({0}%)"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:390
+msgid "Creator Fee ({royaltyPercentage}%)"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:395
+#: src/components/offers/NFTOfferViewer.tsx:585
+msgid "Creator royalty percentage seems high"
+msgstr ""
+
+#: src/components/plot/add/PlotAddForm.tsx:115
+msgid "Currency code is not defined"
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:138
+#: src/components/plotNFT/PlotNFTCard.tsx:177
+msgid "Current Difficulty"
+msgstr ""
+
+#: src/components/settings/ChangePassphrasePrompt.tsx:181
+msgid "Current Passphrase"
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:155
+#: src/components/plotNFT/PlotNFTCard.tsx:194
+msgid "Current Points Balance"
+msgstr ""
+
+#: src/components/nfts/NFTDetails.tsx:165
+msgid "Data Hash"
+msgstr ""
+
+#: src/components/nfts/NFTDetails.tsx:152
+msgid "Data URL {0}"
+msgstr ""
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:30
+msgid "Date"
+msgstr "تاریخ"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:93
+msgid "Delay"
+msgstr "تاخیر"
+
+#: src/components/plot/PlotAction.tsx:25
+#: src/components/plot/PlotAction.tsx:51
+#: src/components/plot/queue/PlotQueueActions.tsx:41
+#: src/components/plot/queue/PlotQueueActions.tsx:93
+#: src/components/plotNFT/PlotNFTCard.tsx:121
+msgid "Delete"
+msgstr "حذف"
+
+#: src/components/app/AppPassPrompt.tsx:110
+msgid "Delete Key"
+msgstr ""
+
+#: src/components/plot/PlotAction.tsx:24
+#: src/components/plot/queue/PlotQueueActions.tsx:40
+msgid "Delete Plot"
+msgstr "حذف پلات"
+
+#: src/components/plotNFT/PlotNFTCard.tsx:311
+msgid "Delete Unconfirmed Transactions"
+msgstr ""
+
+#: src/components/app/AppPassPrompt.tsx:106
+msgid "Deleting key"
+msgstr ""
+
+#: src/components/plot/add/PlotAddChoosePlotter.tsx:92
+msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Maize Proof of Space plotter. If unsure, use the default Maize Proof of Space plotter."
+msgstr ""
+
+#: src/components/settings/SettingsPanel.tsx:185
+msgid "Derivation Index"
+msgstr ""
+
+#: src/components/settings/SettingsDerivationIndex.tsx:57
+msgid "Derivation index must be greater than {index}"
+msgstr ""
+
+#: src/components/nfts/detail/NFTDetail.tsx:73
+#: src/components/nfts/detail/NFTDetailV2.tsx:122
+msgid "Description"
+msgstr ""
+
+#: src/components/nfts/NFTTransferConfirmationDialog.tsx:83
+msgid "Destination"
+msgstr ""
+
+#: src/components/nfts/NFTTransferConfirmationDialog.tsx:68
+msgid "Destination:"
+msgstr ""
+
+#: src/components/nfts/NFTDetails.tsx:240
+#: src/components/offers/OfferViewer.tsx:331
+msgid "Details"
+msgstr ""
+
+#: src/electron/main.tsx:483
+msgid "Developer"
+msgstr ""
+
+#: src/electron/main.tsx:486
+msgid "Developer Tools"
+msgstr "ابزارهای توسعه دهنده"
+
+#: src/components/offers/OfferShareDialog.tsx:550
+msgid "Dexie URL"
+msgstr ""
+
+#: src/components/block/Block.jsx:199
+#: src/components/fullNode/card/FullNodeCardDifficulty.tsx:14
+msgid "Difficulty"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:266
+msgid "Disable NUMA"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:215
+msgid "Disable bitfield plotting"
+msgstr ""
+
+#: src/components/fullNode/FullNodeCloseConnection.tsx:20
+msgid "Disconnect"
+msgstr "قطع ارتباط"
+
+#: src/components/offers/OfferManager.tsx:465
+msgid "Display Offer Data"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1446
+#: src/hooks/useOpenUnsafeLink.tsx:77
+msgid "Do not show this dialog again"
+msgstr ""
+
+#: src/components/farm/FarmHero.tsx:46
+#: src/components/plot/overview/PlotOverviewHero.tsx:66
+msgid "Do you have existing plots on this machine? <0>Add Plot Directory</0>"
+msgstr "پلاتی روی این ماشین دارید؟ <0>اضافه کردن پوشه داری پلات</0>"
+
+#: src/components/nfts/NFTBurnDialog.tsx:114
+msgid "Do you want to burn this NFT?"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:55
+msgid "Does your machine support parallel plotting?"
+msgstr "آیا دستگاه شما از پلات سازی همزمان پشتیبانی می‌کند؟"
+
+#: src/components/nfts/NFTContextualActions.tsx:523
+msgid "Download"
+msgstr ""
+
+#: src/components/offers/OfferImport.tsx:191
+msgid "Drag & Drop an Offer File"
+msgstr ""
+
+#: src/components/offers/OfferImport.tsx:146
+#~ msgid "Drag & drop an offer file below to view its details"
+#~ msgstr ""
+
+#: src/components/offers/OfferImport.tsx:166
+#~ msgid "Drag and drop offer file"
+#~ msgstr ""
+
+#: src/components/backup/BackupRestore.tsx:172
+msgid "Drag and drop your backup file"
+msgstr ""
+
+#: src/components/plot/PlotHarvester.tsx:131
+msgid "Duplicate"
+msgstr ""
+
+#: src/components/plot/card/PlotCardPlotsDuplicate.tsx:11
+msgid "Duplicate Plots"
+msgstr ""
+
+#: src/electron/main.tsx:442
+msgid "Edit"
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:258
+#: src/components/plotNFT/PlotNFTCard.tsx:297
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:80
+msgid "Edit Payout Instructions"
+msgstr ""
+
+#: src/components/nfts/NFTSummary.tsx:69
+msgid "Edition #"
+msgstr ""
+
+#: src/components/nfts/detail/NFTDetail.tsx:94
+#: src/components/nfts/detail/NFTDetailV2.tsx:145
+msgid "Edition Number"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:143
+msgid "Enter a strong passphrase and click Migrate Keys to secure your keys"
+msgstr ""
+
+#: src/components/settings/SetPassphrasePrompt.tsx:158
+msgid "Enter a strong passphrase to secure your keys:"
+msgstr ""
+
+#: src/components/settings/RemovePassphrasePrompt.tsx:121
+msgid "Enter your passphrase:"
+msgstr ""
+
+#: src/components/farm/FarmerStatus.tsx:21
+#: src/components/farm/FarmerStatus.tsx:22
+#: src/components/farm/card/FarmCardStatus.tsx:34
+#: src/components/farm/card/FarmCardStatus.tsx:48
+#: src/components/plot/PlotStatus.tsx:20
+#: src/components/plot/PlotStatus.tsx:21
+#: src/components/plot/queue/PlotQueueIndicator.tsx:22
+msgid "Error"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:14
+msgid "Estimated Network Space"
+msgstr ""
+
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:62
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:70
+msgid "Estimated Time to Win"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:16
+msgid "Estimated sum of all the plotted disk space of all farmers in the network"
+msgstr "تخمین مجموع دیسک های پلات شده همه مزرعه داران در شبکه"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:279
+msgid "Exclude final directory"
+msgstr "بجز آخرین پوشه"
+
+#: src/components/nfts/gallery/NFTGalleryHero.tsx:17
+msgid "Explore the Maize ecosystem; discover and trade great NFTs"
+msgstr ""
+
+#: src/components/offers/utils.ts:175
+#: src/components/plot/PlotHarvester.tsx:118
+msgid "Failed"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:701
+msgid "Failed to decode NFT identifier"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:420
+msgid "Failed to execute Keybase command: {stderr}"
+msgstr ""
+
+#: src/components/settings/SetPassphrasePrompt.tsx:90
+msgid "Failed to set passphrase: {0}"
+msgstr ""
+
+#: src/components/settings/ChangePassphrasePrompt.tsx:119
+msgid "Failed to update passphrase: {0}"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:297
+msgid "Farmer Public Key"
+msgstr ""
+
+#: src/components/block/Block.jsx:245
+msgid "Farmer Puzzle Hash"
+msgstr "مزرعه دارِ جورچین در هم ریزی(هش)"
+
+#: src/components/block/FarmManageFarmingRewards.tsx:142
+#: src/components/farm/FarmManageFarmingRewards.tsx:155
+msgid "Farmer Reward Address"
+msgstr "آدرس پاداش مزرعه دار"
+
+#: src/components/block/FarmManageFarmingRewards.tsx:116
+#: src/components/farm/FarmManageFarmingRewards.tsx:129
+msgid "Farmer Reward Address is not properly formatted."
+msgstr ""
+
+#: src/components/block/FarmManageFarmingRewards.tsx:110
+#: src/components/farm/FarmManageFarmingRewards.tsx:123
+msgid "Farmer Reward Address must not be empty."
+msgstr ""
+
+#: src/components/farm/card/FarmCardStatus.tsx:37
+#: src/components/plot/PlotStatus.tsx:28
+msgid "Farmer is not connected"
+msgstr ""
+
+#: src/components/farm/card/FarmCardStatus.tsx:51
+#: src/components/plot/PlotStatus.tsx:29
+msgid "Farmer is not running"
+msgstr "مزرعه دار درحال اجرا نیست"
+
+#: src/components/farm/FarmHero.tsx:27
+msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
+msgstr "مزرعه داران با در اختیار گذاشتن فضای خالی برای کمک در امن کردن معاملات شبکه، جایزه های بلوکی و کارمزد تراکنش کسب می‌کنند.وقتی پلاتی را اضافه کنید قرار می‌گیرد، مزرعه شما اینجا قرار می‌گیرد. <0>بیشتر بدانید</0>"
+
+#: src/components/dashboard/DashboardSideBar.tsx:101
+#: src/components/farm/FarmerStatus.tsx:18
+#: src/components/farm/card/FarmCardStatus.tsx:61
+#: src/components/plot/PlotStatus.tsx:17
+msgid "Farming"
+msgstr "مزرعه داری"
+
+#: src/components/app/AppSelectMode.tsx:122
+msgid "Farming Mode"
+msgstr ""
+
+#: src/components/farm/card/FarmCardStatus.tsx:14
+#: src/components/farm/card/FarmCardStatus.tsx:25
+#: src/components/farm/card/FarmCardStatus.tsx:31
+#: src/components/farm/card/FarmCardStatus.tsx:45
+#: src/components/farm/card/FarmCardStatus.tsx:58
+msgid "Farming Status"
+msgstr "وضعیت مزرعه داری"
+
+#: src/components/nfts/NFTBurnDialog.tsx:149
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:447
+#: src/components/nfts/NFTTransferAction.tsx:151
+#: src/components/offers/NFTOfferViewer.tsx:719
+#: src/components/offers/OfferManager.tsx:169
+#: src/components/offers/OfferViewer.tsx:301
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:167
+#: src/components/plotNFT/select/PlotNFTSelectBase.tsx:146
+#: src/components/pool/PoolInfo.tsx:17
+#: src/components/settings/ProfileAdd.tsx:112
+msgid "Fee"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:97
+#: src/components/offers/OfferEditorConditionsPanel.tsx:457
+msgid "Fee (Optional)"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTChangePool.tsx:126
+msgid "Fee is used TWICE: once to leave pool, once to join."
+msgstr ""
+
+#: src/components/block/Block.jsx:281
+msgid "Fees Amount"
+msgstr "مبلغ کارمزد ها"
+
+#: src/components/offers/NFTOfferViewer.tsx:210
+#: src/components/offers/OfferSummary.tsx:190
+msgid "Fees included in offer:"
+msgstr ""
+
+#: src/electron/main.tsx:434
+#: src/electron/main.tsx:641
+msgid "File"
+msgstr ""
+
+#: src/components/nfts/NFTPreview.tsx:26
+msgid "File is over 10MB"
+msgstr ""
+
+#: src/components/plot/PlotHarvesterPlots.tsx:71
+#: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:13
+#: src/components/plot/PlotHarvesterPlotsFailed.tsx:13
+#: src/components/plot/PlotHarvesterPlotsNotFound.tsx:13
+msgid "Filename"
+msgstr ""
+
+#: src/components/nfts/gallery/NFTGallery.tsx:136
+msgid "Filters"
+msgstr ""
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:47
+msgid "Final folder location"
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:39
+#: src/components/fullNode/FullNode.jsx:93
+msgid "Finished"
+msgstr ""
+
+#: src/electron/main.tsx:592
+msgid "Follow on Twitter"
+msgstr ""
+
+#: src/electron/main.tsx:551
+msgid "Frequently Asked Questions"
+msgstr "سوالات متداول"
+
+#: src/components/app/AppStatusHeader.tsx:49
+#: src/components/dashboard/DashboardSideBar.tsx:80
+#: src/components/fullNode/FullNode.jsx:132
+msgid "Full Node"
+msgstr "گره کامل"
+
+#: src/components/fullNode/FullNodeConnections.tsx:76
+msgid "Full Node Connections"
+msgstr ""
+
+#: src/electron/main.tsx:517
+msgid "Full Screen"
+msgstr ""
+
+#: src/components/settings/SettingsNFT.tsx:23
+msgid "Gallery Management"
+msgstr ""
+
+#: src/components/settings/Settings.tsx:44
+msgid "General"
+msgstr ""
+
+#: src/components/nfts/gallery/NFTGalleryHero.tsx:14
+msgid "Go collect some gems"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1028
+#: src/components/offers/OfferShareDialog.tsx:1089
+msgid "Go to #{channelName}"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1160
+msgid "Go to Offerpool"
+msgstr ""
+
+#: src/components/plot/PlotHarvesters.tsx:39
+msgid "Harvesters"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:815
+msgid "Hashgreen DEX URL"
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:57
+msgid "Header Hash"
+msgstr "عنوان هش"
+
+#: src/components/block/Block.jsx:163
+msgid "Header hash"
+msgstr "عنوان هش"
+
+#: src/components/block/Block.jsx:179
+#: src/components/fullNode/FullNode.jsx:75
+#: src/components/fullNode/FullNodeConnections.tsx:68
+msgid "Height"
+msgstr ""
+
+#: src/electron/main.tsx:539
+msgid "Help"
+msgstr ""
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:56
+msgid "Here are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:568
+msgid "Hide"
+msgstr ""
+
+#: src/components/settings/SettingsNFT.tsx:34
+msgid "Hide objectionable content"
+msgstr ""
+
+#: src/components/app/AppPassPrompt.tsx:160
+#: src/components/settings/RemovePassphrasePrompt.tsx:150
+msgid "Hint"
+msgstr ""
+
+#: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:65
+#: src/components/plot/PlotHarvesterPlotsFailed.tsx:65
+#: src/components/plot/PlotHarvesterPlotsNotFound.tsx:65
+msgid "Hooray, no files here!"
+msgstr ""
+
+#: src/components/farm/FarmFullNodeConnections.tsx:35
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:35
+msgid "Host Name"
+msgstr "نام میزبان(هاست)"
+
+#: src/components/offers/OfferEditorConfirmationDialog.tsx:16
+msgid "I Understand, Create Offer"
+msgstr ""
+
+#: src/components/fullNode/FullNodeConnections.tsx:29
+msgid "IP address"
+msgstr ""
+
+#: src/components/block/FullNodeAddConnection.tsx:71
+#: src/components/fullNode/FullNodeAddConnection.tsx:70
+msgid "IP address / host"
+msgstr ""
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:129
+msgid "If none selected, then it will default to the temporary directory."
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:767
+msgid "If selected, your offer will be not be shared publicly."
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:129
+msgid "If you have already shared your offer file, you may need to submit a transaction to cancel the pending offer. Click \"Cancel on blockchain\" to submit a cancellation transaction."
+msgstr ""
+
+#: src/components/nfts/NFTBurnDialog.tsx:79
+msgid "If you proceed, this NFT will be permanently deleted. Are you sure you want to continue?"
+msgstr ""
+
+#: src/components/nfts/NFTPreview.tsx:92
+msgid "Image Hash Mismatch"
+msgstr ""
+
+#: src/components/offers/OfferDataEntryDialog.tsx:74
+msgid "Import"
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:41
+msgid "In Progress"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:537
+#: src/components/offers/OfferEditorConditionsPanel.tsx:341
+#: src/components/offers/OfferViewer.tsx:278
+msgid "In exchange for"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1254
+msgid "In exchange for:"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:102
+#: src/components/offers/OfferEditorConditionsPanel.tsx:463
+msgid "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 XMZ (5,000,000 mojos)"
+msgstr ""
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:19
+msgid "Index"
+msgstr ""
+
+#: src/components/plot/PlotHarvesterPlots.tsx:125
+msgid "Initializing..."
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1061
+msgid "Install Keybase"
+msgstr ""
+
+#: src/hooks/useAcceptOfferHook.tsx:78
+msgid ""
+"Insufficient funds available to accept offer. Ensure that your\n"
+"spendable balance is sufficient to cover the offer amount."
+msgstr ""
+
+#: src/components/offers/OfferEditor.tsx:182
+msgid ""
+"Insufficient funds available to create offer. Ensure that your\n"
+"spendable balance is sufficient to cover the offer amount."
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:699
+msgid "Invalid NFT identifier"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTState.tsx:26
+msgid "Invalid state"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:66
+msgid "It is a one-time login link that can be used to log in to a pool's website. It contains a signature using the farmer's key from the plot NFT. Not all pools support this feature."
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTCard.tsx:402
+msgid "Join Pool"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNFT.tsx:64
+#: src/components/plot/add/PlotAddNFT.tsx:146
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:150
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:164
+#: src/components/pool/PoolHero.tsx:26
+msgid "Join a Pool"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNFT.tsx:49
+msgid "Join a pool and get consistent XMZ farming rewards. The average returns are the same, but it is much less volatile."
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTAdd.tsx:63
+msgid "Join a pool and get consistent XMZ farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+msgstr ""
+
+#: src/components/plot/add/PlotAddNFT.tsx:138
+msgid "Join a pool and get more consistent XMZ farming rewards. Create a plot NFT and assign your new plots to a group."
+msgstr ""
+
+#: src/components/app/AppSelectMode.tsx:143
+msgid "Join farming pools"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1078
+msgid "Join {teamName}"
+msgstr ""
+
+#: src/components/plot/PlotHarvesterPlots.tsx:40
+#: src/components/plot/PlotPlotting.tsx:20
+msgid "K-Size"
+msgstr "مقدار حجم-K"
+
+#: src/components/offers/OfferShareDialog.tsx:964
+msgid "Keybase command failed {e}. If you haven't installed Keybase, you can download from https://keybase.io"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1053
+msgid "Keybase is a secure messaging and file sharing application. To share an offer in the Keybase {teamName} team, you must first have Keybase installed."
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:90
+msgid "Keyring migration failed: {0}"
+msgstr ""
+
+#: src/components/farm/FarmFullNodeConnections.tsx:63
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:63
+msgid "KiB Up/Down"
+msgstr "KiB آپلود/دانلود"
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:44
+msgid "Last Attempted Proof"
+msgstr ""
+
+#: src/components/farm/card/FarmCardLastHeightFarmed.tsx:13
+msgid "Last Height Farmed"
+msgstr "آخرین ارتفاع زراعت شده"
+
+#: src/components/fullNode/card/FullNodeCardPeakTime.tsx:18
+msgid "Last Transaction Block Time"
+msgstr ""
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:35
+msgid "Latest Block Challenges"
+msgstr "آخرین چالش های بلوک"
+
+#: src/components/nfts/NFTDetails.tsx:52
+msgid "Launcher ID"
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:294
+#: src/components/plotNFT/PlotNFTCard.tsx:346
+msgid "Launcher Id"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:76
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:118
+msgid "Learn More"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTState.tsx:58
+msgid "Leaving Pool"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:100
+msgid "Legacy keyrings are no longer supported. Your keys need to be migrated to a new keyring that is optionally secured by a master passphrase."
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:107
+msgid "Legacy keyrings are no longer supported. Your keys need to be migrated to a new keyring that is secured by a master passphrase."
+msgstr ""
+
+#: src/components/nfts/NFTDetails.tsx:225
+msgid "License Hash"
+msgstr ""
+
+#: src/components/nfts/NFTDetails.tsx:210
+msgid "License URL {0}"
+msgstr ""
+
+#: src/components/fullNode/FullNodeConnections.tsx:80
+msgid "List of connections is empty"
+msgstr ""
+
+#: src/components/nfts/NFTSummary.tsx:115
+msgid "Loading NFT"
+msgstr ""
+
+#: src/components/offers/NFTOfferPreview.tsx:74
+msgid "Loading NFT Info..."
+msgstr ""
+
+#: src/components/app/AppProviders.tsx:81
+msgid "Loading configuration"
+msgstr ""
+
+#: src/components/farm/Farm.tsx:24
+msgid "Loading farming data"
+msgstr ""
+
+#: src/components/app/AppState.tsx:144
+msgid "Loading keyring status"
+msgstr ""
+
+#: src/components/nfts/NFTPreview.tsx:197
+#: src/components/nfts/NFTPreview.tsx:229
+msgid "Loading preview..."
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:124
+#: src/components/offers/NFTOfferTokenSelector.tsx:104
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:34
+msgid "Loading..."
+msgstr ""
+
+#: src/components/plot/PlotHarvester.tsx:56
+msgid "Local"
+msgstr ""
+
+#: src/components/app/AppSelectMode.tsx:90
+msgid "Manage CAT tokens"
+msgstr ""
+
+#: src/components/farm/FarmHeader.tsx:41
+msgid "Manage Farming Rewards"
+msgstr "مدیریت پاداش های مزرعه داری"
+
+#: src/components/offers/OfferManager.tsx:569
+msgid "Manage Offers"
+msgstr ""
+
+#: src/components/block/FarmManageFarmingRewards.tsx:98
+#: src/components/farm/FarmManageFarmingRewards.tsx:111
+msgid "Manage Your Farming Rewards Target Addresses"
+msgstr "آدرس های مقصد خود را برای پاداش های مزرعه داری مدیریت کنید"
+
+#: src/components/nfts/NFTDetails.tsx:195
+msgid "Metadata Hash"
+msgstr ""
+
+#: src/components/nfts/NFTDetails.tsx:180
+msgid "Metadata URL {0}"
+msgstr ""
+
+#: src/components/fullNode/FullNodeConnections.tsx:57
+msgid "MiB Up/Down"
+msgstr "MiB آپلود/دانلود"
+
+#: src/components/settings/SettingsPanel.tsx:152
+msgid "Migrate Keyring"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:277
+msgid "Migrate Keys"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:136
+msgid "Migration required"
+msgstr ""
+
+#: src/components/settings/SettingsPanel.tsx:99
+msgid "Migration required to support passphrase protection"
+msgstr ""
+
+#: src/components/pool/PoolInfo.tsx:27
+msgid "Minimum Difficulty"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:631
+msgid "MintGarden URL"
+msgstr ""
+
+#: src/components/nfts/NFTDetails.tsx:143
+msgid "Minted at Block Height"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:98
+msgid "Minutes"
+msgstr ""
+
+#: src/components/plot/PlotHarvester.tsx:105
+msgid "Missing Keys"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:118
+msgid "More memory slightly increases speed"
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:467
+msgid "Move"
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:513
+msgid "Move NFT to Profile"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:281
+msgid "Move to Profile"
+msgstr ""
+
+#: src/components/settings/ProfileView.tsx:99
+msgid "My DID"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:241
+msgid "NFT"
+msgstr ""
+
+#: src/components/nfts/NFTDetails.tsx:43
+msgid "NFT ID"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:243
+msgid "NFT Identifier"
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:325
+msgid "NFT Move Failed"
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:315
+msgid "NFT Move Pending"
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:604
+msgid "NFT Offer"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:554
+msgid "NFT Purchase Price"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:327
+msgid "NFT Status Update Failed"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:317
+msgid "NFT Status Updated"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:245
+msgid "NFT Transfer Complete"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:191
+#: src/components/nfts/NFTContextualActions.tsx:255
+msgid "NFT Transfer Failed"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:181
+msgid "NFT Transfer Pending"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:736
+msgid "NFT details not available"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:256
+#~ msgid "NFT for XMZ"
+#~ msgstr ""
+
+#: src/components/offers/NFTOfferPreview.tsx:56
+msgid "NFT identifier does not reference a valid NFT coin."
+msgstr ""
+
+#: src/components/offers/NFTOfferPreview.tsx:121
+msgid "NFT not specified"
+msgstr ""
+
+#: src/components/dashboard/DashboardSideBar.tsx:61
+msgid "NFTs"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:675
+msgid "Net Proceeds"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:704
+msgid "Network Fee (Optional)"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardNetworkName.tsx:14
+msgid "Network Name"
+msgstr ""
+
+#: src/components/settings/ChangePassphrasePrompt.tsx:205
+msgid "New Passphrase"
+msgstr ""
+
+#: src/components/block/Block.jsx:310
+msgid "Next"
+msgstr ""
+
+#: src/electron/main.tsx:361
+msgid "No"
+msgstr ""
+
+#: src/components/farm/card/FarmCardLastHeightFarmed.tsx:15
+msgid "No blocks farmed yet"
+msgstr "هنوز هیچ بلاکی مزرعه داری(تولید) نشده است"
+
+#: src/components/offers/OfferManager.tsx:536
+msgid "No current offers"
+msgstr ""
+
+#: src/components/nfts/NFTPreview.tsx:185
+msgid "No file available"
+msgstr ""
+
+#: src/components/plot/PlotHarvesterPlots.tsx:123
+msgid "No plots yet"
+msgstr ""
+
+#: src/components/block/FarmManageFarmingRewards.tsx:135
+#: src/components/farm/FarmManageFarmingRewards.tsx:148
+msgid "No private keys for one or both addresses. Safe only if you are sending rewards to another wallet."
+msgstr "بدون کلید خصوصی برای یک یا هر دو آدرس. فقط در صورت ارسال پاداش به کیف پول دیگر ، ایمن است."
+
+#: src/components/offers/OfferViewer.tsx:176
+msgid "Node Count"
+msgstr ""
+
+#: src/components/farm/FarmFullNodeConnections.tsx:31
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:31
+#: src/components/fullNode/FullNodeConnections.tsx:25
+msgid "Node ID"
+msgstr "شناسه گره"
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:175
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:259
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:391
+#: src/components/plot/add/PlotAddNFT.tsx:91
+msgid "None"
+msgstr "خالی"
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:68
+msgid "None of your plots have passed the plot filter yet."
+msgstr "هنوز هیچ یک از پلات های شما از فیلتر طرح عبور نکرده اند."
+
+#: src/components/farm/FarmerStatus.tsx:20
+#: src/components/farm/card/FarmCardNotAvailable.tsx:19
+#: src/components/farm/card/FarmCardNotAvailable.tsx:22
+#: src/components/nfts/detail/NFTDetail.tsx:77
+#: src/components/nfts/detail/NFTDetail.tsx:87
+#: src/components/nfts/detail/NFTDetailV2.tsx:126
+#: src/components/nfts/detail/NFTDetailV2.tsx:137
+#: src/components/plot/PlotStatus.tsx:19
+#: src/components/plotNFT/PlotNFTCard.tsx:361
+msgid "Not Available"
+msgstr "در دسترس نیست"
+
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:14
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:43
+msgid "Not Synced"
+msgstr ""
+
+#: src/components/offers/OfferViewer.tsx:165
+msgid "Not accepted"
+msgstr ""
+
+#: src/components/offers/OfferViewer.tsx:156
+msgid "Not confirmed"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:20
+msgid "Not connected"
+msgstr ""
+
+#: src/components/block/FarmManageFarmingRewards.tsx:163
+#: src/components/farm/FarmManageFarmingRewards.tsx:176
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XMZ reward for pooling plots."
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:117
+#: src/components/plotNFT/PlotNFTCard.tsx:158
+msgid "Number of Plots"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:171
+msgid "Number of buckets"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:188
+msgid "Number of buckets for phase 3 & 4"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:136
+msgid "Number of threads"
+msgstr ""
+
+#: src/components/offers/OfferDataDialog.tsx:75
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:87
+msgid "OK"
+msgstr "تأیید"
+
+#: src/components/offers/OfferDataDialog.tsx:42
+#: src/components/offers/OfferDataDialog.tsx:50
+msgid "Offer Data"
+msgstr ""
+
+#: src/components/offers/OfferViewer.tsx:150
+msgid "Offer Identifier"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:545
+#: src/components/offers/OfferShareDialog.tsx:626
+#: src/components/offers/OfferShareDialog.tsx:708
+#: src/components/offers/OfferShareDialog.tsx:810
+#: src/components/offers/OfferShareDialog.tsx:1019
+#: src/components/offers/OfferShareDialog.tsx:1144
+msgid "Offer Shared"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:176
+msgid "Offer cannot be accepted because you don't possess the requested assets"
+msgstr ""
+
+#: src/hooks/useAcceptOfferHook.tsx:63
+msgid "Offer has been accepted and is awaiting confirmation."
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:713
+msgid "OfferBin URL"
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:367
+msgid "Offered"
+msgstr ""
+
+#: src/components/offers/utils.ts:159
+msgid "Offering: [{makerString}], Requesting: [{takerString}]"
+msgstr ""
+
+#: src/components/dashboard/DashboardSideBar.tsx:67
+msgid "Offers"
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:631
+msgid "Offers you accepted"
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:626
+msgid "Offers you created"
+msgstr ""
+
+#: src/components/offers/OfferAcceptConfirmationDialog.tsx:68
+msgid "Once you accept this offer, you will not be able to cancel the transaction. Are you sure you want to accept this offer?"
+msgstr ""
+
+#: src/components/nfts/NFTTransferConfirmationDialog.tsx:41
+msgid "Once you initiate this transfer, you will not be able to cancel the transaction. Are you sure you want to transfer the NFT?"
+msgstr ""
+
+#: src/components/offers/OfferAcceptConfirmationDialog.tsx:37
+msgid "One or more unknown tokens are being offered. Please verify that the asset IDs of the tokens listed below match the asset IDs of the tokens you expect to receive."
+msgstr ""
+
+#: src/hooks/useOpenUnsafeLink.tsx:43
+msgid "Open Link"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:396
+msgid "Open in Browser"
+msgstr ""
+
+#: src/components/nfts/NFTDetails.tsx:73
+msgid "Owner DID"
+msgstr ""
+
+#: src/components/nfts/NFTDetails.tsx:117
+msgid "Owner Public Key"
+msgstr ""
+
+#: src/components/offers/OfferViewer.tsx:218
+msgid "Parent Coin"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:156
+#: src/components/app/AppKeyringMigrator.tsx:157
+#: src/components/app/AppPassPrompt.tsx:139
+#: src/components/settings/RemovePassphrasePrompt.tsx:129
+#: src/components/settings/SetPassphrasePrompt.tsx:169
+#: src/components/settings/SettingsPanel.tsx:201
+msgid "Passphrase"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:220
+#: src/components/settings/ChangePassphrasePrompt.tsx:253
+#: src/components/settings/SetPassphrasePrompt.tsx:222
+msgid "Passphrase Hint"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:219
+#: src/components/settings/ChangePassphrasePrompt.tsx:252
+#: src/components/settings/SetPassphrasePrompt.tsx:221
+msgid "Passphrase Hint (Optional)"
+msgstr ""
+
+#: src/components/settings/SettingsPanel.tsx:72
+msgid "Passphrase protection has been disabled"
+msgstr ""
+
+#: src/components/settings/SettingsPanel.tsx:108
+msgid "Passphrase protection is disabled"
+msgstr ""
+
+#: src/components/settings/SettingsPanel.tsx:105
+msgid "Passphrase protection is enabled"
+msgstr ""
+
+#: src/components/settings/SettingsPanel.tsx:100
+msgid "Passphrase support requires migrating your keys to a new keyring"
+msgstr ""
+
+#: src/components/offers/OfferDataEntryDialog.tsx:40
+#: src/components/offers/OfferImport.tsx:177
+msgid "Paste Offer Data"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTCard.tsx:357
+msgid "Payout Address"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardPeakHeight.tsx:14
+msgid "Peak Height"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTState.tsx:43
+msgid "Pending"
+msgstr ""
+
+#: src/components/offers/utils.ts:165
+msgid "Pending Accept"
+msgstr ""
+
+#: src/components/offers/utils.ts:169
+msgid "Pending Cancel"
+msgstr ""
+
+#: src/components/offers/utils.ts:167
+msgid "Pending Confirm"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:144
+#: src/hooks/useAbsorbRewards.tsx:43
+msgid "Please Confirm"
+msgstr ""
+
+#: src/hooks/useOpenUnsafeLink.tsx:50
+msgid "Please check the following link to verify the site you are going to visit. Proceed at your own risk."
+msgstr ""
+
+#: src/components/app/AppPassPrompt.tsx:60
+#: src/components/settings/SetPassphrasePrompt.tsx:58
+msgid "Please enter a passphrase"
+msgstr ""
+
+#: src/components/settings/ProfileAdd.tsx:64
+msgid "Please enter a valid numeric fee"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:697
+msgid "Please enter an NFT identifier"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:705
+msgid "Please enter an amount"
+msgstr ""
+
+#: src/components/offers/OfferEditor.tsx:136
+msgid "Please enter an amount for each row"
+msgstr ""
+
+#: src/components/settings/ChangePassphrasePrompt.tsx:81
+msgid "Please enter your current passphrase, and a new passphrase"
+msgstr ""
+
+#: src/components/app/AppPassPrompt.tsx:97
+#: src/components/app/AppPassPrompt.tsx:113
+#: src/components/settings/RemovePassphrasePrompt.tsx:58
+msgid "Please enter your passphrase"
+msgstr ""
+
+#: src/components/app/AppPassPrompt.tsx:107
+msgid "Please enter your passphrase to proceed"
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:285
+msgid "Please select a profile to move the NFT to."
+msgstr ""
+
+#: src/components/offers/OfferEditor.tsx:134
+msgid "Please select an asset for each row"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:703
+msgid "Please select an asset type"
+msgstr ""
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:56
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:60
+msgid "Please specify final directory"
+msgstr "لطفاً محل پوشه نهایی را مشخص کنید"
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:73
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:77
+msgid "Please specify temporary directory"
+msgstr "لطفا پوشه موقت را مشخص کنید"
+
+#: src/hooks/useAbsorbRewards.tsx:19
+msgid "Please wait for synchronization"
+msgstr ""
+
+#: src/hooks/useJoinPool.tsx:28
+msgid "Please wait for wallet synchronization"
+msgstr ""
+
+#: src/components/farm/card/FarmCardPlotCount.tsx:11
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:44
+msgid "Plot Count"
+msgstr ""
+
+#: src/components/block/Block.jsx:259
+msgid "Plot Id"
+msgstr ""
+
+#: src/components/plot/PlotHarvesterPlots.tsx:46
+msgid "Plot Key"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:318
+msgid "Plot NFT Plot Target Address"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:319
+msgid "Plot NFT Pool Contract Address"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:111
+#: src/components/plotNFT/PlotNFTChangePool.tsx:92
+msgid "Plot NFT with p2_singleton_puzzle_hash {plotNFTId} does not exists"
+msgstr ""
+
+#: src/components/block/Block.jsx:237
+msgid "Plot Public Key"
+msgstr ""
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:93
+msgid "Plot Size"
+msgstr "اندازه پلات"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:74
+msgid "Plot in Parallel"
+msgstr ""
+
+#: src/components/plot/PlotHarvesterPlots.tsx:23
+msgid "Plot is duplicate of {0}"
+msgstr "پلات کپی این {0} پلات است"
+
+#: src/components/plotNFT/PlotNFTState.tsx:46
+msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
+msgstr ""
+
+#: src/components/dashboard/DashboardSideBar.tsx:87
+#: src/components/plot/PlotHarvester.tsx:93
+msgid "Plots"
+msgstr ""
+
+#: src/components/plot/card/PlotCardPlotsFailedToOpen.tsx:13
+msgid "Plots Failed To Open"
+msgstr ""
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:20
+msgid "Plots Passed Filter"
+msgstr "پلات ها با موفقیت از فیلتر عبور کردند"
+
+#: src/components/plot/card/PlotCardNotFound.tsx:11
+msgid "Plots With Missing Keys"
+msgstr ""
+
+#: src/components/plot/overview/PlotOverviewHero.tsx:33
+msgid "Plots are allocated space on your hard drive used to farm and earn Maize.<0>Learn more</0>"
+msgstr ""
+
+#: src/components/plot/add/PlotAddChoosePlotter.tsx:103
+msgid "Plotter"
+msgstr ""
+
+#: src/components/plot/PlotPlotting.tsx:49
+#: src/components/plot/queue/PlotQueueIndicator.tsx:34
+msgid "Plotting"
+msgstr ""
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:35
+msgid "Plotting Manager"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:58
+msgid "Plotting in parallel can save time. Otherwise, add plot(s) to the queue."
+msgstr "ساخت پلات ها به طور همزمان می تواند زمان کمتری مصرف کند. در غیر اینصورت،پلات(ها) را در صف ساخته شدن قرار دهید."
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:217
+msgid "Plotting with bitfield enabled has about 30% less overall writes and is now almost always faster. You may see reduced memory requirements with bitfield plotting disabled. If your CPU design is from before 2010 you may have to disable bitfield plotting."
+msgstr "پلات سازی با فعال کردن bitfield حدود ۳۰٪ اعمال نوشتن بر هارد دیسک را کمتر میکند و در حال حاضر سریع تر می باشد. ممکن است با غیر فعال کردن bitfield نیاز به حافظه کمتری باشد. اگر CPU شما ساخت قبل از سال ۲۰۱۰ می‌باشد، ممکن است مجبور به غیرفعال کردن پلاتسازی bitfield باشید."
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:173
+#: src/components/plotNFT/PlotNFTCard.tsx:212
+msgid "Points Found Since Start"
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:184
+#: src/components/plotNFT/PlotNFTCard.tsx:223
+msgid "Points Found in Last 24 Hours"
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:193
+#: src/components/plotNFT/PlotNFTCard.tsx:232
+msgid "Points Successful in Last 24 Hours"
+msgstr ""
+
+#: src/components/plot/PlotHarvesterPlots.tsx:65
+msgid "Pool Contract Address"
+msgstr "آدرس قرارداد استخر"
+
+#: src/components/plot/PlotHarvesterPlots.tsx:52
+msgid "Pool Key"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:53
+msgid "Pool Login Link"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:91
+msgid "Pool Payout Instructions"
+msgstr ""
+
+#: src/components/block/Block.jsx:241
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:308
+msgid "Pool Public Key"
+msgstr ""
+
+#: src/components/block/Block.jsx:252
+msgid "Pool Puzzle Hash"
+msgstr "استخر جورچین هش(در هم سازی)"
+
+#: src/components/block/FarmManageFarmingRewards.tsx:152
+#: src/components/farm/FarmManageFarmingRewards.tsx:165
+msgid "Pool Reward Address"
+msgstr "آدرس پاداش استخر"
+
+#: src/components/block/FarmManageFarmingRewards.tsx:128
+#: src/components/farm/FarmManageFarmingRewards.tsx:141
+msgid "Pool Reward Address is not properly formatted."
+msgstr ""
+
+#: src/components/block/FarmManageFarmingRewards.tsx:123
+#: src/components/farm/FarmManageFarmingRewards.tsx:136
+msgid "Pool Reward Address must not be empty."
+msgstr ""
+
+#: src/components/block/Block.jsx:273
+msgid "Pool Reward Amount"
+msgstr "مقدار پاداش استخر"
+
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:39
+msgid "Pool does not provide relativeLockHeight."
+msgstr ""
+
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:36
+msgid "Pool does not provide targetPuzzleHash."
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:271
+#: src/components/plotNFT/PlotNFTCard.tsx:323
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:65
+msgid "Pool:"
+msgstr ""
+
+#: src/components/dashboard/DashboardSideBar.tsx:107
+#: src/components/plotNFT/PlotNFTExternalState.tsx:24
+#: src/components/plotNFT/PlotNFTState.tsx:59
+msgid "Pooling"
+msgstr ""
+
+#: src/components/block/FullNodeAddConnection.tsx:76
+#: src/components/farm/FarmFullNodeConnections.tsx:41
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:41
+#: src/components/fullNode/FullNodeAddConnection.tsx:75
+#: src/components/fullNode/FullNodeConnections.tsx:35
+msgid "Port"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:96
+#: src/components/plotNFT/PlotNFTChangePool.tsx:85
+msgid "Preparing Plot NFT"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:104
+msgid "Preparing standard wallet"
+msgstr ""
+
+#: src/components/nfts/NFTPreview.tsx:153
+msgid "Preview"
+msgstr ""
+
+#: src/components/nfts/NFTPreview.tsx:191
+msgid "Preview URL is not valid"
+msgstr ""
+
+#: src/components/block/Block.jsx:307
+msgid "Previous"
+msgstr ""
+
+#: src/components/block/Block.jsx:193
+msgid "Previous Header Hash"
+msgstr "عنوان هش قبلی"
+
+#: src/components/nfts/gallery/NFTGallerySidebar.tsx:52
+#: src/components/nfts/gallery/NFTGallerySidebar.tsx:54
+msgid "Price"
+msgstr ""
+
+#: src/components/settings/ProfileView.tsx:66
+msgid "Profile Name"
+msgstr ""
+
+#: src/components/settings/Settings.tsx:50
+#: src/components/settings/SettingsProfiles.tsx:47
+msgid "Profiles"
+msgstr ""
+
+#: src/components/block/Block.jsx:229
+msgid "Proof of Space Size"
+msgstr "اثباتِ مقدار فضا"
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:24
+msgid "Proofs Found"
+msgstr "اثبات های یافت شده"
+
+#: src/components/nfts/NFTProperties.tsx:100
+msgid "Properties"
+msgstr ""
+
+#: src/components/pool/PoolInfo.tsx:22
+msgid "Protocol Version"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:527
+msgid "Purchase Summary"
+msgstr ""
+
+#: src/components/offers/OfferViewer.tsx:238
+msgid "Puzzle Hash"
+msgstr ""
+
+#: src/components/plot/PlotPlotting.tsx:24
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:204
+msgid "Queue Name"
+msgstr ""
+
+#: src/components/plot/queue/PlotQueueIndicator.tsx:35
+msgid "Queued"
+msgstr "در صف انتظار"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:117
+msgid "RAM max usage"
+msgstr "حداکثر مقدار استفاده از فضای رم"
+
+#: src/components/nfts/NFTRankings.tsx:80
+msgid "Rankings"
+msgstr ""
+
+#: src/components/app/AppSelectMode.tsx:111
+msgid "Recommended"
+msgstr ""
+
+#: src/components/settings/ProfileAdd.tsx:118
+msgid "Recommended: 0.000005 XMZ"
+msgstr ""
+
+#: src/components/plot/PlotHeader.tsx:75
+#: src/components/plot/overview/PlotOverviewHero.tsx:59
+#: src/components/plot/overview/PlotOverviewPlots.tsx:68
+msgid "Refresh Plots"
+msgstr "تازه سازی پلات ها"
+
+#: src/components/pool/PoolInfo.tsx:32
+msgid "Relative Lock Height"
+msgstr ""
+
+#: src/electron/main.tsx:559
+msgid "Release Notes"
+msgstr "یادداشت‌های انتشار"
+
+#: src/components/plot/PlotHarvester.tsx:56
+msgid "Remote"
+msgstr ""
+
+#: src/components/settings/RemovePassphrasePrompt.tsx:117
+#: src/components/settings/RemovePassphrasePrompt.tsx:175
+#: src/components/settings/SettingsPanel.tsx:163
+msgid "Remove Passphrase"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:255
+msgid "Remove keys from old keyring upon successful migration"
+msgstr ""
+
+#: src/components/plot/queue/PlotQueueIndicator.tsx:36
+msgid "Removing"
+msgstr ""
+
+#: src/electron/main.tsx:578
+msgid "Report an Issue..."
+msgstr "گزارش یک مشکل یا خطا..."
+
+#: src/components/offers/OfferManager.tsx:392
+msgid "Requested"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:533
+#: src/components/offers/OfferEditor.tsx:213
+msgid "Reset"
+msgstr ""
+
+#: src/components/backup/BackupRestore.tsx:159
+msgid "Restore Metadata for Coloured Coins and other Smart Wallets from Backup"
+msgstr "بازگردانی فراداده ها (Metadata) برای سکه های رنگی (نشانه گذاری شده) و سایر کیف پول های هوشمند از پشتیبان"
+
+#: src/components/nfts/NFTDetails.tsx:128
+msgid "Royalty Percentage"
+msgstr ""
+
+#: src/components/app/AppSelectMode.tsx:149
+msgid "Runs the full node"
+msgstr ""
+
+#: src/components/backup/BackupRestore.tsx:185
+msgid "Safe To Skip"
+msgstr ""
+
+#: src/components/block/FarmManageFarmingRewards.tsx:178
+#: src/components/farm/FarmManageFarmingRewards.tsx:191
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:130
+#: src/components/settings/SettingsDerivationIndex.tsx:100
+msgid "Save"
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:480
+msgid "Save Offer File"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:235
+#: src/components/settings/ChangePassphrasePrompt.tsx:268
+#: src/components/settings/SetPassphrasePrompt.tsx:238
+msgid "Save passphrase"
+msgstr ""
+
+#: src/components/fullNode/FullNodeBlockSearch.tsx:40
+msgid "Search block by header hash"
+msgstr ""
+
+#: src/components/offers/OfferSummaryRow.tsx:228
+#: src/components/offers/OfferSummaryRow.tsx:306
+msgid "Search on Tail Database"
+msgstr ""
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:106
+msgid "Second temporary folder location"
+msgstr ""
+
+#: src/components/settings/SettingsPanel.tsx:102
+msgid "Secure your keychain using a strong passphrase"
+msgstr ""
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:100
+msgid "Select 2nd Temporary Directory"
+msgstr ""
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:34
+msgid "Select Final Directory"
+msgstr ""
+
+#: src/components/offers/OfferImport.tsx:184
+msgid "Select Offer File"
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:356
+msgid "Select Profile"
+msgstr ""
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:52
+msgid "Select Temporary Directory"
+msgstr "انتخاب پوشه موقت"
+
+#: src/components/app/AppSelectMode.tsx:58
+msgid "Select Your Client Mode"
+msgstr ""
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:36
+msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external HDD)."
+msgstr ""
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:54
+msgid "Select the temporary destination for the folder where you would like the plot to be stored. We recommend you use a fast drive."
+msgstr ""
+
+#: src/components/plot/add/PlotAddNFT.tsx:86
+msgid "Select your Plot NFT"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNFT.tsx:77
+msgid "Select your Plot NFT from the dropdown or create a new one."
+msgstr ""
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:73
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:90
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:122
+msgid "Selected"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTExternalState.tsx:23
+#: src/components/plotNFT/PlotNFTState.tsx:57
+msgid "Self Pooling"
+msgstr ""
+
+#: src/components/plotNFT/select/PlotNFTSelectBase.tsx:104
+msgid "Self pool. When you win a block you will earn XMZ rewards."
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:367
+msgid "Sell an NFT"
+msgstr ""
+
+#: src/components/nfts/NFTBurnDialog.tsx:142
+#: src/components/nfts/NFTTransferAction.tsx:142
+msgid "Send to Address"
+msgstr ""
+
+#: src/components/settings/SetPassphrasePrompt.tsx:154
+#: src/components/settings/SetPassphrasePrompt.tsx:264
+#: src/components/settings/SettingsPanel.tsx:173
+msgid "Set Passphrase"
+msgstr ""
+
+#: src/components/dashboard/DashboardSideBar.tsx:117
+#: src/components/settings/Settings.tsx:33
+msgid "Settings"
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:426
+#: src/components/offers/OfferShareDialog.tsx:1105
+#: src/components/offers/OfferShareDialog.tsx:1278
+msgid "Share"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1405
+msgid "Share Offer"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:765
+msgid "Share Privately"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:587
+msgid "Share on Dexie"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:852
+msgid "Share on Hashgreen DEX"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1048
+msgid "Share on Keybase"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:668
+msgid "Share on MintGarden"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:750
+msgid "Share on OfferBin"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1175
+msgid "Share on offerpool"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:568
+msgid "Show"
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:451
+msgid "Show Details"
+msgstr ""
+
+#: src/components/nfts/gallery/NFTGallery.tsx:149
+msgid "Show Hidden"
+msgstr ""
+
+#: src/components/nfts/NFTPreview.tsx:212
+msgid "Show Preview"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:64
+#: src/components/app/AppKeyringMigrator.tsx:267
+#~ msgid "Skip"
+#~ msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:63
+#~ msgid "Skip Keyring Migration"
+#~ msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:281
+msgid "Skips adding a final directory to harvester for farming"
+msgstr "از افزودن پوشه نهایی به برداشت گر(harvester) برای مزرعه داری، صرفه نظر شود"
+
+#: src/components/pool/PoolHero.tsx:21
+msgid "Smooth out your XMZ farming rewards by joining a pool."
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:138
+msgid "Specify a value of 0 to use all available threads"
+msgstr ""
+
+#: src/electron/main.tsx:655
+msgid "Speech"
+msgstr ""
+
+#: src/components/app/AppState.tsx:199
+msgid "Starting services"
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:95
+msgid "State"
+msgstr "حالت"
+
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:71
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:79
+#: src/components/nfts/gallery/NFTGallerySidebar.tsx:39
+#: src/components/nfts/gallery/NFTGallerySidebar.tsx:41
+#: src/components/offers/OfferManager.tsx:342
+#: src/components/offers/OfferViewer.tsx:144
+#: src/components/plot/PlotHarvesterPlots.tsx:75
+#: src/components/plot/PlotPlotting.tsx:28
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:112
+#: src/components/plotNFT/PlotNFTCard.tsx:143
+msgid "Status"
+msgstr ""
+
+#: src/components/app/AppSelectMode.tsx:84
+msgid "Store and Send XMZ"
+msgstr ""
+
+#: src/components/app/AppPassPrompt.tsx:114
+msgid "Submit"
+msgstr "ثبت و ارسال"
+
+#: src/hooks/useAcceptOfferHook.tsx:61
+msgid "Success"
+msgstr ""
+
+#: src/components/settings/SettingsDerivationIndex.tsx:66
+msgid "Successfully updated the derivation index. Your balances may take a while to update."
+msgstr ""
+
+#: src/components/offers/OfferViewer.tsx:269
+msgid "Summary"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:49
+msgid "Synced"
+msgstr "همگام سازی شده"
+
+#: src/components/farm/FarmerStatus.tsx:19
+#: src/components/farm/card/FarmCardStatus.tsx:17
+#: src/components/plot/PlotStatus.tsx:18
+msgid "Syncing"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:27
+msgid "Syncing <0/>/<1/>"
+msgstr ""
+
+#: src/components/pool/PoolInfo.tsx:37
+msgid "Target Puzzle Hash"
+msgstr ""
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:64
+msgid "Temporary folder location"
+msgstr "مکان ثانویه پوشه موقت"
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:326
+msgid "The NFT move failed: {error}"
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:316
+msgid "The NFT move transaction has been successfully submitted to the blockchain."
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:318
+msgid "The NFT status has been updated. If the transaction was successfully sent to the mempool, it may still complete."
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:328
+msgid "The NFT status update failed: {error}"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:192
+#: src/components/nfts/NFTContextualActions.tsx:256
+msgid "The NFT transfer failed: {error}"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:182
+#: src/components/nfts/NFTContextualActions.tsx:246
+msgid "The NFT transfer transaction has been successfully submitted to the blockchain."
+msgstr ""
+
+#: src/components/settings/SettingsPanel.tsx:187
+msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for XMZ, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
+msgstr ""
+
+#: src/components/farm/FarmFullNodeConnections.tsx:95
+msgid "The full node that your farmer is connected to is below. <0>Learn more</0>"
+msgstr "گره کاملی که مزرعه شما به آن متصل است. <0>اطلاعات بیشتر</0>"
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:47
+#: src/components/plot/add/PlotAddChooseSize.tsx:104
+msgid "The minimum required size for mainnet is k=32"
+msgstr "حداقل اندازه مورد نیاز برای شبکه اصلی k = 32 است"
+
+#: src/components/offers/NFTOfferViewer.tsx:679
+msgid "The net proceeds include the asking price, minus any associated creator fees (if the NFT has royalty payments enabled)."
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:16
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:45
+msgid "The node is not synced"
+msgstr "گره همگام سازی نشده"
+
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:35
+msgid "The node is syncing, which means it is downloading blocks from other nodes, to reach the latest block in the chain"
+msgstr ""
+
+#: src/hooks/usePoolInfo.ts:56
+msgid "The pool URL \"{normalizedUrl}\" is not working. Is it pool? Error: {0}"
+msgstr ""
+
+#: src/hooks/usePoolInfo.ts:44
+msgid "The pool URL is not valid. {normalizedUrl}"
+msgstr "ادرس استخر استخراج معین شده معتبر نیست. {normalizedUrl}"
+
+#: src/hooks/usePoolInfo.ts:40
+msgid "The pool URL needs to use protocol https. {normalizedUrl}"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTState.tsx:29
+msgid "The pool switching operation was cancelled, please try again by changing pool, or self pooling"
+msgstr ""
+
+#: src/components/block/Block.jsx:262
+msgid "The seed used to create the plot. This depends on the pool pk and plot pk."
+msgstr "بذر مورد استفاده برای ایجاد پلات. این به pk استخر و pk پلات بستگی دارد."
+
+#: src/components/offers/NFTOfferViewer.tsx:638
+msgid "The total amount offered includes the offered purchase price, plus the optional offer creation fee.<0/>If the NFT has royalty payments enabled, those creator fees will be paid from the offered purchase price."
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:475
+msgid "The total amount offered includes the price you're willing to pay for the NFT, plus the optional offer creation fee. One or more coins totalling at least the amount shown below will be deducted from your spendable balance upon offer creation.<0/>If the NFT has royalty payments enabled, those creator fees will be paid by the party that accepts the offer."
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:464
+msgid "The total amount requested includes the asking price, plus the associated creator fees (if the NFT has royalty payments enabled). Creator fees will be paid by the party that accepts the offer.<0/>The optional offer creation fee is not included in this total, and will be deducted from your spendable balance upon offer creation."
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:625
+msgid "The total amount requested includes the asking price, plus the associated creator fees (if the NFT has royalty payments enabled).{0}"
+msgstr ""
+
+#: src/components/block/Block.jsx:206
+msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this block."
+msgstr ""
+
+#: src/components/block/Block.jsx:222
+msgid "The total number of VDF (verifiable delay function) or proof of time iterations on this block."
+msgstr "تعداد کل VDF (عملکرد تأخیری قابل تأیید) یا اثبات تکرار زمان در این بلوک."
+
+#: src/components/block/Block.jsx:284
+msgid "The total transactions fees in this block. Rewarded to the farmer."
+msgstr "کل کارمزد های تراکنش ها در این بلوک. به مزرعه دار پاداش داده شده."
+
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:106
+msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XMZ address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+msgstr ""
+
+#: src/components/plot/card/PlotCardPlotsFailedToOpen.tsx:15
+msgid "These plots are invalid, you might want to delete them."
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:428
+msgid "They will receive"
+msgstr ""
+
+#: src/components/plot/PlotAddDirectoryDialog.tsx:88
+msgid "This allows you to add a directory that has plots in it. If you have not created any plots, go to the plotting screen."
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:129
+#: src/components/plotNFT/PlotNFTCard.tsx:168
+msgid "This difficulty is an artifically lower difficulty than on the real network, and is used when farming, in order to find more proofs and send them to the pool. The more plots you have, the higher difficulty you will have. However, the difficulty does not affect rewards."
+msgstr ""
+
+#: src/hooks/useSelectDirectory.tsx:32
+msgid "This feature is available only from the GUI."
+msgstr "این ویژگی تنها در نسخه داری واسط گرافیکی در دسترس است."
+
+#: src/components/block/Block.jsx:172
+msgid "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
+msgstr "این مدت زمان صرف شده برای ساخت بلوک توسط مزرعه دار است،که قبلا با توجه به زمان سپری شده به انتها رسیده است"
+
+#: src/components/fullNode/card/FullNodeCardPeakTime.tsx:19
+msgid "This is the timestamp of the most recent transaction block."
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:148
+#: src/components/plotNFT/PlotNFTCard.tsx:187
+msgid "This is the total number of points this plotNFT has with this pool, since the last payout. The pool will reset the points after making a payout."
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:165
+#: src/components/plotNFT/PlotNFTCard.tsx:204
+msgid "This is the total number of points your farmer has found for this plot NFT. Each k32 plot will get around 10 points per day, so if you have 10TiB, should should expect around 1000 points per day, or 41 points per hour."
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:52
+msgid "This node is fully caught up and validating the network"
+msgstr "این گره کاملا درگیر و در حال اعتبار سنجی شبکه است"
+
+#: src/components/offers/OfferViewer.tsx:178
+msgid "This number reflects the number of nodes that the accepted SpendBundle has been sent to"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:226
+#: src/components/offers/OfferSummary.tsx:206
+msgid "This offer has a fee included to help expedite the transaction when the offer is accepted."
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:220
+#: src/components/offers/OfferSummary.tsx:200
+msgid "This offer has a fee included to help expedite the transaction when the offer is accepted. You may specify an additional fee if you feel that the included fee is too small."
+msgstr ""
+
+#: src/components/offers/OfferHeader.tsx:62
+msgid "This offer has completed successfully"
+msgstr ""
+
+#: src/components/offers/OfferHeader.tsx:46
+msgid "This offer is no longer valid. To understand why, click <0>here</0> to learn more."
+msgstr ""
+
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:307
+msgid "This plot NFT is assigned to a different key. You can still create plots for this plot NFT, but you can not make changes."
+msgstr ""
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:47
+msgid "This table shows you the last time your farm attempted to win a block challenge. <0>Learn more</0>"
+msgstr ""
+"این جدول آخرین زمانی را به شما نشان میدهد که مزرعه شما تلاشی برای برنده شدن در چالش و پردازش یک بلوک کرده است.\n"
+"<0>بیشتر بدانید</0>"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:154
+msgid "Thread Multiplier for Phase 2"
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:87
+msgid "Time Created"
+msgstr ""
+
+#: src/components/block/Block.jsx:167
+msgid "Timestamp"
+msgstr ""
+
+#: src/components/nfts/NFTCard.tsx:69
+#: src/components/nfts/NFTSummary.tsx:189
+#: src/components/nfts/detail/NFTDetail.tsx:42
+#: src/components/nfts/detail/NFTDetailV2.tsx:104
+msgid "Title Not Available"
+msgstr ""
+
+#: src/components/offers/OfferManager.tsx:594
+msgid "Token Offer"
+msgstr ""
+
+#: src/components/settings/ProfileView.tsx:136
+msgid "Token Standard"
+msgstr ""
+
+#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/nfts/gallery/NFTGallerySidebar.tsx:68
+#: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
+msgid "Tokens"
+msgstr ""
+
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:118
+msgid "Too Many Plot NFTs"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:458
+#: src/components/offers/NFTOfferViewer.tsx:619
+msgid "Total Amount Offered"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:456
+#: src/components/offers/NFTOfferViewer.tsx:615
+msgid "Total Amount Requested"
+msgstr ""
+
+#: src/components/farm/card/FarmCardTotalMaizeFarmed.tsx:27
+msgid "Total Maize Farmed"
+msgstr ""
+
+#: src/components/plot/card/PlotCardTotalHarvesters.tsx:11
+msgid "Total Harvesters"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:14
+msgid "Total Iterations"
+msgstr ""
+
+#: src/components/farm/card/FarmCardTotalNetworkSpace.tsx:12
+msgid "Total Network Space"
+msgstr ""
+
+#: src/components/plot/card/PlotCardTotalPlots.tsx:11
+msgid "Total Plots"
+msgstr ""
+
+#: src/components/plot/card/PlotCardTotalPlotsSize.tsx:11
+msgid "Total Plots Size"
+msgstr ""
+
+#: src/components/farm/card/FarmCardTotalSizeOfPlots.tsx:11
+msgid "Total Size of Plots"
+msgstr "جمع اندازه پلات ها"
+
+#: src/components/block/Block.jsx:203
+msgid "Total VDF Iterations"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:16
+msgid "Total iterations since the start of the blockchain"
+msgstr "کل تکرارها از زمان شروع زنجیره بلوکی"
+
+#: src/components/app/AppSelectMode.tsx:96
+msgid "Trade tokens"
+msgstr ""
+
+#: src/components/block/Block.jsx:269
+msgid "Transactions Filter Hash"
+msgstr ""
+
+#: src/components/nfts/NFTTransferAction.tsx:171
+#: src/components/nfts/NFTTransferConfirmationDialog.tsx:46
+msgid "Transfer"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:217
+#: src/components/nfts/NFTTransferAction.tsx:219
+msgid "Transfer NFT"
+msgstr ""
+
+#: src/hooks/useOpenUnsafeLink.tsx:56
+msgid "URL"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:751
+msgid "Unable to create an offer for an NFT that you do not own."
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:765
+msgid "Unable to create an offer for an NFT with a creator royalty percentage greater than 100%"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:444
+msgid "Unable to create an offer where the net amount is negative"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:979
+msgid "Unable to open Keybase. Install Keybase from https://keybase.io"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:886
+msgid "Unable to open browser. Install Keybase from https://keybase.io"
+msgstr ""
+
+#: src/components/nfts/NFTDetails.tsx:110
+#: src/components/nfts/NFTDetails.tsx:134
+msgid "Unassigned"
+msgstr ""
+
+#: src/components/nfts/NFTProfileDropdown.tsx:100
+#: src/components/nfts/NFTProfileDropdown.tsx:168
+msgid "Unassigned NFTs"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTCard.tsx:148
+msgid "Unclaimed Rewards"
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:93
+msgid "Unfinished"
+msgstr ""
+
+#: src/components/offers/utils.ts:177
+msgid "Unknown"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:409
+#: src/components/offers/OfferManager.tsx:232
+#: src/components/offers/OfferSummaryRow.tsx:189
+#: src/components/offers/OfferSummaryRow.tsx:190
+#: src/components/offers/OfferSummaryRow.tsx:268
+msgid "Unknown CAT"
+msgstr ""
+
+#: src/components/app/AppPassPrompt.tsx:100
+msgid "Unlock Keyring"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:146
+msgid "Unrecognized asset"
+msgstr ""
+
+#: src/components/nfts/NFTPreview.tsx:90
+msgid "Update Pending"
+msgstr ""
+
+#: src/components/farm/card/FarmCardUserFees.tsx:27
+msgid "User Transaction Fees"
+msgstr ""
+
+#: src/components/fullNode/card/FullNodeCardVDFSubSlotIterations.tsx:14
+msgid "VDF Sub Slot Iterations"
+msgstr "تکرارهای زیر شکافی VDF"
+
+#: src/components/plotNFT/select/PlotNFTSelectBase.tsx:156
+msgid "Verify Pool Details"
+msgstr ""
+
+#: src/electron/main.tsx:474
+msgid "View"
+msgstr ""
+
+#: src/components/plot/queue/PlotQueueActions.tsx:75
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:55
+msgid "View Log"
+msgstr "مشاهده سوابق(لاگ)"
+
+#: src/components/plotNFT/PlotNFTCard.tsx:282
+msgid "View Pool Login Link"
+msgstr ""
+
+#: src/components/offers/OfferImport.tsx:212
+#: src/components/offers/OfferManager.tsx:617
+msgid "View an Offer"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:568
+msgid "View on Dexie"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:833
+msgid "View on Hashgreen DEX"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:677
+#: src/components/offers/OfferShareDialog.tsx:649
+msgid "View on MintGarden"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:731
+msgid "View on OfferBin"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:684
+msgid "View on SkyNFT"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:691
+msgid "View on Spacescan.io"
+msgstr ""
+
+#: src/components/offers/OfferViewerTitle.tsx:54
+msgid "Viewing offer"
+msgstr ""
+
+#: src/components/farm/card/FarmCardNotAvailable.tsx:25
+#: src/components/plot/PlotStatus.tsx:26
+#: src/components/plot/PlotStatus.tsx:27
+msgid "Wait for synchronization"
+msgstr "در انتظار همگام سازی"
+
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:82
+msgid "Waiting for the transaction to be confirmed"
+msgstr ""
+
+#: src/components/app/AppStatusHeader.tsx:75
+msgid "Wallet"
+msgstr ""
+
+#: src/components/app/AppSelectMode.tsx:76
+#: src/components/app/AppSelectMode.tsx:130
+msgid "Wallet Mode"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:72
+msgid "Wallet is not defined"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTAdd.tsx:61
+msgid "Want to Join a Pool? Create a Plot NFT"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:87
+msgid "Want to have a delay before the next plot starts?"
+msgstr "آیا می خواهید قبل از شروع ساخت پلات بعدی تاخیر داشته باشید؟"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:252
+msgid "Warm start"
+msgstr ""
+
+#: src/components/offers/OfferAcceptConfirmationDialog.tsx:34
+msgid "Warning"
+msgstr ""
+
+#: src/components/offers/OfferSummary.tsx:148
+msgid "Warning: Verify that the offered CAT asset IDs match the asset IDs of the tokens you expect to receive."
+msgstr ""
+
+#: src/hooks/useOpenUnsafeLink.tsx:42
+msgid "Warning: You're about to visit a website"
+msgstr ""
+
+#: src/components/block/Block.jsx:183
+msgid "Weight"
+msgstr "وزن"
+
+#: src/components/block/Block.jsx:186
+msgid "Weight is the total added difficulty of all blocks up to and including this one"
+msgstr ""
+
+#: src/components/offers/OfferEditorConfirmationDialog.tsx:22
+msgid "When creating an offer, any assets that are being offered will be locked and unavailable until the offer is accepted or cancelled, resulting in your spendable balance changing."
+msgstr ""
+
+#: src/electron/main.tsx:525
+msgid "Window"
+msgstr "پنجره"
+
+#: src/components/farm/card/FarmCardBlockRewards.tsx:32
+msgid "Without fees"
+msgstr "بدونه کارمزد"
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:520
+msgid "Would you like to move the specified NFT to a profile?"
+msgstr ""
+
+#: src/components/nfts/NFTTransferAction.tsx:226
+msgid "Would you like to transfer the specified NFT to a new owner?"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:261
+#~ msgid "XMZ for NFT"
+#~ msgstr ""
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:48
+#: src/electron/main.tsx:362
+msgid "Yes"
+msgstr "بله"
+
+#: src/components/offers/OfferAcceptConfirmationDialog.tsx:24
+msgid "Yes, Accept Offer"
+msgstr ""
+
+#: src/components/nfts/NFTMoveToProfileDialog.tsx:65
+msgid "Yes, move"
+msgstr ""
+
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:177
+msgid "You already have 50 or more Plot NFTs."
+msgstr ""
+
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:121
+msgid "You already have more than 10 Plot NFTs. Click OK if you're sure you want to create a new one."
+msgstr ""
+
+#: src/hooks/useAbsorbRewards.tsx:27
+#: src/hooks/useJoinPool.tsx:36
+msgid "You are in pending state. Please wait for confirmation"
+msgstr ""
+
+#: src/hooks/useAbsorbRewards.tsx:35
+msgid "You are not self pooling"
+msgstr ""
+
+#: src/components/app/AppSelectMode.tsx:164
+msgid "You can always change your mode later in the settings"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTCard.tsx:420
+msgid "You can still create plots for this plot NFT, but you can not make changes until sync is complete."
+msgstr ""
+
+#: src/components/offers/OfferHeader.tsx:38
+msgid "You created this offer"
+msgstr ""
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:76
+msgid "You do not need to be synced or connected to plot. Temporary files are created during the plotting process which exceed the size of the final plot files. Make sure you have enough space. <0>Learn more</0>"
+msgstr ""
+
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:73
+msgid "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3 to 4 times longer than this estimate."
+msgstr ""
+"شما {0} درصد فضا در شبکه دارید، بر این اساس برای مزرعه داری (ساختن) یک بلوک مدت زمان {expectedTimeToWin} تخمین زده میشود.\n"
+"در عمل رسیدن به نتیجه اصلی ۳ تا ۴ برابر تخمین بالا به طول می انجامد."
+
+#: src/components/pool/PoolJoin.tsx:36
+msgid "You need to claim your rewards first"
+msgstr ""
+
+#: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:36
+msgid "You need {currencyCode} to join a pool."
+msgstr ""
+
+#: src/components/offers/OfferEditorConditionsPanel.tsx:340
+msgid "You will offer"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:426
+#: src/components/offers/NFTOfferViewer.tsx:532
+#: src/components/offers/OfferViewer.tsx:283
+msgid "You will receive"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:150
+#: src/hooks/useAbsorbRewards.tsx:51
+msgid "You will recieve <0/> to {address}"
+msgstr ""
+
+#: src/components/farm/FarmHeader.tsx:25
+msgid "Your Farm Overview"
+msgstr "نمای کلی مزرعه شما"
+
+#: src/components/farm/FarmFullNodeConnections.tsx:92
+msgid "Your Full Node Connection"
+msgstr "اتصالات گره کامل شما"
+
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:93
+msgid "Your Harvester Network"
+msgstr "شبکه برداشت کننده های شما"
+
+#: src/components/pool/PoolOverview.tsx:42
+msgid "Your Pool Overview"
+msgstr "نمای کلی استخر شما"
+
+#: src/components/app/AppPassPrompt.tsx:96
+msgid "Your keyring is locked"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:69
+#~ msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Are you sure you want to skip migrating your keys?"
+#~ msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:112
+#~ msgid "Your keys need to be migrated to a new keyring that is optionally secured by a master passphrase."
+#~ msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:118
+#~ msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
+#~ msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1023
+msgid "Your offer has been successfully posted to Keybase."
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1249
+msgid "Your offer:"
+msgstr ""
+
+#: src/components/app/AppKeyringMigrator.tsx:239
+#: src/components/settings/ChangePassphrasePrompt.tsx:271
+#: src/components/settings/SetPassphrasePrompt.tsx:242
+msgid "Your passphrase can be stored in your system's secure credential store. Maize will be able to access your keys without prompting for your passphrase."
+msgstr ""
+
+#: src/components/settings/SettingsPanel.tsx:61
+msgid "Your passphrase has been set"
+msgstr ""
+
+#: src/components/settings/SettingsPanel.tsx:50
+msgid "Your passphrase has been updated"
+msgstr ""
+
+#: src/util/getDescriptiveError.ts:5
+msgid "[Error 13] Permission denied. You are trying to access a file/directory without having the necessary permissions. Most likely one of the plot folders in your config.yaml has an issue."
+msgstr "[خطای 13] مجوز رد شد. شما در حال تلاش برای دسترسی به یک پرونده / پوشه بدون داشتن مجوزهای لازم هستید. به احتمال زیاد یکی از پوشه های پلات در config.yaml شما مشکل دارد."
+
+#: src/util/getDescriptiveError.ts:8
+msgid "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
+msgstr "[خطای 22] پرونده پیدا نشد. به احتمال زیاد یکی از پوشه های پلات در config.yaml شما مشکل دارد."
+
+#: src/components/offers/OfferViewerTitle.tsx:38
+msgid "created {0}"
+msgstr ""
+
+#: src/components/offers/OfferImport.tsx:197
+msgid "or Paste (Ctrl-V) an Offer blob"
+msgstr ""
+
+#: src/components/offers/OfferImport.tsx:195
+msgid "or Paste (⌘V) an Offer blob"
+msgstr ""
+
+#: src/components/plot/add/PlotAddForm.tsx:134
+msgid "p2SingletonPuzzleHash is not defined"
+msgstr ""
+
+#: src/components/nfts/NFTTransferConfirmationDialog.tsx:101
+msgid "{0, plural, one {mojo} other {mojos}}"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:1148
+msgid "{0}"
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:172
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:189
+msgid "{0} buckets is recommended"
+msgstr ""
+
+#: src/components/nfts/detail/NFTDetail.tsx:98
+#: src/components/nfts/detail/NFTDetailV2.tsx:149
+msgid "{0} of {1}"
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTGraph.tsx:111
+msgid "{0} points {1} - {2} hours ago"
+msgstr ""
+
+#: src/components/offers/NFTOfferViewer.tsx:216
+#: src/components/offers/OfferSummary.tsx:196
+msgid "{makerFee, plural, one {mojo} other {mojos}}"
+msgstr ""
+
+#: src/components/offers/OfferSummaryRow.tsx:49
+#: src/components/offers/OfferViewer.tsx:62
+msgid "{mojos, plural, one {mojo} other {mojos}}"
+msgstr ""
+
+#: src/components/nfts/NFTRankings.tsx:51
+msgid "{value} of {max_value}"
+msgstr ""
+
+#: src/components/plot/add/PlotAddChoosePlotter.tsx:118
+msgid "{warning}"
+msgstr ""

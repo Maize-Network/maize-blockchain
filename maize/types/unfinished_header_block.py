@@ -8,8 +8,8 @@ from maize.types.end_of_slot_bundle import EndOfSubSlotBundle
 from maize.util.streamable import Streamable, streamable
 
 
-@dataclass(frozen=True)
 @streamable
+@dataclass(frozen=True)
 class UnfinishedHeaderBlock(Streamable):
     # Same as a FullBlock but without TransactionInfo and Generator, used by light clients
     finished_sub_slots: List[EndOfSubSlotBundle]  # If first sb

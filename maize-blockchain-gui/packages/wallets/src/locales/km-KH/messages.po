@@ -1,0 +1,886 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-02-08 18:51+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: km_KH\n"
+"Project-Id-Version: maize-blockchain\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-07-27 18:40\n"
+"Last-Translator: \n"
+"Language-Team: Khmer\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: maize-blockchain\n"
+"X-Crowdin-Project-ID: 440660\n"
+"X-Crowdin-Language: km\n"
+"X-Crowdin-File: /main/packages/wallets/src/locales/en-US/messages.po\n"
+"X-Crowdin-File-ID: 1890\n"
+
+#: src/components/WalletHistory.tsx:210
+msgid "+"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:210
+msgid "-"
+msgstr ""
+
+#: src/components/WalletHeader.tsx:74
+msgid "Actions"
+msgstr "ជម្រើស"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:96
+msgid "Add"
+msgstr "បន្ថែម"
+
+#: src/components/cat/WalletDID.tsx:874
+#: src/components/did/WalletDID.tsx:874
+#: src/components/did/WalletDIDCreate.tsx:205
+msgid "Add Backup ID"
+msgstr ""
+
+#: src/components/hero/WalletHeroAdd.tsx:99
+msgid "Add Custom Token"
+msgstr ""
+
+#: src/components/WalletsList.tsx:54
+#: src/components/WalletsManageTokens.tsx:170
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:61
+#: src/components/cat/WalletCATCreateSimple.tsx:70
+#: src/components/hero/WalletHeroAdd.tsx:64
+#: src/components/hero/WalletHeroWallets.tsx:83
+msgid "Add Token"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateSimple.tsx:94
+msgid "Adding {0} token"
+msgstr ""
+
+#: src/components/WalletReceiveAddress.tsx:60
+msgid "Address"
+msgstr "អាស័យដ្ឋាន"
+
+#: src/components/WalletSend.tsx:156
+#: src/components/cat/WalletCATSend.tsx:195
+#: src/components/rateLimited/WalletRateLimited.jsx:700
+msgid "Address / Puzzle hash"
+msgstr "អាស័យដ្ឋាន / Puzzle hash"
+
+#: src/components/WalletHistory.tsx:226
+#: src/components/WalletSend.tsx:166
+#: src/components/cat/WalletCATSend.tsx:206
+#: src/components/rateLimited/WalletRateLimited.jsx:719
+msgid "Amount"
+msgstr "ចំនួន"
+
+#: src/components/create/createRLAdmin.jsx:238
+msgid "Amount For Initial Coin"
+msgstr "ចំនួនកាក់ដំបូង"
+
+#: src/components/did/WalletDIDCreate.tsx:61
+msgid "Amount must be an even amount."
+msgstr ""
+
+#: src/components/WalletHeader.tsx:42
+msgid "Are you sure you want to delete unconfirmed transactions?"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:80
+#: src/components/cat/WalletCATTAILDialog.tsx:43
+#: src/components/cat/WalletCATTAILDialog.tsx:55
+msgid "Asset Id"
+msgstr ""
+
+#: src/constants/WalletName.ts:11
+msgid "Atomic Swap Wallet"
+msgstr ""
+
+#: src/constants/WalletName.ts:14
+msgid "Authorized Payee Wallet"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:646
+#: src/components/did/WalletDID.tsx:646
+#: src/components/rateLimited/WalletRateLimited.jsx:540
+msgid "Balance"
+msgstr "សមតុល្យ"
+
+#: src/components/PasteMnemonic.tsx:78
+#: src/components/WalletRenameDialog.tsx:90
+msgid "Cancel"
+msgstr "បោះបង់"
+
+#: src/components/WalletSend.tsx:103
+#: src/components/cat/WalletCATSend.tsx:118
+msgid "Cannot send maize to coloured address. Please enter a maize address."
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:140
+msgid "Check my snapshot balance"
+msgstr ""
+
+#: src/components/cat/WalletCATSelect.tsx:25
+#: src/components/create/WalletCreateList.tsx:32
+#: src/constants/WalletName.ts:23
+msgid "Maize Asset Token"
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:151
+msgid "Click here to download an older version of the wallet"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:984
+#: src/components/did/WalletDID.tsx:984
+msgid "Coin Name"
+msgstr ""
+
+#: src/components/WalletHeader.tsx:37
+msgid "Confirmation"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:156
+msgid "Confirmed"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:356
+msgid "Confirmed at Height"
+msgstr ""
+
+#: src/components/WalletStatusHeader.tsx:40
+msgid "Connected ({0})"
+msgstr ""
+
+#: src/components/WalletConnections.tsx:62
+msgid "Connection type"
+msgstr ""
+
+#: src/components/WalletConnections.tsx:80
+msgid "Connections"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:305
+#: src/components/rateLimited/WalletRateLimited.jsx:427
+#: src/components/rateLimited/WalletRateLimited.jsx:484
+msgid "Copy"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateNew.tsx:101
+#: src/components/create/createRLAdmin.jsx:306
+#: src/components/create/createRLUser.jsx:99
+#: src/components/did/WalletDIDCreate.tsx:218
+msgid "Create"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:967
+#: src/components/did/WalletDID.tsx:967
+msgid "Create An Attestation Packet"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExisting.tsx:76
+msgid "Create Maize Asset Token Wallet from Existing TAIL"
+msgstr ""
+
+#: src/components/did/WalletDIDCreate.tsx:109
+msgid "Create Distributed Identity Wallet"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateNew.tsx:75
+msgid "Create New Maize Asset Token Wallet"
+msgstr ""
+
+#: src/components/cat/WalletCATSelect.tsx:32
+#: src/components/did/WalletDIDSelect.tsx:32
+msgid "Create New Wallet"
+msgstr ""
+
+#: src/components/cat/WalletCAT.tsx:129
+#: src/components/standard/WalletStandard.tsx:54
+msgid "Create Offer"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:187
+msgid "Create Rate Limited Admin Wallet"
+msgstr ""
+
+#: src/components/create/createRLUser.jsx:78
+msgid "Create Rate Limited User Wallet"
+msgstr ""
+
+#: src/components/WalletSend.tsx:138
+#: src/components/cat/WalletCATSend.tsx:176
+#: src/components/rateLimited/WalletRateLimited.jsx:683
+msgid "Create Transaction"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExisting.tsx:75
+msgid "Create custom CAT Wallet"
+msgstr ""
+
+#: src/constants/WalletName.ts:20
+msgid "Custody Wallet"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateSimple.tsx:102
+msgid "Custom"
+msgstr ""
+
+#: src/constants/WalletName.ts:29
+msgid "DID Wallet"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:199
+msgid "Date"
+msgstr ""
+
+#: src/components/WalletHeader.tsx:38
+#: src/components/cat/WalletDID.tsx:448
+#: src/components/cat/WalletDID.tsx:862
+#: src/components/did/WalletDID.tsx:448
+#: src/components/did/WalletDID.tsx:862
+#: src/components/did/WalletDIDCreate.tsx:194
+#: src/components/did/WalletDIDRecovery.tsx:101
+msgid "Delete"
+msgstr ""
+
+#: src/components/WalletHeader.tsx:87
+msgid "Delete Unconfirmed Transactions"
+msgstr ""
+
+#: src/components/card/WalletCardTotalBalance.tsx:63
+msgid "Derivation Index: {0}"
+msgstr ""
+
+#: src/components/create/WalletCreateList.tsx:39
+#: src/components/did/WalletDIDSelect.tsx:25
+msgid "Distributed Identity"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:426
+#: src/components/did/WalletDID.tsx:426
+msgid "Drag and drop attestation packet(s)"
+msgstr ""
+
+#: src/components/did/WalletDIDRecovery.tsx:109
+msgid "Drag and drop your recovery backup file"
+msgstr ""
+
+#: src/components/WalletImport.tsx:133
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your Maize wallet."
+msgstr ""
+
+#: src/components/cat/WalletCATSend.tsx:128
+msgid "Error the entered address appears to be for a different colour."
+msgstr ""
+
+#: src/components/WalletSend.tsx:186
+#: src/components/cat/WalletCATSend.tsx:240
+msgid "Farm"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:238
+#: src/components/WalletSend.tsx:177
+#: src/components/cat/WalletCATSend.tsx:219
+#: src/components/create/createRLAdmin.jsx:243
+#: src/components/create/createRLAdmin.jsx:271
+#: src/components/rateLimited/WalletRateLimited.jsx:732
+msgid "Fee"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:975
+#: src/components/did/WalletDID.tsx:975
+msgid "Filename"
+msgstr ""
+
+#: src/components/WalletReceiveAddress.tsx:38
+msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefore wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
+msgstr ""
+
+#: src/components/WalletConnections.tsx:27
+msgid "IP address"
+msgstr ""
+
+#: src/components/WalletSendTransactionResultDialog.tsx:41
+msgid "If you would like to speed up the transaction, please delete unconfirmed transactions and retry with a higher fee."
+msgstr ""
+
+#: src/components/PasteMnemonic.tsx:86
+msgid "Import"
+msgstr ""
+
+#: src/components/WalletImport.tsx:130
+msgid "Import Wallet from Mnemonics"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:93
+msgid "Incoming"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:332
+#: src/components/rateLimited/WalletRateLimited.jsx:471
+msgid "Info Packet"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:259
+msgid "Initial Amount"
+msgstr ""
+
+#: src/components/create/createRLUser.jsx:87
+msgid "Initialize a Rate Limited User Wallet:"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:217
+msgid "Interval"
+msgstr ""
+
+#: src/components/WalletConnections.tsx:85
+msgid "List of connections is empty"
+msgstr ""
+
+#: src/components/WalletReceiveAddressField.tsx:40
+msgid "Loading..."
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:805
+#: src/components/did/WalletDID.tsx:805
+msgid "Manage Recovery DIDs"
+msgstr ""
+
+#: src/components/WalletsManageTokens.tsx:147
+msgid "Manage token list"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:170
+#: src/components/cat/WalletCATSend.tsx:231
+msgid "Memo"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:365
+msgid "Memos"
+msgstr ""
+
+#: src/components/WalletSendTransactionResultDialog.tsx:19
+msgid "Mempool Full"
+msgstr ""
+
+#: src/components/WalletConnections.tsx:55
+msgid "MiB Up/Down"
+msgstr ""
+
+#: src/constants/WalletName.ts:17
+msgid "Multi Sig Wallet"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:536
+#: src/components/did/WalletDID.tsx:536
+msgid "My DID Wallet"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:414
+msgid "My Pubkey"
+msgstr ""
+
+#: src/constants/WalletName.ts:35
+msgid "NFT Wallet"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:71
+msgid "Name"
+msgstr ""
+
+#: src/components/WalletReceiveAddress.tsx:48
+msgid "New Address"
+msgstr ""
+
+#: src/components/WalletAdd.tsx:73
+msgid "New Wallet"
+msgstr ""
+
+#: src/components/WalletAdd.tsx:107
+#: src/components/WalletImport.tsx:164
+msgid "Next"
+msgstr ""
+
+#: src/components/WalletRenameDialog.tsx:78
+msgid "Nickname"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:401
+msgid "No previous transactions"
+msgstr ""
+
+#: src/components/WalletConnections.tsx:23
+msgid "Node ID"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:350
+#: src/components/WalletHistory.tsx:360
+msgid "Not Available"
+msgstr ""
+
+#: src/components/WalletStatusHeader.tsx:38
+msgid "Not Connected"
+msgstr ""
+
+#: src/components/WalletStatus.tsx:39
+msgid "Not Synced"
+msgstr ""
+
+#: src/components/cat/WalletCATTAILDialog.tsx:82
+msgid "OK"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:184
+msgid "Offer Accepted"
+msgstr ""
+
+#: src/components/WalletSend.tsx:141
+#: src/components/cat/WalletCATSend.tsx:179
+msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
+msgstr ""
+
+#: src/components/did/WalletDIDRecovery.tsx:33
+msgid "Only one backup file is allowed."
+msgstr ""
+
+#: src/components/WalletHistory.tsx:93
+msgid "Outgoing"
+msgstr ""
+
+#: src/components/WalletImport.tsx:95
+msgid "Paste Mnemonic"
+msgstr ""
+
+#: src/components/PasteMnemonic.tsx:55
+msgid "Paste Mnemonic (24 words)"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:163
+msgid "Pending"
+msgstr ""
+
+#: src/components/card/WalletCardPendingBalance.tsx:36
+#: src/components/rateLimited/WalletRateLimited.jsx:572
+msgid "Pending Balance"
+msgstr ""
+
+#: src/components/card/WalletCardPendingChange.tsx:37
+#: src/components/rateLimited/WalletRateLimited.jsx:577
+msgid "Pending Change"
+msgstr ""
+
+#: src/components/card/WalletCardPendingTotalBalance.tsx:37
+#: src/components/rateLimited/WalletRateLimited.jsx:567
+msgid "Pending Total Balance"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:667
+msgid "Please enter 0 fee. Positive fees not supported yet for RL."
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:924
+#: src/components/did/WalletDID.tsx:924
+msgid "Please enter a coin"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:525
+#: src/components/cat/WalletDID.tsx:914
+#: src/components/did/WalletDID.tsx:525
+#: src/components/did/WalletDID.tsx:914
+msgid "Please enter a filename"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:934
+#: src/components/did/WalletDID.tsx:934
+msgid "Please enter a pubkey"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:944
+#: src/components/did/WalletDID.tsx:944
+msgid "Please enter a puzzlehash"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExisting.tsx:40
+msgid "Please enter a valid CAT name"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:41
+msgid "Please enter a valid asset id"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:139
+msgid "Please enter a valid initial coin amount"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:776
+#: src/components/did/WalletDID.tsx:776
+#: src/components/did/WalletDIDCreate.tsx:75
+msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
+msgstr ""
+
+#: src/components/WalletSend.tsx:93
+#: src/components/cat/WalletCATSend.tsx:104
+#: src/components/rateLimited/WalletRateLimited.jsx:638
+msgid "Please enter a valid numeric amount"
+msgstr ""
+
+#: src/components/did/WalletDIDCreate.tsx:49
+msgid "Please enter a valid numeric amount."
+msgstr ""
+
+#: src/components/WalletSend.tsx:98
+#: src/components/cat/WalletCATSend.tsx:109
+#: src/components/create/createRLAdmin.jsx:149
+#: src/components/rateLimited/WalletRateLimited.jsx:648
+msgid "Please enter a valid numeric fee"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:99
+msgid "Please enter a valid numeric interval length"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:114
+msgid "Please enter a valid numeric spendable amount"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:124
+msgid "Please enter a valid pubkey"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:45
+msgid "Please enter a valid token name"
+msgstr ""
+
+#: src/components/WalletRenameDialog.tsx:49
+msgid "Please enter valid wallet name"
+msgstr ""
+
+#: src/components/WalletSend.tsx:88
+#: src/components/cat/WalletCATSend.tsx:95
+#: src/components/rateLimited/WalletRateLimited.jsx:622
+msgid "Please finish syncing before making a transaction"
+msgstr ""
+
+#: src/components/did/WalletDIDRecovery.tsx:54
+msgid "Please select backup file first"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:37
+#: src/components/cat/WalletCATCreateSimple.tsx:37
+#: src/components/did/WalletDIDRecovery.tsx:63
+msgid "Please wait for wallet synchronization"
+msgstr ""
+
+#: src/constants/WalletName.ts:32
+msgid "Pooling Wallet"
+msgstr ""
+
+#: src/components/WalletConnections.tsx:33
+msgid "Port"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:993
+#: src/components/create/createRLAdmin.jsx:296
+#: src/components/did/WalletDID.tsx:993
+msgid "Pubkey"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:1002
+#: src/components/did/WalletDID.tsx:1002
+msgid "Puzzlehash"
+msgstr ""
+
+#: src/constants/WalletName.ts:8
+msgid "RL Wallet"
+msgstr ""
+
+#: src/components/create/WalletCreateList.tsx:45
+msgid "Rate Limited"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:390
+#: src/components/rateLimited/WalletRateLimited.jsx:437
+msgid "Rate Limited Info"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:272
+msgid "Rate Limited User Wallet Setup"
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:143
+msgid "Read the blog post for details"
+msgstr ""
+
+#: src/components/WalletHeader.tsx:60
+msgid "Receive"
+msgstr ""
+
+#: src/components/WalletReceiveAddress.tsx:35
+#: src/components/WalletReceiveAddressField.tsx:38
+msgid "Receive Address"
+msgstr ""
+
+#: src/components/cat/WalletCATSend.tsx:122
+msgid "Recipient address is not a coloured wallet address. Please enter a coloured wallet address"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExisting.tsx:104
+#: src/components/cat/WalletDID.tsx:463
+#: src/components/did/WalletDID.tsx:463
+#: src/components/did/WalletDIDRecovery.tsx:124
+msgid "Recover"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:338
+#: src/components/cat/WalletDID.tsx:479
+#: src/components/did/WalletDID.tsx:338
+#: src/components/did/WalletDID.tsx:479
+msgid "Recover DID Wallet"
+msgstr ""
+
+#: src/components/did/WalletDIDRecovery.tsx:83
+msgid "Recover Distributed Identity Wallet"
+msgstr ""
+
+#: src/components/did/WalletDIDSelect.tsx:39
+msgid "Recover Wallet"
+msgstr ""
+
+#: src/constants/WalletName.ts:26
+msgid "Recoverable Wallet"
+msgstr ""
+
+#: src/components/cat/WalletCATSelect.tsx:39
+msgid "Recovery Wallet"
+msgstr ""
+
+#: src/components/WalletRenameDialog.tsx:69
+#: src/components/cat/WalletCAT.tsx:102
+msgid "Rename Wallet"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:177
+msgid "Retire"
+msgstr ""
+
+#: src/components/WalletRenameDialog.tsx:98
+msgid "Save"
+msgstr ""
+
+#: src/components/WalletTokenCard.tsx:144
+#: src/components/cat/WalletCATTAILDialog.tsx:71
+msgid "Search on Tail Database"
+msgstr ""
+
+#: src/components/WalletsList.tsx:32
+#: src/components/hero/WalletHeroWallets.tsx:47
+msgid "Select Wallet"
+msgstr ""
+
+#: src/components/create/WalletCreateList.tsx:25
+msgid "Select Wallet Type"
+msgstr ""
+
+#: src/components/did/WalletDIDRecovery.tsx:90
+msgid "Selected recovery file:"
+msgstr ""
+
+#: src/components/WalletHeader.tsx:59
+#: src/components/WalletSend.tsx:196
+#: src/components/cat/WalletCATSend.tsx:250
+#: src/components/rateLimited/WalletRateLimited.jsx:747
+msgid "Send"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:459
+msgid "Send this info packet to your Rate Limited Wallet user who must use it to complete setup of their wallet:"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:278
+msgid "Send your pubkey to your Rate Limited Wallet admin:"
+msgstr ""
+
+#: src/components/cat/WalletCAT.tsx:116
+msgid "Show Asset Id"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:229
+msgid "Spendable Amount"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:201
+msgid "Spendable Amount Per Interval"
+msgstr ""
+
+#: src/components/card/WalletCardSpendableBalance.tsx:37
+#: src/components/rateLimited/WalletRateLimited.jsx:547
+msgid "Spendable Balance"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:395
+#: src/components/rateLimited/WalletRateLimited.jsx:442
+msgid "Spending Interval (number of blocks): {interval}"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:196
+msgid "Spending Interval Length (number of blocks)"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:400
+#: src/components/rateLimited/WalletRateLimited.jsx:447
+msgid "Spending Limit (maize per interval): {0}"
+msgstr ""
+
+#: src/constants/WalletName.ts:5
+msgid "Standard Wallet"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:886
+#: src/components/did/WalletDID.tsx:886
+#: src/components/rateLimited/WalletRateLimited.jsx:346
+msgid "Submit"
+msgstr ""
+
+#: src/components/WalletSendTransactionResultDialog.tsx:15
+msgid "Success"
+msgstr ""
+
+#: src/components/WalletHeader.tsx:58
+msgid "Summary"
+msgstr ""
+
+#: src/components/WalletStatus.tsx:44
+msgid "Synced"
+msgstr ""
+
+#: src/components/WalletStatus.tsx:49
+msgid "Syncing"
+msgstr ""
+
+#: src/components/card/WalletCardTotalBalance.tsx:65
+msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for XMZ, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:789
+#: src/components/did/WalletDID.tsx:789
+#: src/components/did/WalletDIDCreate.tsx:88
+msgid "The number of Backup IDs needed for recovery cannot exceed the number of Backup IDs added."
+msgstr ""
+
+#: src/components/WalletSendTransactionResultDialog.tsx:34
+msgid "The transaction could not be immediately included in the mempool because the specified fee is too low. The transaction will be retried periodically, and may be included in the mempool once fees are lower, or if space becomes available."
+msgstr ""
+
+#: src/components/WalletBadge.tsx:26
+msgid "This access token is verified"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:130
+msgid "This is not a valid address for sending funds to"
+msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:23
+msgid "This is the amount of Maize that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Maize that you have just spent but is not yet in the blockchain."
+msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:44
+msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
+msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:37
+msgid "This is the sum of the incoming and outgoing pending transactions (not yet included into the blockchain). This does not include farming rewards."
+msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:16
+msgid "This is the total amount of maize in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:31
+msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
+msgstr ""
+
+#: src/components/WalletHistory.tsx:191
+msgid "To"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExisting.tsx:85
+msgid "Token and Asset Issuance Limitations"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateSimple.tsx:45
+msgid "Token has empty asset id"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateSimple.tsx:41
+msgid "Token has empty name"
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:206
+msgid "Tokens"
+msgstr ""
+
+#: src/components/card/WalletCardTotalBalance.tsx:56
+#: src/components/rateLimited/WalletRateLimited.jsx:542
+msgid "Total Balance"
+msgstr ""
+
+#: src/components/WalletSendTransactionResultDialog.tsx:27
+msgid "Transaction has successfully been sent to a full node and included in the mempool."
+msgstr ""
+
+#: src/components/WalletHistory.tsx:308
+msgid "Transactions"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:280
+#: src/components/rateLimited/WalletRateLimited.jsx:292
+msgid "User Pubkey"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:561
+msgid "View pending balances"
+msgstr ""
+
+#: src/components/cat/WalletCAT.tsx:75
+#: src/components/cat/WalletDID.tsx:1118
+#: src/components/did/WalletDID.tsx:1118
+msgid "Wallet does not exists"
+msgstr ""
+
+#: src/components/Wallet.tsx:50
+msgid "Wallet with type {0} not supported"
+msgstr ""
+
+#: src/components/Wallet.tsx:23
+msgid "Wallet {walletId} not found"
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:148
+msgid "Want to see your old balance for yourself?"
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:114
+msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
+msgstr ""
+
+#: src/components/WalletAdd.tsx:76
+msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
+msgstr ""
+
+#: src/components/rateLimited/WalletRateLimited.jsx:315
+msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:110
+msgid "Your CAT tokens have been upgraded!"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:326
+#: src/components/did/WalletDID.tsx:326
+msgid "Your DID requires at least {dids_num_req} attestation file{0} for recovery. Please upload additional files."
+msgstr ""
+
+#: src/components/WalletImport.tsx:71
+msgid "Your pasted list does not include 24 valid mnemonic words."
+msgstr ""
+

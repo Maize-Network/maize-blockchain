@@ -1,4 +1,4 @@
-; See chia/types/condition_opcodes.py
+; See maize/types/condition_opcodes.py
 
 (
     (defconstant AGG_SIG_UNSAFE 49)
@@ -35,4 +35,7 @@
     ; block index
     (defconstant ASSERT_HEIGHT_RELATIVE 82)
     (defconstant ASSERT_HEIGHT_ABSOLUTE 83)
+
+    ; A condition that is always true and always ignore all arguments
+    (defconstant REMARK 1)
 )

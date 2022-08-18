@@ -1,0 +1,365 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-02-08 18:51+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: zh_CN\n"
+"Project-Id-Version: maize-blockchain\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-07-27 18:40\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: maize-blockchain\n"
+"X-Crowdin-Project-ID: 440660\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
+"X-Crowdin-File-ID: 1886\n"
+
+#: src/components/Amount/Amount.tsx:116
+msgid "Amount"
+msgstr "数量"
+
+#: src/components/Settings/SettingsApp.tsx:76
+msgid "Appearance"
+msgstr "界面"
+
+#: src/components/FormBackButton/FormBackButton.tsx:47
+#: src/screens/SelectKey/SelectKey.tsx:79
+#: src/screens/SelectKey/SelectKeyItem.tsx:93
+msgid "Back"
+msgstr "返回"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:147
+msgid "Can be backed up to mnemonic seed"
+msgstr "可备份为助记词"
+
+#: src/components/ConfirmDialog/ConfirmDialog.tsx:105
+#: src/hooks/useKeyringMigrationPrompt.tsx:17
+msgid "Cancel"
+msgstr "取消"
+
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:51
+msgid "Connected"
+msgstr "已连接"
+
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:42
+msgid "Copied"
+msgstr "已复制"
+
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:44
+msgid "Copy to Clipboard"
+msgstr "复制到剪贴板"
+
+#: src/screens/SelectKey/SelectKey.tsx:180
+msgid "Create a new private key"
+msgstr "创建新私钥"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:163
+msgid "DANGER: permanently delete private key"
+msgstr "注意：永久性删除私钥"
+
+#: src/components/Settings/SettingsApp.tsx:83
+msgid "Dark"
+msgstr "深色"
+
+#: src/screens/SelectKey/SelectKey.tsx:78
+#: src/screens/SelectKey/SelectKeyItem.tsx:92
+msgid "Delete"
+msgstr "删除"
+
+#: src/screens/SelectKey/SelectKey.tsx:202
+#: src/screens/SelectKey/SelectKey.tsx:77
+msgid "Delete all keys"
+msgstr "删除所有密钥"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:91
+msgid "Delete key {fingerprint}"
+msgstr "删除密钥 {fingerprint}"
+
+#: src/screens/SelectKey/SelectKey.tsx:83
+msgid "Deleting all keys will permanently remove the keys from your computer, make sure you have backups. Are you sure you want to continue?"
+msgstr "删除所有密钥将会把你的密钥从你的计算机中永久移除，请确保你已经将其备份。确定继续？"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:124
+msgid "Deleting the key will permanently remove the key from your computer, make sure you have backups. Are you sure you want to continue?"
+msgstr "删除此密钥将会把密钥从你的计算机中永久移除，请确保你已经将其备份。确定继续？"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:68
+msgid "Disable"
+msgstr "禁用"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:67
+msgid "Disable Passphrase Protection"
+msgstr "跳过私钥密码保护"
+
+#: src/components/Back/Back.tsx:35
+#: src/components/FormBackButton/FormBackButton.tsx:27
+msgid "Discard"
+msgstr "放弃"
+
+#: src/components/CardSimple/CardSimple.tsx:63
+#: src/hooks/useShowError.tsx:11
+msgid "Error"
+msgstr "错误"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:78
+msgid "Error:"
+msgstr "错误:"
+
+#: src/components/LayoutMain/LayoutFooter.tsx:50
+msgid "FAQ"
+msgstr "常见问题"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:67
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:67
+msgid "Farmer public key:"
+msgstr "农民公钥："
+
+#: src/components/Settings/SettingsApp.tsx:66
+msgid "Farming"
+msgstr "正在耕种"
+
+#: src/components/Fee/Fee.tsx:52
+msgid "Fee"
+msgstr "费用"
+
+#: src/components/Settings/SettingsApp.tsx:105
+msgid "Frequently Asked Questions"
+msgstr "常见问题解答"
+
+#: src/components/Settings/SettingsApp.tsx:101
+msgid "Help"
+msgstr "帮助"
+
+#: src/components/LocaleToggle/LocaleToggle.tsx:71
+msgid "Help translate"
+msgstr "改进翻译"
+
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:75
+msgid "Hide Advanced Options"
+msgstr "隐藏高级选项"
+
+#: src/screens/SelectKey/SelectKey.tsx:191
+msgid "Import from Mnemonics (24 words)"
+msgstr "自助记词导入（24个词）"
+
+#: src/components/Fee/Fee.tsx:40
+msgid "Incorrect value"
+msgstr "数值错误"
+
+#: src/components/Settings/SettingsApp.tsx:90
+msgid "Language"
+msgstr "语言"
+
+#: src/components/Settings/SettingsApp.tsx:80
+msgid "Light"
+msgstr "浅色"
+
+#: src/screens/SelectKey/SelectKey.tsx:116
+msgid "Loading list of the keys"
+msgstr "加载密钥列表"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+msgid "Log Out"
+msgstr "登出"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+msgid "Logout"
+msgstr "登出"
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:16
+msgid "Migrate"
+msgstr "迁移"
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:15
+msgid "Migration required"
+msgstr "需要迁移"
+
+#: src/components/Settings/SettingsApp.tsx:62
+msgid "Mode"
+msgstr "显示方式"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:49
+msgid "New passphrase is the same as your current passphrase"
+msgstr "新私钥密码与当前私钥密码相同"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:93
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:93
+msgid "No 24 word seed, since this key is imported."
+msgstr "没有24个助记词种子，因为此密钥已导入。"
+
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:52
+msgid "Not connected"
+msgstr "未连接"
+
+#: src/components/ConfirmDialog/ConfirmDialog.tsx:106
+msgid "OK"
+msgstr "确定"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:75
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:75
+msgid "Pool public key:"
+msgstr "奖励池公钥："
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:142
+msgid "Private key with public fingerprint {fingerprint}"
+msgstr "公共指纹为 {fingerprint} 的私钥"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:28
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:40
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:28
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:40
+msgid "Private key {fingerprint}"
+msgstr "私钥 {fingerprint}"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:51
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:51
+msgid "Private key:"
+msgstr "私钥:"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:59
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:59
+msgid "Public key:"
+msgstr "公钥："
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:91
+msgid "Reload Application"
+msgstr "重新加载程序"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:87
+msgid "Report an Issue"
+msgstr "反馈问题"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:151
+msgid "See private key"
+msgstr "查看私钥："
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:85
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:85
+msgid "Seed:"
+msgstr "种子："
+
+#: src/screens/SelectKey/SelectKey.tsx:135
+msgid "Select Key"
+msgstr "选择密钥"
+
+#: src/components/Dropdown/Dropdown.tsx:85
+msgid "Select..."
+msgstr "请选择..."
+
+#: src/components/LayoutMain/LayoutFooter.tsx:53
+#: src/components/Settings/SettingsApp.tsx:108
+msgid "Send Feedback"
+msgstr "发送反馈"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:61
+msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
+msgstr "强烈建议设置私钥密码以保护您的密钥。是否要跳过设置私钥密码？"
+
+#: src/components/Settings/Settings.tsx:48
+#: src/components/Settings/Settings.tsx:58
+msgid "Settings"
+msgstr "设置"
+
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:74
+msgid "Show Advanced Options"
+msgstr "显示高级选项"
+
+#: src/screens/SelectKey/SelectKey.tsx:140
+msgid "Sign In"
+msgstr "登录"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:59
+msgid "Skip"
+msgstr "跳过"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:58
+msgid "Skip Passphrase Protection"
+msgstr "跳过私钥密码保护"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:73
+msgid "Something went wrong"
+msgstr "出错了"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:31
+msgid "The provided passphrase and confirmation do not match"
+msgstr "提供的私钥密码跟确认的不匹配"
+
+#: src/utils/getTransactionResult.ts:15
+msgid "Transaction has not been sent to node yet"
+msgstr "交易尚未发送到节点"
+
+#: src/utils/getTransactionResult.ts:33
+msgid "Transaction has sent to a full node and is pending inclusion into the mempool. {0}"
+msgstr "交易已经发送到一个完整的节点，正在等待加入备注。 {0}"
+
+#: src/utils/getTransactionResult.ts:24
+msgid "Transaction has successfully been sent to a full node and included in the mempool."
+msgstr "交易已成功发送到一个完整的节点，并包含在备注库中。"
+
+#: src/screens/SelectKey/SelectKey.tsx:123
+msgid "Try Again"
+msgstr "请重试"
+
+#: src/screens/SelectKey/SelectKey.tsx:127
+msgid "Unable to load the list of the keys"
+msgstr "无法加载密钥列表"
+
+#: src/components/LocaleToggle/LocaleToggle.tsx:48
+msgid "Unknown"
+msgstr "未知"
+
+#: src/components/Back/Back.tsx:34
+#: src/components/FormBackButton/FormBackButton.tsx:26
+msgid "Unsaved Changes"
+msgstr "未保存的更改"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:70
+msgid "Using a passphrase is strongly recommended to protect your keys. Are you sure you want to disable passphrase protection?"
+msgstr "强烈建议设置私钥密码以保护您的密钥。是否要跳过禁用私钥密码？"
+
+#: src/components/Fee/Fee.tsx:32
+msgid "Value seems high"
+msgstr "值似乎过高"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/Settings/SettingsApp.tsx:69
+msgid "Wallet"
+msgstr "钱包"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:117
+msgid "Warning: This key is used for a wallet that may have a non-zero balance. By deleting this key you may lose access to this wallet"
+msgstr "警告：此密钥用于可能有余额的钱包。删除此密钥可能会无法访问此钱包。"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:99
+msgid "Warning: This key is used for your farming rewards address. By deleting this key you may lose access to any future farming rewards"
+msgstr "警告：此密钥用于耕作奖励地址。删除此密钥后可能会无法提取将来的耕作奖励。"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:108
+msgid "Warning: This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
+msgstr "警告：此密钥用于池奖励地址。删除此密钥可能会无法获得将来的池奖励。"
+
+#: src/screens/SelectKey/SelectKey.tsx:143
+msgid "Welcome to Maize. Please log in with an existing key, or create a new key."
+msgstr "欢迎来到奇亚。请用已有的密钥登录，或者创建一个新的密钥。"
+
+#: src/components/Back/Back.tsx:38
+#: src/components/FormBackButton/FormBackButton.tsx:30
+msgid "You have made changes. Do you want to discard them?"
+msgstr "你已经做了一些更改。你确定要放弃这些修改吗？"
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:20
+msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
+msgstr "您的密钥尚未迁移到新的密钥串。在迁移完成之前，您将无法创建新密钥或删除现有密钥。您想要现在迁移密钥吗？"
+
+#: src/components/Amount/Amount.tsx:98
+msgid "{0, plural, one {mojo} other {mojos}}"
+msgstr "{0, plural, one {mojo} other {mojos}}"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:39
+msgid "{minPassphraseLength, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
+msgstr "{minPassphraseLength, plural, other {密码长度必须至少为 # 个字符}}"

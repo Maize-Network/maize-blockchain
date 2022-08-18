@@ -10,10 +10,12 @@ SERVICES_FOR_GROUP = {
     "timelord": "maize_timelord_launcher maize_timelord maize_full_node".split(),
     "timelord-only": "maize_timelord".split(),
     "timelord-launcher-only": "maize_timelord_launcher".split(),
-    "wallet": "maize_wallet maize_full_node".split(),
-    "wallet-only": "maize_wallet".split(),
+    "wallet": "maize_wallet".split(),
     "introducer": "maize_introducer".split(),
     "simulator": "maize_full_node_simulator".split(),
+    "crawler": "maize_crawler".split(),
+    "seeder": "maize_crawler maize_seeder".split(),
+    "seeder-only": "maize_seeder".split(),
 }
 
 
