@@ -1,9 +1,12 @@
 #!/bin/bash
-pip install setuptools_scm
-# The environment variable MAIZE_INSTALLER_VERSION needs to be defined.
+
+set -o errexit -o nounset
+
+git status
+git submodule
+
 # If the env variable NOTARIZE and the username and password variables are
 # set, this will attempt to Notarize the signed DMG.
-MAIZE_INSTALLER_VERSION=$(python installer-version.py)
 
 if [ ! "$MAIZE_INSTALLER_VERSION" ]; then
 	echo "WARNING: No environment variable MAIZE_INSTALLER_VERSION set. Using 0.0.0."
@@ -12,17 +15,16 @@ fi
 echo "Maize Installer Version is: $MAIZE_INSTALLER_VERSION"
 
 echo "Installing npm and electron packagers"
-npm install electron-installer-dmg -g
-npm install electron-packager -g
-npm install electron/electron-osx-sign -g
-npm install notarize-cli -g
+cd npm_macos || exit
+npm ci
+PATH=$(npm bin):$PATH
+cd .. || exit
 
 echo "Create dist/"
 sudo rm -rf dist
 mkdir dist
 
 echo "Create executables with pyinstaller"
-pip install pyinstaller==4.2
 SPEC_FILE=$(python -c 'import maize; print(maize.PYINSTALLER_SPEC_PATH)')
 pyinstaller --log-level=INFO "$SPEC_FILE"
 LAST_EXIT_CODE=$?
@@ -30,31 +32,38 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	echo >&2 "pyinstaller failed!"
 	exit $LAST_EXIT_CODE
 fi
-cp -r dist/daemon ../maize-blockchain-gui
-cd .. || exit
-cd maize-blockchain-gui || exit
+cp -r dist/daemon ../maize-blockchain-gui/packages/gui
 
-echo "npm build"
-npm install
-npm audit fix
-npm run build
-LAST_EXIT_CODE=$?
-if [ "$LAST_EXIT_CODE" -ne 0 ]; then
-	echo >&2 "npm run build failed!"
-	exit $LAST_EXIT_CODE
-fi
+# Change to the gui package
+cd ../maize-blockchain-gui/packages/gui || exit
 
+# sets the version for maize-blockchain in package.json
+brew install jq
+cp package.json package.json.orig
+jq --arg VER "$MAIZE_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
+
+echo "electron-packager"
 electron-packager . Maize --asar.unpack="**/daemon/**" --platform=darwin \
---icon=src/assets/img/Chia.icns --overwrite --app-bundle-id=net.maize.blockchain \
---appVersion=$MAIZE_INSTALLER_VERSION
+--icon=src/assets/img/maize.icns --overwrite --app-bundle-id=net.maize.blockchain \
+--appVersion=$MAIZE_INSTALLER_VERSION \
+--no-prune --no-deref-symlinks \
+--ignore="/node_modules/(?!ws(/|$))(?!@electron(/|$))" --ignore="^/src$" --ignore="^/public$"
 LAST_EXIT_CODE=$?
+# Note: `node_modules/ws` and `node_modules/@electron/remote` are dynamic dependencies
+# which GUI calls by `window.require('...')` at runtime.
+# So `ws` and `@electron/remote` cannot be ignored at this time.
+ls -l "${MAC_PACKAGE_NAME}/Maize.app/Contents/Resources/app.asar"
+
+# reset the package.json to the original
+mv package.json.orig package.json
+
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	echo >&2 "electron-packager failed!"
 	exit $LAST_EXIT_CODE
 fi
 
-if [ "$NOTARIZE" ]; then
-  electron-osx-sign Maize-darwin-x64/Maize.app --platform=darwin \
+if [ "$NOTARIZE" == true ]; then
+  electron-osx-sign "${MAC_PACKAGE_NAME}/Maize.app" --platform=darwin \
   --hardened-runtime=true --provisioning-profile=maizeblockchain.provisionprofile \
   --entitlements=entitlements.mac.plist --entitlements-inherit=entitlements.mac.plist \
   --no-gatekeeper-assess
@@ -65,24 +74,25 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	exit $LAST_EXIT_CODE
 fi
 
-mv Maize-darwin-x64 ../build_scripts/dist/
-cd ../build_scripts || exit
+mv "$MAC_PACKAGE_NAME" ../../../build_scripts/dist/
+cd ../../../build_scripts || exit
 
-DMG_NAME="Maize-$MAIZE_INSTALLER_VERSION.dmg"
+DMG_NAME="Maize-${MAIZE_INSTALLER_VERSION}${MAC_FILE_SUFFIX}.dmg"
 echo "Create $DMG_NAME"
 mkdir final_installer
-electron-installer-dmg dist/Maize-darwin-x64/Maize.app Maize-$MAIZE_INSTALLER_VERSION \
---overwrite --out final_installer
+NODE_PATH=./npm_macos/node_modules node build_dmg.js "dist/$MAC_PACKAGE_NAME/Maize.app" "${MAIZE_INSTALLER_VERSION}${MAC_FILE_SUFFIX}"
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	echo >&2 "electron-installer-dmg failed!"
 	exit $LAST_EXIT_CODE
 fi
 
-if [ "$NOTARIZE" ]; then
+ls -lh final_installer
+
+if [ "$NOTARIZE" == true ]; then
 	echo "Notarize $DMG_NAME on ci"
 	cd final_installer || exit
-  notarize-cli --file=$DMG_NAME --bundle-id net.maize.blockchain \
+  notarize-cli --file="$DMG_NAME" --bundle-id net.maize.blockchain \
 	--username "$APPLE_NOTARIZE_USERNAME" --password "$APPLE_NOTARIZE_PASSWORD"
   echo "Notarization step complete"
 else
