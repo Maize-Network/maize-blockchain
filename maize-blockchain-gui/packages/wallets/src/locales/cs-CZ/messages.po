@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-02-08 18:51+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: cs_CZ\n"
+"Project-Id-Version: maize-blockchain\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-07-27 18:38\n"
+"Last-Translator: \n"
+"Language-Team: Czech\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Crowdin-Project: maize-blockchain\n"
+"X-Crowdin-Project-ID: 440660\n"
+"X-Crowdin-Language: cs\n"
+"X-Crowdin-File: /main/packages/wallets/src/locales/en-US/messages.po\n"
+"X-Crowdin-File-ID: 1890\n"
+
+#: src/components/WalletHistory.tsx:210
+msgid "+"
+msgstr "+"
+
+#: src/components/WalletHistory.tsx:210
+msgid "-"
+msgstr "-"
+
+#: src/components/WalletHeader.tsx:74
+msgid "Actions"
+msgstr "Akce"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:96
+msgid "Add"
+msgstr "Přidat"
+
+#: src/components/cat/WalletDID.tsx:874
+#: src/components/did/WalletDID.tsx:874
+#: src/components/did/WalletDIDCreate.tsx:205
+msgid "Add Backup ID"
+msgstr "Přidat ID zálohy"
+
+#: src/components/hero/WalletHeroAdd.tsx:99
+msgid "Add Custom Token"
+msgstr "Přidat vlastní Token"
+
+#: src/components/WalletsList.tsx:54
+#: src/components/WalletsManageTokens.tsx:170
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:61
+#: src/components/cat/WalletCATCreateSimple.tsx:70
+#: src/components/hero/WalletHeroAdd.tsx:64
+#: src/components/hero/WalletHeroWallets.tsx:83
+msgid "Add Token"
+msgstr "Přidat token"
+
+#: src/components/cat/WalletCATCreateSimple.tsx:94
+msgid "Adding {0} token"
+msgstr "Přidávání {0} tokenů"
+
+#: src/components/WalletReceiveAddress.tsx:76
+msgid "Address"
+msgstr "Adresa"
+
+#: src/components/WalletSend.tsx:156
+#: src/components/cat/WalletCATSend.tsx:195
+#: src/components/rateLimited/WalletRateLimited.jsx:700
+msgid "Address / Puzzle hash"
+msgstr "Adresa / Hash šifry"
+
+#: src/components/WalletHistory.tsx:226
+#: src/components/WalletSend.tsx:167
+#: src/components/cat/WalletCATSend.tsx:207
+#: src/components/rateLimited/WalletRateLimited.jsx:719
+msgid "Amount"
+msgstr "Částka"
+
+#: src/components/create/createRLAdmin.jsx:238
+msgid "Amount For Initial Coin"
+msgstr "Částka pro počáteční minci"
+
+#: src/components/did/WalletDIDCreate.tsx:61
+msgid "Amount must be an even amount."
+msgstr "Částka musí být sudá částka."
+
+#: src/components/WalletHeader.tsx:42
+msgid "Are you sure you want to delete unconfirmed transactions?"
+msgstr "Opravdu chcete odstranit nepotvrzenou transakci?"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:80
+#: src/components/cat/WalletCATTAILDialog.tsx:43
+#: src/components/cat/WalletCATTAILDialog.tsx:55
+msgid "Asset Id"
+msgstr "ID aktiva"
+
+#: src/constants/WalletName.ts:11
+msgid "Atomic Swap Wallet"
+msgstr ""
+
+#: src/constants/WalletName.ts:14
+msgid "Authorized Payee Wallet"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:646
+#: src/components/did/WalletDID.tsx:646
+#: src/components/rateLimited/WalletRateLimited.jsx:540
+msgid "Balance"
+msgstr "Zůstatek"
+
+#: src/components/PasteMnemonic.tsx:78
+#: src/components/WalletRenameDialog.tsx:90
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: src/components/WalletSend.tsx:103
+#: src/components/cat/WalletCATSend.tsx:118
+msgid "Cannot send maize to coloured address. Please enter a maize address."
+msgstr "Maize nelze odeslat na barevnou adresu. Zadejte prosím běžnou Maize adresu."
+
+#: src/components/WalletsSidebar.tsx:145
+msgid "Check my snapshot balance"
+msgstr ""
+
+#: src/components/cat/WalletCATSelect.tsx:25
+#: src/components/create/WalletCreateList.tsx:32
+#: src/constants/WalletName.ts:23
+msgid "Maize Asset Token"
+msgstr "Maize Asset Token"
+
+#: src/components/WalletsSidebar.tsx:160
+msgid "Click here to download an older version of the wallet"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:984
+#: src/components/did/WalletDID.tsx:984
+msgid "Coin Name"
+msgstr "Název mince"
+
+#: src/components/WalletHeader.tsx:37
+msgid "Confirmation"
+msgstr "Potvrzení"
+
+#: src/components/WalletHistory.tsx:156
+msgid "Confirmed"
+msgstr "Potvrzeno"
+
+#: src/components/WalletHistory.tsx:356
+msgid "Confirmed at Height"
+msgstr "Potvrzeno ve výšce"
+
+#: src/components/WalletStatusHeader.tsx:40
+#~ msgid "Connected ({0})"
+#~ msgstr "Připojeno ({0})"
+
+#: src/components/WalletConnections.tsx:62
+msgid "Connection type"
+msgstr "Typ připojení"
+
+#: src/components/WalletConnections.tsx:80
+#~ msgid "Connections"
+#~ msgstr "Připojení"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:305
+#: src/components/rateLimited/WalletRateLimited.jsx:427
+#: src/components/rateLimited/WalletRateLimited.jsx:484
+msgid "Copy"
+msgstr "Kopírovat"
+
+#: src/components/cat/WalletCATCreateNew.tsx:101
+#: src/components/create/createRLAdmin.jsx:306
+#: src/components/create/createRLUser.jsx:99
+#: src/components/did/WalletDIDCreate.tsx:218
+msgid "Create"
+msgstr "Vytvořit"
+
+#: src/components/cat/WalletDID.tsx:967
+#: src/components/did/WalletDID.tsx:967
+msgid "Create An Attestation Packet"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExisting.tsx:76
+msgid "Create Maize Asset Token Wallet from Existing TAIL"
+msgstr "Vytvořit Maize Asset Token Peněženku z existující TAIL"
+
+#: src/components/did/WalletDIDCreate.tsx:109
+msgid "Create Distributed Identity Wallet"
+msgstr "Vytvořit peněženku distribuované identity"
+
+#: src/components/cat/WalletCATCreateNew.tsx:75
+msgid "Create New Maize Asset Token Wallet"
+msgstr "Vytvořit novou Maize Asset Token peněženku"
+
+#: src/components/cat/WalletCATSelect.tsx:32
+#: src/components/did/WalletDIDSelect.tsx:32
+msgid "Create New Wallet"
+msgstr "Vytvořit novou peněženku"
+
+#: src/components/cat/WalletCAT.tsx:129
+#: src/components/standard/WalletStandard.tsx:54
+msgid "Create Offer"
+msgstr ""
+
+#: src/components/create/createRLAdmin.jsx:187
+msgid "Create Rate Limited Admin Wallet"
+msgstr "Vytvořit limitovanou administrátorskou peněženku"
+
+#: src/components/create/createRLUser.jsx:78
+msgid "Create Rate Limited User Wallet"
+msgstr "Vytvořit limitovanou uživatelskou peněženku"
+
+#: src/components/WalletSend.tsx:138
+#: src/components/cat/WalletCATSend.tsx:176
+#: src/components/rateLimited/WalletRateLimited.jsx:683
+msgid "Create Transaction"
+msgstr "Vytvořit transakci"
+
+#: src/components/cat/WalletCATCreateExisting.tsx:75
+msgid "Create custom CAT Wallet"
+msgstr "Vytvořit vlastní CAT peněženku"
+
+#: src/constants/WalletName.ts:20
+msgid "Custody Wallet"
+msgstr "Správcovská (custody) peněženka"
+
+#: src/components/cat/WalletCATCreateSimple.tsx:102
+msgid "Custom"
+msgstr "Vlastní"
+
+#: src/constants/WalletName.ts:29
+msgid "DID Wallet"
+msgstr "DID Peněženka"
+
+#: src/components/WalletHistory.tsx:199
+msgid "Date"
+msgstr "Datum"
+
+#: src/components/WalletHeader.tsx:38
+#: src/components/cat/WalletDID.tsx:448
+#: src/components/cat/WalletDID.tsx:862
+#: src/components/did/WalletDID.tsx:448
+#: src/components/did/WalletDID.tsx:862
+#: src/components/did/WalletDIDCreate.tsx:194
+#: src/components/did/WalletDIDRecovery.tsx:101
+msgid "Delete"
+msgstr "Odstranit"
+
+#: src/components/WalletHeader.tsx:87
+msgid "Delete Unconfirmed Transactions"
+msgstr "Odstranit nepotvrzené transakce"
+
+#: src/components/card/WalletCardTotalBalance.tsx:63
+msgid "Derivation Index: {0}"
+msgstr ""
+
+#: src/components/create/WalletCreateList.tsx:39
+#: src/components/did/WalletDIDSelect.tsx:25
+msgid "Distributed Identity"
+msgstr "Distribuovaná identita"
+
+#: src/components/cat/WalletDID.tsx:426
+#: src/components/did/WalletDID.tsx:426
+msgid "Drag and drop attestation packet(s)"
+msgstr ""
+
+#: src/components/did/WalletDIDRecovery.tsx:109
+msgid "Drag and drop your recovery backup file"
+msgstr "Přetáhněte záložní soubor obnovy"
+
+#: src/components/WalletImport.tsx:133
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your Maize wallet."
+msgstr "Zadejte 24 slov, které jste si poznamenali při zakládání vaší Maize peněženky."
+
+#: src/components/cat/WalletCATSend.tsx:128
+msgid "Error the entered address appears to be for a different colour."
+msgstr "Chyba zadaná adresa se zdá být pro jinou barvu."
+
+#: src/components/WalletSend.tsx:189
+#: src/components/cat/WalletCATSend.tsx:244
+msgid "Farm"
+msgstr "Farma"
+
+#: src/components/WalletHistory.tsx:238
+#: src/components/WalletSend.tsx:179
+#: src/components/cat/WalletCATSend.tsx:221
+#: src/components/create/createRLAdmin.jsx:243
+#: src/components/create/createRLAdmin.jsx:271
+#: src/components/rateLimited/WalletRateLimited.jsx:732
+msgid "Fee"
+msgstr "Poplatek"
+
+#: src/components/cat/WalletDID.tsx:975
+#: src/components/did/WalletDID.tsx:975
+msgid "Filename"
+msgstr "Název souboru"
+
+#: src/components/WalletReceiveAddress.tsx:49
+msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefore wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
+msgstr "HD nebo Hierarchické Deterministické klíče jsou typy veřejného/soukromého klíče, kde jeden soukromý klíč může mít téměř nekonečný počet různých veřejných klíčů (a tedy i příchozích adres peněženky), které se váží k jedinému soukromému klíči a mohou tak být utráceny."
+
+#: src/components/WalletConnections.tsx:27
+msgid "IP address"
+msgstr "IP adresa"
+
+#: src/components/WalletSendTransactionResultDialog.tsx:41
+msgid "If you would like to speed up the transaction, please delete unconfirmed transactions and retry with a higher fee."
+msgstr "Pokud chcete urychlit transakci, odstraňte prosím nepotvrzené transakce a zkuste to znovu s vyšším poplatkem."
+
+#: src/components/PasteMnemonic.tsx:86
+msgid "Import"
+msgstr "Import"
+
+#: src/components/WalletImport.tsx:130
+msgid "Import Wallet from Mnemonics"
+msgstr "Importovat peněženku"
+
+#: src/components/WalletHistory.tsx:93
+msgid "Incoming"
+msgstr "Příchozí"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:332
+#: src/components/rateLimited/WalletRateLimited.jsx:471
+msgid "Info Packet"
+msgstr "Informační Paket"
+
+#: src/components/create/createRLAdmin.jsx:259
+msgid "Initial Amount"
+msgstr "Počáteční částka"
+
+#: src/components/create/createRLUser.jsx:87
+msgid "Initialize a Rate Limited User Wallet:"
+msgstr "Inicializovat uživatelskou peněženku s omezenou sazbou:"
+
+#: src/components/create/createRLAdmin.jsx:217
+msgid "Interval"
+msgstr "Interval"
+
+#: src/components/WalletConnections.tsx:85
+msgid "List of connections is empty"
+msgstr "Seznam připojení je prázdný"
+
+#: src/components/WalletReceiveAddressField.tsx:40
+msgid "Loading..."
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:805
+#: src/components/did/WalletDID.tsx:805
+msgid "Manage Recovery DIDs"
+msgstr "Správa DID obnovení"
+
+#: src/components/WalletsManageTokens.tsx:147
+msgid "Manage token list"
+msgstr "Spravovat seznam tokenů"
+
+#: src/components/WalletHistory.tsx:170
+#: src/components/cat/WalletCATSend.tsx:234
+msgid "Memo"
+msgstr ""
+
+#: src/components/WalletHistory.tsx:365
+msgid "Memos"
+msgstr ""
+
+#: src/components/WalletSendTransactionResultDialog.tsx:19
+msgid "Mempool Full"
+msgstr "Mempool plný"
+
+#: src/components/WalletConnections.tsx:55
+msgid "MiB Up/Down"
+msgstr "MiB odesláno/přijato"
+
+#: src/constants/WalletName.ts:17
+msgid "Multi Sig Wallet"
+msgstr "Více podpisová peněženka"
+
+#: src/components/cat/WalletDID.tsx:536
+#: src/components/did/WalletDID.tsx:536
+msgid "My DID Wallet"
+msgstr "Má DID peněženka"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:414
+msgid "My Pubkey"
+msgstr "Můj Pubkey"
+
+#: src/constants/WalletName.ts:35
+msgid "NFT Wallet"
+msgstr ""
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:71
+msgid "Name"
+msgstr "Název"
+
+#: src/components/WalletReceiveAddress.tsx:64
+msgid "New Address"
+msgstr "Nová adresa"
+
+#: src/components/WalletAdd.tsx:73
+msgid "New Wallet"
+msgstr "Nová peněženka"
+
+#: src/components/WalletAdd.tsx:107
+#: src/components/WalletImport.tsx:164
+msgid "Next"
+msgstr "Další"
+
+#: src/components/WalletRenameDialog.tsx:78
+msgid "Nickname"
+msgstr "Uživatelské jméno"
+
+#: src/components/WalletHistory.tsx:401
+msgid "No previous transactions"
+msgstr "Žádné předchozí transakce"
+
+#: src/components/WalletConnections.tsx:23
+msgid "Node ID"
+msgstr "ID uzlu"
+
+#: src/components/WalletHistory.tsx:350
+#: src/components/WalletHistory.tsx:360
+msgid "Not Available"
+msgstr "Nedostupný"
+
+#: src/components/WalletStatusHeader.tsx:38
+#~ msgid "Not Connected"
+#~ msgstr "Nepřipojeno"
+
+#: src/components/WalletStatus.tsx:57
+msgid "Not Synced"
+msgstr " Není synchronizováno"
+
+#: src/components/cat/WalletCATTAILDialog.tsx:82
+msgid "OK"
+msgstr "OK"
+
+#: src/components/WalletHistory.tsx:184
+msgid "Offer Accepted"
+msgstr "Nabídka přijata"
+
+#: src/components/WalletSend.tsx:141
+#: src/components/cat/WalletCATSend.tsx:179
+msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
+msgstr "Mezi každým transakčním blokem je v průměru jedna minuta. Pokud nedojde ke zdržení z důvodu přetížení, zpracování vaší transakce proběhne zhruba do minuty."
+
+#: src/components/did/WalletDIDRecovery.tsx:33
+msgid "Only one backup file is allowed."
+msgstr "Povolen pouze jeden záložní soubor."
+
+#: src/components/WalletHistory.tsx:93
+msgid "Outgoing"
+msgstr "Odchozí"
+
+#: src/components/WalletImport.tsx:95
+msgid "Paste Mnemonic"
+msgstr "Vložit Mnemonic"
+
+#: src/components/PasteMnemonic.tsx:55
+msgid "Paste Mnemonic (24 words)"
+msgstr "Vložit Mnemonic (24 slov)"
+
+#: src/components/WalletHistory.tsx:163
+msgid "Pending"
+msgstr "Čeká na vyřízení"
+
+#: src/components/card/WalletCardPendingBalance.tsx:36
+#: src/components/rateLimited/WalletRateLimited.jsx:572
+msgid "Pending Balance"
+msgstr "Nevyřízený zůstatek"
+
+#: src/components/card/WalletCardPendingChange.tsx:37
+#: src/components/rateLimited/WalletRateLimited.jsx:577
+msgid "Pending Change"
+msgstr "Nevyřízená změna"
+
+#: src/components/card/WalletCardPendingTotalBalance.tsx:37
+#: src/components/rateLimited/WalletRateLimited.jsx:567
+msgid "Pending Total Balance"
+msgstr "Nevyřízený celkový zůstatek"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:667
+msgid "Please enter 0 fee. Positive fees not supported yet for RL."
+msgstr "Zadejte 0 poplatek. Kladné poplatky ještě nejsou pro RL podporovány."
+
+#: src/components/cat/WalletDID.tsx:924
+#: src/components/did/WalletDID.tsx:924
+msgid "Please enter a coin"
+msgstr "Prosím zadejte minci"
+
+#: src/components/cat/WalletDID.tsx:525
+#: src/components/cat/WalletDID.tsx:914
+#: src/components/did/WalletDID.tsx:525
+#: src/components/did/WalletDID.tsx:914
+msgid "Please enter a filename"
+msgstr "Prosím zadejte název souboru"
+
+#: src/components/cat/WalletDID.tsx:934
+#: src/components/did/WalletDID.tsx:934
+msgid "Please enter a pubkey"
+msgstr "Prosím zadejte pubkey"
+
+#: src/components/cat/WalletDID.tsx:944
+#: src/components/did/WalletDID.tsx:944
+msgid "Please enter a puzzlehash"
+msgstr "Prosím zadejte puzzlehash"
+
+#: src/components/cat/WalletCATCreateExisting.tsx:40
+msgid "Please enter a valid CAT name"
+msgstr "Zadejte prosím platný CAT název"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:41
+msgid "Please enter a valid asset id"
+msgstr "Zadejte prosím platné ID aktiva"
+
+#: src/components/create/createRLAdmin.jsx:139
+msgid "Please enter a valid initial coin amount"
+msgstr "Prosím, zadejte platné množství"
+
+#: src/components/cat/WalletDID.tsx:776
+#: src/components/did/WalletDID.tsx:776
+#: src/components/did/WalletDIDCreate.tsx:75
+msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
+msgstr "Zadejte prosím platné celé číslo 0 a více pro počet záložních ID potřebných pro obnovení."
+
+#: src/components/WalletSend.tsx:93
+#: src/components/cat/WalletCATSend.tsx:104
+#: src/components/rateLimited/WalletRateLimited.jsx:638
+msgid "Please enter a valid numeric amount"
+msgstr "Prosím, zadejte platné množství"
+
+#: src/components/did/WalletDIDCreate.tsx:49
+msgid "Please enter a valid numeric amount."
+msgstr "Prosím zadejte platnou číselnou hodnotu."
+
+#: src/components/WalletSend.tsx:98
+#: src/components/cat/WalletCATSend.tsx:109
+#: src/components/create/createRLAdmin.jsx:149
+#: src/components/rateLimited/WalletRateLimited.jsx:648
+msgid "Please enter a valid numeric fee"
+msgstr "Prosím, zadejte platnou číselnou hodnotu"
+
+#: src/components/create/createRLAdmin.jsx:99
+msgid "Please enter a valid numeric interval length"
+msgstr "Prosím, zadejte platnou číselnou hodnotu"
+
+#: src/components/create/createRLAdmin.jsx:114
+msgid "Please enter a valid numeric spendable amount"
+msgstr "Zadejte prosím platnou číselnou částku, která je k dispozici"
+
+#: src/components/create/createRLAdmin.jsx:124
+msgid "Please enter a valid pubkey"
+msgstr "Zadejte prosím platný pubkey"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:45
+msgid "Please enter a valid token name"
+msgstr "Zadejte prosím platný název tokenu"
+
+#: src/components/WalletRenameDialog.tsx:49
+msgid "Please enter valid wallet name"
+msgstr "Zadejte prosím platný název peněženky"
+
+#: src/components/WalletSend.tsx:88
+#: src/components/cat/WalletCATSend.tsx:95
+#: src/components/rateLimited/WalletRateLimited.jsx:622
+msgid "Please finish syncing before making a transaction"
+msgstr "Prosím dokončete synchronizaci před provedením transakce"
+
+#: src/components/did/WalletDIDRecovery.tsx:54
+msgid "Please select backup file first"
+msgstr "Nejprve prosím zvolte záložní soubor"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:37
+#: src/components/cat/WalletCATCreateSimple.tsx:37
+#: src/components/did/WalletDIDRecovery.tsx:63
+msgid "Please wait for wallet synchronization"
+msgstr "Počkejte prosím na synchronizaci peněženky"
+
+#: src/constants/WalletName.ts:32
+msgid "Pooling Wallet"
+msgstr ""
+
+#: src/components/WalletConnections.tsx:33
+msgid "Port"
+msgstr "Port"
+
+#: src/components/cat/WalletDID.tsx:993
+#: src/components/create/createRLAdmin.jsx:296
+#: src/components/did/WalletDID.tsx:993
+msgid "Pubkey"
+msgstr "Veřejný klíč"
+
+#: src/components/cat/WalletDID.tsx:1002
+#: src/components/did/WalletDID.tsx:1002
+msgid "Puzzlehash"
+msgstr ""
+
+#: src/constants/WalletName.ts:8
+msgid "RL Wallet"
+msgstr ""
+
+#: src/components/create/WalletCreateList.tsx:45
+msgid "Rate Limited"
+msgstr "Rychlost omezena"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:390
+#: src/components/rateLimited/WalletRateLimited.jsx:437
+msgid "Rate Limited Info"
+msgstr "Info o omezení rychlosti"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:272
+msgid "Rate Limited User Wallet Setup"
+msgstr "Nastavení uživatelské peněženky s omezenou rychlostí"
+
+#: src/components/WalletsSidebar.tsx:152
+msgid "Read the blog post for details"
+msgstr ""
+
+#: src/components/WalletHeader.tsx:60
+msgid "Receive"
+msgstr "Přijmout"
+
+#: src/components/WalletReceiveAddress.tsx:46
+#: src/components/WalletReceiveAddressField.tsx:38
+msgid "Receive Address"
+msgstr "Adresa příjemce"
+
+#: src/components/cat/WalletCATSend.tsx:122
+msgid "Recipient address is not a coloured wallet address. Please enter a coloured wallet address"
+msgstr "Adresa příjemce není barevná adresa peněženky. Zadejte prosím adresu barevné peněženky"
+
+#: src/components/cat/WalletCATCreateExisting.tsx:104
+#: src/components/cat/WalletDID.tsx:463
+#: src/components/did/WalletDID.tsx:463
+#: src/components/did/WalletDIDRecovery.tsx:124
+msgid "Recover"
+msgstr "Obnovit"
+
+#: src/components/cat/WalletDID.tsx:338
+#: src/components/cat/WalletDID.tsx:479
+#: src/components/did/WalletDID.tsx:338
+#: src/components/did/WalletDID.tsx:479
+msgid "Recover DID Wallet"
+msgstr "Obnovit DID peněženku"
+
+#: src/components/did/WalletDIDRecovery.tsx:83
+msgid "Recover Distributed Identity Wallet"
+msgstr "Obnovit peněženku distribuované identity"
+
+#: src/components/did/WalletDIDSelect.tsx:39
+msgid "Recover Wallet"
+msgstr "Obnovit peněženku"
+
+#: src/constants/WalletName.ts:26
+msgid "Recoverable Wallet"
+msgstr "Obnovitelná peněženka"
+
+#: src/components/cat/WalletCATSelect.tsx:39
+msgid "Recovery Wallet"
+msgstr "Obnovit peněženku"
+
+#: src/components/WalletRenameDialog.tsx:69
+#: src/components/cat/WalletCAT.tsx:102
+msgid "Rename Wallet"
+msgstr "Přejmenovat peněženku"
+
+#: src/components/WalletHistory.tsx:177
+msgid "Retire"
+msgstr ""
+
+#: src/components/WalletRenameDialog.tsx:98
+msgid "Save"
+msgstr "Uložit"
+
+#: src/components/WalletTokenCard.tsx:144
+#: src/components/cat/WalletCATTAILDialog.tsx:71
+msgid "Search on Tail Database"
+msgstr "Hledat v Tail databázi"
+
+#: src/components/WalletsList.tsx:32
+#: src/components/hero/WalletHeroWallets.tsx:47
+msgid "Select Wallet"
+msgstr "Vybrat peněženku"
+
+#: src/components/create/WalletCreateList.tsx:25
+msgid "Select Wallet Type"
+msgstr "Zvolte typ peněženky"
+
+#: src/components/did/WalletDIDRecovery.tsx:90
+msgid "Selected recovery file:"
+msgstr "Vybraný soubor pro obnovení:"
+
+#: src/components/WalletHeader.tsx:59
+#: src/components/WalletSend.tsx:200
+#: src/components/cat/WalletCATSend.tsx:255
+#: src/components/rateLimited/WalletRateLimited.jsx:747
+msgid "Send"
+msgstr "Odeslat"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:459
+msgid "Send this info packet to your Rate Limited Wallet user who must use it to complete setup of their wallet:"
+msgstr "Poslat tento informační paket uživateli Rate Limited peněženky. Ten jej musí použít k dokončení nastavení své peněženky:"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:278
+msgid "Send your pubkey to your Rate Limited Wallet admin:"
+msgstr "Pošlete svůj veřejný klíč vašemu správci Rate Limited peněženky:"
+
+#: src/components/cat/WalletCAT.tsx:116
+msgid "Show Asset Id"
+msgstr "Ukázat ID aktiva"
+
+#: src/components/create/createRLAdmin.jsx:229
+msgid "Spendable Amount"
+msgstr "Disponibilní částka"
+
+#: src/components/create/createRLAdmin.jsx:201
+msgid "Spendable Amount Per Interval"
+msgstr "Disponibilní částka za interval"
+
+#: src/components/card/WalletCardSpendableBalance.tsx:37
+#: src/components/rateLimited/WalletRateLimited.jsx:547
+msgid "Spendable Balance"
+msgstr "Dostupný zůstatek"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:395
+#: src/components/rateLimited/WalletRateLimited.jsx:442
+msgid "Spending Interval (number of blocks): {interval}"
+msgstr "Interval výdajů (počet bloků): {interval}"
+
+#: src/components/create/createRLAdmin.jsx:196
+msgid "Spending Interval Length (number of blocks)"
+msgstr "Délka intervalu výdajů (počet bloků)"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:400
+#: src/components/rateLimited/WalletRateLimited.jsx:447
+msgid "Spending Limit (maize per interval): {0}"
+msgstr "Limit výdajů (maize na interval): {0}"
+
+#: src/constants/WalletName.ts:5
+msgid "Standard Wallet"
+msgstr "Standardní peněženka"
+
+#: src/components/cat/WalletDID.tsx:886
+#: src/components/did/WalletDID.tsx:886
+#: src/components/rateLimited/WalletRateLimited.jsx:346
+msgid "Submit"
+msgstr "Odeslat"
+
+#: src/components/WalletSendTransactionResultDialog.tsx:15
+msgid "Success"
+msgstr "Úspěch"
+
+#: src/components/WalletHeader.tsx:58
+msgid "Summary"
+msgstr "Shrnutí"
+
+#: src/components/WalletStatus.tsx:69
+msgid "Synced"
+msgstr "Synchronizováno"
+
+#: src/components/WalletStatus.tsx:81
+msgid "Syncing"
+msgstr "Synchronizace"
+
+#: src/components/card/WalletCardTotalBalance.tsx:65
+msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for XMZ, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:789
+#: src/components/did/WalletDID.tsx:789
+#: src/components/did/WalletDIDCreate.tsx:88
+msgid "The number of Backup IDs needed for recovery cannot exceed the number of Backup IDs added."
+msgstr "Počet záložních ID potřebných pro obnovení nesmí překročit počet přidaných záložních ID."
+
+#: src/components/WalletSendTransactionResultDialog.tsx:34
+msgid "The transaction could not be immediately included in the mempool because the specified fee is too low. The transaction will be retried periodically, and may be included in the mempool once fees are lower, or if space becomes available."
+msgstr "Transakci nelze okamžitě zahrnout do mempoolu, protože zadaný poplatek je příliš nízký. Transakce bude pravidelně opakována a může být zahrnuta do mempoolu, jakmile budou poplatky nižší nebo bude k dispozici prostor."
+
+#: src/components/WalletBadge.tsx:26
+msgid "This access token is verified"
+msgstr "Tento přístupový token je ověřen"
+
+#: src/components/WalletHistory.tsx:130
+msgid "This is not a valid address for sending funds to"
+msgstr "Toto není platná adresa pro odesílání prostředků"
+
+#: src/components/standard/WalletStandardCards.tsx:23
+msgid "This is the amount of Maize that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Maize that you have just spent but is not yet in the blockchain."
+msgstr "Maize zůstatek využitelný pro transakce. Neobsahuje nezpracované odměny za farmaření, nezpracované příchozí transakce a ani převody, které ještě nebyly zaneseny do blockchainu."
+
+#: src/components/standard/WalletStandardCards.tsx:44
+msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
+msgstr "Dosud nezpracovaná změna vlastního převodu, která ještě nebyla potvrzena."
+
+#: src/components/standard/WalletStandardCards.tsx:37
+msgid "This is the sum of the incoming and outgoing pending transactions (not yet included into the blockchain). This does not include farming rewards."
+msgstr "Souhrn příchozích a odchozích nezpracovaných změn (zatím nejsou obsaženy v blockchainu). Neobsahuje odměny za farmaření."
+
+#: src/components/standard/WalletStandardCards.tsx:16
+msgid "This is the total amount of maize in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr "Toto je celkový počet Maize v blockchainu na aktuálním bloku kontrolovaných vaším privátním klíčem. Zahrnuje zmrazené odměny z farmaření ale nezahrnuje čekající příchozí ani odchozí transakce."
+
+#: src/components/standard/WalletStandardCards.tsx:31
+msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
+msgstr "Celkový zůstatek plus čekající transakce. Jinými slovy: celkový zůstatek po schválení čekajících transakcí."
+
+#: src/components/WalletHistory.tsx:191
+msgid "To"
+msgstr "Komu"
+
+#: src/components/cat/WalletCATCreateExisting.tsx:85
+msgid "Token and Asset Issuance Limitations"
+msgstr "Omezení vydávání tokenu a aktiv"
+
+#: src/components/cat/WalletCATCreateSimple.tsx:45
+msgid "Token has empty asset id"
+msgstr "Token má prázdné ID aktiva"
+
+#: src/components/cat/WalletCATCreateSimple.tsx:41
+msgid "Token has empty name"
+msgstr "Token má prázdný název"
+
+#: src/components/WalletsSidebar.tsx:216
+msgid "Tokens"
+msgstr "Tokeny"
+
+#: src/components/card/WalletCardTotalBalance.tsx:56
+#: src/components/rateLimited/WalletRateLimited.jsx:542
+msgid "Total Balance"
+msgstr "Celkový zůstatek"
+
+#: src/components/WalletSendTransactionResultDialog.tsx:27
+msgid "Transaction has successfully been sent to a full node and included in the mempool."
+msgstr "Transakce byla úspěšně odeslána do plného uzlu a zahrnuta do mempoolu."
+
+#: src/components/WalletHistory.tsx:308
+msgid "Transactions"
+msgstr "Transakce"
+
+#: src/components/create/createRLAdmin.jsx:280
+#: src/components/rateLimited/WalletRateLimited.jsx:292
+msgid "User Pubkey"
+msgstr "Uživatelský veřejný klíč"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:561
+msgid "View pending balances"
+msgstr "Zobrazit nevyřízené zůstatky"
+
+#: src/components/WalletConnections.tsx:80
+msgid "Wallet Connections"
+msgstr ""
+
+#: src/components/cat/WalletCAT.tsx:75
+#: src/components/cat/WalletDID.tsx:1118
+#: src/components/did/WalletDID.tsx:1118
+msgid "Wallet does not exists"
+msgstr "Peněženka neexistuje"
+
+#: src/components/Wallet.tsx:50
+msgid "Wallet with type {0} not supported"
+msgstr "Peněženka s typem {0} není podporována"
+
+#: src/components/Wallet.tsx:23
+msgid "Wallet {walletId} not found"
+msgstr "Peněženka {walletId} nenalezena"
+
+#: src/components/WalletsSidebar.tsx:157
+msgid "Want to see your old balance for yourself?"
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:119
+msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
+msgstr ""
+
+#: src/components/WalletAdd.tsx:76
+msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
+msgstr "Vítejte! Následující slova použijte pro zazálohování své peněženky. Bez těchto slov si nebudete schopni v budoucnu peněženku znovu připojit (např. při přeinstalování počítače). Zapište si každé slovo (spolu s pořadím) a udržujte je v bezpečí!"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:315
+msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
+msgstr "Pro dokončení registrace Rate Limited peněženky potřebujete instalační paket. Ten obdržíte od svého správce a vyplníte ho zde:"
+
+#: src/components/WalletsSidebar.tsx:115
+msgid "Your CAT tokens have been upgraded!"
+msgstr ""
+
+#: src/components/cat/WalletDID.tsx:326
+#: src/components/did/WalletDID.tsx:326
+msgid "Your DID requires at least {dids_num_req} attestation file{0} for recovery. Please upload additional files."
+msgstr "Váš DID vyžaduje alespoň {dids_num_req} soubor atestace{0} k obnově. Nahrajte prosím další soubory."
+
+#: src/components/WalletImport.tsx:71
+msgid "Your pasted list does not include 24 valid mnemonic words."
+msgstr "Váš vkládaný seznam neobsahuje 24 platných mnemotických slov."

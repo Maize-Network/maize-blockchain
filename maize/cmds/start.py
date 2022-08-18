@@ -1,5 +1,6 @@
 import click
 
+from maize.util.config import load_config
 from maize.util.service_groups import all_groups
 
 
@@ -10,5 +11,11 @@ from maize.util.service_groups import all_groups
 def start_cmd(ctx: click.Context, restart: bool, group: str) -> None:
     import asyncio
     from .start_funcs import async_start
+    from .keys_funcs import migrate_keys
 
-    asyncio.get_event_loop().run_until_complete(async_start(ctx.obj["root_path"], group, restart))
+    if ctx.obj["force_legacy_keyring_migration"]:
+        migrate_keys(True)
+
+    root_path = ctx.obj["root_path"]
+    config = load_config(root_path, "config.yaml")
+    asyncio.run(async_start(root_path, config, group, restart))

@@ -5,8 +5,8 @@ from maize.types.condition_opcodes import ConditionOpcode
 from maize.util.streamable import Streamable, streamable
 
 
-@dataclass(frozen=True)
 @streamable
+@dataclass(frozen=True)
 class ConditionWithArgs(Streamable):
     """
     This structure is used to store parsed CLVM conditions

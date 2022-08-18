@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-02-08 18:51+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: fi_FI\n"
+"Project-Id-Version: maize-blockchain\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-08-04 12:02\n"
+"Last-Translator: \n"
+"Language-Team: Finnish\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: maize-blockchain\n"
+"X-Crowdin-Project-ID: 440660\n"
+"X-Crowdin-Language: fi\n"
+"X-Crowdin-File: /main/packages/wallets/src/locales/en-US/messages.po\n"
+"X-Crowdin-File-ID: 1890\n"
+
+#: src/components/WalletHistory.tsx:210
+msgid "+"
+msgstr "+"
+
+#: src/components/WalletHistory.tsx:210
+msgid "-"
+msgstr "-"
+
+#: src/components/WalletHeader.tsx:74
+msgid "Actions"
+msgstr "Toiminnot"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:96
+msgid "Add"
+msgstr "Lisää"
+
+#: src/components/cat/WalletDID.tsx:874
+#: src/components/did/WalletDID.tsx:874
+#: src/components/did/WalletDIDCreate.tsx:205
+msgid "Add Backup ID"
+msgstr "Lisää Varmuuskopion ID"
+
+#: src/components/hero/WalletHeroAdd.tsx:99
+msgid "Add Custom Token"
+msgstr "Lisää Kustomoitu Token"
+
+#: src/components/WalletsList.tsx:54
+#: src/components/WalletsManageTokens.tsx:170
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:61
+#: src/components/cat/WalletCATCreateSimple.tsx:70
+#: src/components/hero/WalletHeroAdd.tsx:64
+#: src/components/hero/WalletHeroWallets.tsx:83
+msgid "Add Token"
+msgstr "Lisää Token"
+
+#: src/components/cat/WalletCATCreateSimple.tsx:94
+msgid "Adding {0} token"
+msgstr "Lisätään {0} token"
+
+#: src/components/WalletReceiveAddress.tsx:76
+msgid "Address"
+msgstr "Osoite"
+
+#: src/components/WalletSend.tsx:156
+#: src/components/cat/WalletCATSend.tsx:195
+#: src/components/rateLimited/WalletRateLimited.jsx:700
+msgid "Address / Puzzle hash"
+msgstr "Osoite / Puzzle-tiiviste"
+
+#: src/components/WalletHistory.tsx:226
+#: src/components/WalletSend.tsx:167
+#: src/components/cat/WalletCATSend.tsx:207
+#: src/components/rateLimited/WalletRateLimited.jsx:719
+msgid "Amount"
+msgstr "Määrä"
+
+#: src/components/create/createRLAdmin.jsx:238
+msgid "Amount For Initial Coin"
+msgstr "Alkumäärä"
+
+#: src/components/did/WalletDIDCreate.tsx:61
+msgid "Amount must be an even amount."
+msgstr "Anna tasamäärä."
+
+#: src/components/WalletHeader.tsx:42
+msgid "Are you sure you want to delete unconfirmed transactions?"
+msgstr "Haluatko varmasti poistaa nämä vahvistamattomat tapahtumat?"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:80
+#: src/components/cat/WalletCATTAILDialog.tsx:43
+#: src/components/cat/WalletCATTAILDialog.tsx:55
+msgid "Asset Id"
+msgstr "Assetin Tunniste"
+
+#: src/constants/WalletName.ts:11
+msgid "Atomic Swap Wallet"
+msgstr "Atomic Swap Lompakko"
+
+#: src/constants/WalletName.ts:14
+msgid "Authorized Payee Wallet"
+msgstr "Valtuutettu Lompakko"
+
+#: src/components/cat/WalletDID.tsx:646
+#: src/components/did/WalletDID.tsx:646
+#: src/components/rateLimited/WalletRateLimited.jsx:540
+msgid "Balance"
+msgstr "Saldo"
+
+#: src/components/PasteMnemonic.tsx:78
+#: src/components/WalletRenameDialog.tsx:90
+msgid "Cancel"
+msgstr "Peru"
+
+#: src/components/WalletSend.tsx:103
+#: src/components/cat/WalletCATSend.tsx:118
+msgid "Cannot send maize to coloured address. Please enter a maize address."
+msgstr "Maizea (XMZ) ei voi lähettää CAT-osoitteeseen. Anna maize-osoite."
+
+#: src/components/WalletsSidebar.tsx:145
+msgid "Check my snapshot balance"
+msgstr "Tarkista snapshot-saldo"
+
+#: src/components/cat/WalletCATSelect.tsx:25
+#: src/components/create/WalletCreateList.tsx:32
+#: src/constants/WalletName.ts:23
+msgid "Maize Asset Token"
+msgstr "Maize Asset Token"
+
+#: src/components/WalletsSidebar.tsx:160
+msgid "Click here to download an older version of the wallet"
+msgstr "Napsauta tästä ladataksesi vanhan version lompakosta"
+
+#: src/components/cat/WalletDID.tsx:984
+#: src/components/did/WalletDID.tsx:984
+msgid "Coin Name"
+msgstr "Kolikon Nimi"
+
+#: src/components/WalletHeader.tsx:37
+msgid "Confirmation"
+msgstr "Vahvista"
+
+#: src/components/WalletHistory.tsx:156
+msgid "Confirmed"
+msgstr "Vahvistettu"
+
+#: src/components/WalletHistory.tsx:356
+msgid "Confirmed at Height"
+msgstr "Vahvistettu korkeudessa"
+
+#: src/components/WalletStatusHeader.tsx:40
+#~ msgid "Connected ({0})"
+#~ msgstr "Yhdistetty ({0})"
+
+#: src/components/WalletConnections.tsx:62
+msgid "Connection type"
+msgstr "Yhteystyyppi"
+
+#: src/components/WalletConnections.tsx:80
+#~ msgid "Connections"
+#~ msgstr "Yhteydet"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:305
+#: src/components/rateLimited/WalletRateLimited.jsx:427
+#: src/components/rateLimited/WalletRateLimited.jsx:484
+msgid "Copy"
+msgstr "Kopioi"
+
+#: src/components/cat/WalletCATCreateNew.tsx:101
+#: src/components/create/createRLAdmin.jsx:306
+#: src/components/create/createRLUser.jsx:99
+#: src/components/did/WalletDIDCreate.tsx:218
+msgid "Create"
+msgstr "Luo"
+
+#: src/components/cat/WalletDID.tsx:967
+#: src/components/did/WalletDID.tsx:967
+msgid "Create An Attestation Packet"
+msgstr "Luo todistuspaketti"
+
+#: src/components/cat/WalletCATCreateExisting.tsx:76
+msgid "Create Maize Asset Token Wallet from Existing TAIL"
+msgstr "Luo Maize Asset Token -lompakko olemassa olevasta TAIL tunnisteesta"
+
+#: src/components/did/WalletDIDCreate.tsx:109
+msgid "Create Distributed Identity Wallet"
+msgstr "Luo Hajautettu DID-Identiteettilompakko"
+
+#: src/components/cat/WalletCATCreateNew.tsx:75
+msgid "Create New Maize Asset Token Wallet"
+msgstr "Luo Uusi Maize Asset Token -lompakko"
+
+#: src/components/cat/WalletCATSelect.tsx:32
+#: src/components/did/WalletDIDSelect.tsx:32
+msgid "Create New Wallet"
+msgstr "Luo uusi lompakko"
+
+#: src/components/cat/WalletCAT.tsx:129
+#: src/components/standard/WalletStandard.tsx:54
+msgid "Create Offer"
+msgstr "Luo Tarjous"
+
+#: src/components/create/createRLAdmin.jsx:187
+msgid "Create Rate Limited Admin Wallet"
+msgstr "Luo Siirtorajoitettu Pääkäyttäjälompakko"
+
+#: src/components/create/createRLUser.jsx:78
+msgid "Create Rate Limited User Wallet"
+msgstr "Luo Siirtorajoitettu Käyttäjälompakko"
+
+#: src/components/WalletSend.tsx:138
+#: src/components/cat/WalletCATSend.tsx:176
+#: src/components/rateLimited/WalletRateLimited.jsx:683
+msgid "Create Transaction"
+msgstr "Luo Transaktio"
+
+#: src/components/cat/WalletCATCreateExisting.tsx:75
+msgid "Create custom CAT Wallet"
+msgstr "Luo kustomi CAT-lompakko"
+
+#: src/constants/WalletName.ts:20
+msgid "Custody Wallet"
+msgstr "Hallintalompakko (custody)"
+
+#: src/components/cat/WalletCATCreateSimple.tsx:102
+msgid "Custom"
+msgstr "Kustomi"
+
+#: src/constants/WalletName.ts:29
+msgid "DID Wallet"
+msgstr "DID-lompakko"
+
+#: src/components/WalletHistory.tsx:199
+msgid "Date"
+msgstr "Päiväys"
+
+#: src/components/WalletHeader.tsx:38
+#: src/components/cat/WalletDID.tsx:448
+#: src/components/cat/WalletDID.tsx:862
+#: src/components/did/WalletDID.tsx:448
+#: src/components/did/WalletDID.tsx:862
+#: src/components/did/WalletDIDCreate.tsx:194
+#: src/components/did/WalletDIDRecovery.tsx:101
+msgid "Delete"
+msgstr "Poista"
+
+#: src/components/WalletHeader.tsx:87
+msgid "Delete Unconfirmed Transactions"
+msgstr "Poista Vahvistamattomat Transaktiot"
+
+#: src/components/card/WalletCardTotalBalance.tsx:63
+msgid "Derivation Index: {0}"
+msgstr "Derivaatioindeksi: {0}"
+
+#: src/components/create/WalletCreateList.tsx:39
+#: src/components/did/WalletDIDSelect.tsx:25
+msgid "Distributed Identity"
+msgstr "Hajautettu Identiteetti"
+
+#: src/components/cat/WalletDID.tsx:426
+#: src/components/did/WalletDID.tsx:426
+msgid "Drag and drop attestation packet(s)"
+msgstr "Raahaa ja pudota todistuspaketti"
+
+#: src/components/did/WalletDIDRecovery.tsx:109
+msgid "Drag and drop your recovery backup file"
+msgstr "Raahaa ja pudota palautuksen varmuuskopiotiedosto"
+
+#: src/components/WalletImport.tsx:133
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your Maize wallet."
+msgstr "Anna tallentamasi 24 muistisanaa palauttaaksesi Maize-lompakon."
+
+#: src/components/cat/WalletCATSend.tsx:128
+msgid "Error the entered address appears to be for a different colour."
+msgstr "Virhe, annettu osoite näyttää olevan eri tokenille."
+
+#: src/components/WalletSend.tsx:189
+#: src/components/cat/WalletCATSend.tsx:244
+msgid "Farm"
+msgstr "Farmi"
+
+#: src/components/WalletHistory.tsx:238
+#: src/components/WalletSend.tsx:179
+#: src/components/cat/WalletCATSend.tsx:221
+#: src/components/create/createRLAdmin.jsx:243
+#: src/components/create/createRLAdmin.jsx:271
+#: src/components/rateLimited/WalletRateLimited.jsx:732
+msgid "Fee"
+msgstr "Veloitus"
+
+#: src/components/cat/WalletDID.tsx:975
+#: src/components/did/WalletDID.tsx:975
+msgid "Filename"
+msgstr "Tiedoston nimi"
+
+#: src/components/WalletReceiveAddress.tsx:49
+msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefore wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
+msgstr "HD- eli hierarkis-deterministiset avaimet ovat julkisen ja salaisen avaimen toteutus, jossa yhtä salaista avainta kohti voi olla lähes loputon määrä julkisia avaimia (ja lompakon osoitteita). Kaikki nämä osoitteet/avaimet osoittavat samaan salaiseen avaimeen."
+
+#: src/components/WalletConnections.tsx:27
+msgid "IP address"
+msgstr "IP-osoite"
+
+#: src/components/WalletSendTransactionResultDialog.tsx:41
+msgid "If you would like to speed up the transaction, please delete unconfirmed transactions and retry with a higher fee."
+msgstr "Jos haluat nopeuttaa transaktiota, poista vahvistamattomat transaktiot ja yritä uudelleen korkeammalla maksulla."
+
+#: src/components/PasteMnemonic.tsx:86
+msgid "Import"
+msgstr "Tuo"
+
+#: src/components/WalletImport.tsx:130
+msgid "Import Wallet from Mnemonics"
+msgstr "Tuo Lompakko Muistisanoista"
+
+#: src/components/WalletHistory.tsx:93
+msgid "Incoming"
+msgstr "Saapuva"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:332
+#: src/components/rateLimited/WalletRateLimited.jsx:471
+msgid "Info Packet"
+msgstr "Infopaketti"
+
+#: src/components/create/createRLAdmin.jsx:259
+msgid "Initial Amount"
+msgstr "Alkusumma"
+
+#: src/components/create/createRLUser.jsx:87
+msgid "Initialize a Rate Limited User Wallet:"
+msgstr "Alusta Rajoitetun Käytön Käyttäjälompakko:"
+
+#: src/components/create/createRLAdmin.jsx:217
+msgid "Interval"
+msgstr "Aikaväli"
+
+#: src/components/WalletConnections.tsx:85
+msgid "List of connections is empty"
+msgstr "Yhteyksien luettelo on tyhjä"
+
+#: src/components/WalletReceiveAddressField.tsx:40
+msgid "Loading..."
+msgstr "Ladataan..."
+
+#: src/components/cat/WalletDID.tsx:805
+#: src/components/did/WalletDID.tsx:805
+msgid "Manage Recovery DIDs"
+msgstr "Hallitse Palautus-DID:jä"
+
+#: src/components/WalletsManageTokens.tsx:147
+msgid "Manage token list"
+msgstr "Hallitse tokenilistaa"
+
+#: src/components/WalletHistory.tsx:170
+#: src/components/cat/WalletCATSend.tsx:234
+msgid "Memo"
+msgstr "Muistio"
+
+#: src/components/WalletHistory.tsx:365
+msgid "Memos"
+msgstr "Muistiot"
+
+#: src/components/WalletSendTransactionResultDialog.tsx:19
+msgid "Mempool Full"
+msgstr "Muistipooli Täynnä"
+
+#: src/components/WalletConnections.tsx:55
+msgid "MiB Up/Down"
+msgstr "MiB Lähetys/Lataus"
+
+#: src/constants/WalletName.ts:17
+msgid "Multi Sig Wallet"
+msgstr "Multi Sig -lompakko"
+
+#: src/components/cat/WalletDID.tsx:536
+#: src/components/did/WalletDID.tsx:536
+msgid "My DID Wallet"
+msgstr "Oma hajautettu DID-lompakko"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:414
+msgid "My Pubkey"
+msgstr "Julkinen Avaimeni"
+
+#: src/constants/WalletName.ts:35
+msgid "NFT Wallet"
+msgstr "NFT-Lompakko"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:71
+msgid "Name"
+msgstr "Nimi"
+
+#: src/components/WalletReceiveAddress.tsx:64
+msgid "New Address"
+msgstr "Uusi Osoite"
+
+#: src/components/WalletAdd.tsx:73
+msgid "New Wallet"
+msgstr "Uusi Lompakko"
+
+#: src/components/WalletAdd.tsx:107
+#: src/components/WalletImport.tsx:164
+msgid "Next"
+msgstr "Seuraava"
+
+#: src/components/WalletRenameDialog.tsx:78
+msgid "Nickname"
+msgstr "Alias"
+
+#: src/components/WalletHistory.tsx:401
+msgid "No previous transactions"
+msgstr "Ei aiempia transaktioita"
+
+#: src/components/WalletConnections.tsx:23
+msgid "Node ID"
+msgstr "Noodin tunnus"
+
+#: src/components/WalletHistory.tsx:350
+#: src/components/WalletHistory.tsx:360
+msgid "Not Available"
+msgstr "Ei Saatavilla"
+
+#: src/components/WalletStatusHeader.tsx:38
+#~ msgid "Not Connected"
+#~ msgstr "Ei yhdistetty"
+
+#: src/components/WalletStatus.tsx:57
+msgid "Not Synced"
+msgstr "Ei Synkronoitu"
+
+#: src/components/cat/WalletCATTAILDialog.tsx:82
+msgid "OK"
+msgstr "OK"
+
+#: src/components/WalletHistory.tsx:184
+msgid "Offer Accepted"
+msgstr "Tarjous Hyväksytty"
+
+#: src/components/WalletSend.tsx:141
+#: src/components/cat/WalletCATSend.tsx:179
+msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
+msgstr "Transaktiolohkon väli on keskimäärin minuutti. Ruuhkattomana aikana transaktiosi voidaan lisätä alle minuutissa lohkoketjuun."
+
+#: src/components/did/WalletDIDRecovery.tsx:33
+msgid "Only one backup file is allowed."
+msgstr "Vain yksi varmuuskopiotiedosto on sallittu."
+
+#: src/components/WalletHistory.tsx:93
+msgid "Outgoing"
+msgstr "Lähtevä"
+
+#: src/components/WalletImport.tsx:95
+msgid "Paste Mnemonic"
+msgstr "Liitä Muistisanat"
+
+#: src/components/PasteMnemonic.tsx:55
+msgid "Paste Mnemonic (24 words)"
+msgstr "Liitä Muistisanat (24)"
+
+#: src/components/WalletHistory.tsx:163
+msgid "Pending"
+msgstr "Odottaa"
+
+#: src/components/card/WalletCardPendingBalance.tsx:36
+#: src/components/rateLimited/WalletRateLimited.jsx:572
+msgid "Pending Balance"
+msgstr "Avoin Saldo"
+
+#: src/components/card/WalletCardPendingChange.tsx:37
+#: src/components/rateLimited/WalletRateLimited.jsx:577
+msgid "Pending Change"
+msgstr "Avoimet Vaihtorahat"
+
+#: src/components/card/WalletCardPendingTotalBalance.tsx:37
+#: src/components/rateLimited/WalletRateLimited.jsx:567
+msgid "Pending Total Balance"
+msgstr "Avoin Kokonaissumma"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:667
+msgid "Please enter 0 fee. Positive fees not supported yet for RL."
+msgstr "Anna nollaveloitus. Positiivisia veloituksia ei vielä tueta."
+
+#: src/components/cat/WalletDID.tsx:924
+#: src/components/did/WalletDID.tsx:924
+msgid "Please enter a coin"
+msgstr "Syötä kolikko"
+
+#: src/components/cat/WalletDID.tsx:525
+#: src/components/cat/WalletDID.tsx:914
+#: src/components/did/WalletDID.tsx:525
+#: src/components/did/WalletDID.tsx:914
+msgid "Please enter a filename"
+msgstr "Anna tiedostonimi"
+
+#: src/components/cat/WalletDID.tsx:934
+#: src/components/did/WalletDID.tsx:934
+msgid "Please enter a pubkey"
+msgstr "Syötä julkinen pubkey"
+
+#: src/components/cat/WalletDID.tsx:944
+#: src/components/did/WalletDID.tsx:944
+msgid "Please enter a puzzlehash"
+msgstr "Syötä puzzlehash osoitetiiviste"
+
+#: src/components/cat/WalletCATCreateExisting.tsx:40
+msgid "Please enter a valid CAT name"
+msgstr "Anna kelvollinen CAT-nimi"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:41
+msgid "Please enter a valid asset id"
+msgstr "Anna kelvollinen asset ID"
+
+#: src/components/create/createRLAdmin.jsx:139
+msgid "Please enter a valid initial coin amount"
+msgstr "Anna käypä kolikoiden määrä"
+
+#: src/components/cat/WalletDID.tsx:776
+#: src/components/did/WalletDID.tsx:776
+#: src/components/did/WalletDIDCreate.tsx:75
+msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
+msgstr "Syötä kelvollinen 0 tai suurempi kokonaisluku varmuuskopion tunnusten lukumäärälle, jota tarvitaan palauttamiseen."
+
+#: src/components/WalletSend.tsx:93
+#: src/components/cat/WalletCATSend.tsx:104
+#: src/components/rateLimited/WalletRateLimited.jsx:638
+msgid "Please enter a valid numeric amount"
+msgstr "Anna käypä numeerinen arvo"
+
+#: src/components/did/WalletDIDCreate.tsx:49
+msgid "Please enter a valid numeric amount."
+msgstr "Anna kelvollinen numeerinen summa."
+
+#: src/components/WalletSend.tsx:98
+#: src/components/cat/WalletCATSend.tsx:109
+#: src/components/create/createRLAdmin.jsx:149
+#: src/components/rateLimited/WalletRateLimited.jsx:648
+msgid "Please enter a valid numeric fee"
+msgstr "Anna käypä numeerinen veloitus"
+
+#: src/components/create/createRLAdmin.jsx:99
+msgid "Please enter a valid numeric interval length"
+msgstr "Anna käypä numeerinen intervallin pituus"
+
+#: src/components/create/createRLAdmin.jsx:114
+msgid "Please enter a valid numeric spendable amount"
+msgstr "Anna käypä käytettävä määrä"
+
+#: src/components/create/createRLAdmin.jsx:124
+msgid "Please enter a valid pubkey"
+msgstr "Anna käypä julkinen avain"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:45
+msgid "Please enter a valid token name"
+msgstr "Anna kelvollinen tokenin nimi"
+
+#: src/components/WalletRenameDialog.tsx:49
+msgid "Please enter valid wallet name"
+msgstr "Anna kelvollinen lompakon nimi"
+
+#: src/components/WalletSend.tsx:88
+#: src/components/cat/WalletCATSend.tsx:95
+#: src/components/rateLimited/WalletRateLimited.jsx:622
+msgid "Please finish syncing before making a transaction"
+msgstr "Synkronoi loppuun ennen transaktion tekemistä"
+
+#: src/components/did/WalletDIDRecovery.tsx:54
+msgid "Please select backup file first"
+msgstr "Valitse varmuuskopiotiedosto ensin"
+
+#: src/components/cat/WalletCATCreateExistingSimple.tsx:37
+#: src/components/cat/WalletCATCreateSimple.tsx:37
+#: src/components/did/WalletDIDRecovery.tsx:63
+msgid "Please wait for wallet synchronization"
+msgstr "Ole hyvä ja odota lompakon synkronointia"
+
+#: src/constants/WalletName.ts:32
+msgid "Pooling Wallet"
+msgstr "Poolilompakko"
+
+#: src/components/WalletConnections.tsx:33
+msgid "Port"
+msgstr "Portti"
+
+#: src/components/cat/WalletDID.tsx:993
+#: src/components/create/createRLAdmin.jsx:296
+#: src/components/did/WalletDID.tsx:993
+msgid "Pubkey"
+msgstr "Julkinen avain"
+
+#: src/components/cat/WalletDID.tsx:1002
+#: src/components/did/WalletDID.tsx:1002
+msgid "Puzzlehash"
+msgstr "Puzzlehash-osoitetiiviste"
+
+#: src/constants/WalletName.ts:8
+msgid "RL Wallet"
+msgstr "Rajoitettu Lompakko"
+
+#: src/components/create/WalletCreateList.tsx:45
+msgid "Rate Limited"
+msgstr "Siirtorajoitettu"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:390
+#: src/components/rateLimited/WalletRateLimited.jsx:437
+msgid "Rate Limited Info"
+msgstr "Siirtorajoitetetun Tiedot"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:272
+msgid "Rate Limited User Wallet Setup"
+msgstr "Siirtorajoitetun Lompakon Asennus"
+
+#: src/components/WalletsSidebar.tsx:152
+msgid "Read the blog post for details"
+msgstr "Lue blogikirjoitus lisätietoja varten"
+
+#: src/components/WalletHeader.tsx:60
+msgid "Receive"
+msgstr "Vastaanota"
+
+#: src/components/WalletReceiveAddress.tsx:46
+#: src/components/WalletReceiveAddressField.tsx:38
+msgid "Receive Address"
+msgstr "Vastaanottajan Osoite"
+
+#: src/components/cat/WalletCATSend.tsx:122
+msgid "Recipient address is not a coloured wallet address. Please enter a coloured wallet address"
+msgstr "Vastaanottajan osoite ei ole CAT-osoite. Syötä CAT-osoite"
+
+#: src/components/cat/WalletCATCreateExisting.tsx:104
+#: src/components/cat/WalletDID.tsx:463
+#: src/components/did/WalletDID.tsx:463
+#: src/components/did/WalletDIDRecovery.tsx:124
+msgid "Recover"
+msgstr "Palauta"
+
+#: src/components/cat/WalletDID.tsx:338
+#: src/components/cat/WalletDID.tsx:479
+#: src/components/did/WalletDID.tsx:338
+#: src/components/did/WalletDID.tsx:479
+msgid "Recover DID Wallet"
+msgstr "Palauta hajautettu DID-lompakko"
+
+#: src/components/did/WalletDIDRecovery.tsx:83
+msgid "Recover Distributed Identity Wallet"
+msgstr "Palauta Hajautettu DID-Identiteettilompakko"
+
+#: src/components/did/WalletDIDSelect.tsx:39
+msgid "Recover Wallet"
+msgstr "Palauta Lompakko"
+
+#: src/constants/WalletName.ts:26
+msgid "Recoverable Wallet"
+msgstr "Palautettavissa Oleva Lompakko"
+
+#: src/components/cat/WalletCATSelect.tsx:39
+msgid "Recovery Wallet"
+msgstr "Recovery-lompakko"
+
+#: src/components/WalletRenameDialog.tsx:69
+#: src/components/cat/WalletCAT.tsx:102
+msgid "Rename Wallet"
+msgstr "Uudelleennimeä Lompakko"
+
+#: src/components/WalletHistory.tsx:177
+msgid "Retire"
+msgstr "Poista vanhentunut"
+
+#: src/components/WalletRenameDialog.tsx:98
+msgid "Save"
+msgstr "Tallenna"
+
+#: src/components/WalletTokenCard.tsx:144
+#: src/components/cat/WalletCATTAILDialog.tsx:71
+msgid "Search on Tail Database"
+msgstr "Etsi Tail-tietokannasta"
+
+#: src/components/WalletsList.tsx:32
+#: src/components/hero/WalletHeroWallets.tsx:47
+msgid "Select Wallet"
+msgstr "Valitse Lompakko"
+
+#: src/components/create/WalletCreateList.tsx:25
+msgid "Select Wallet Type"
+msgstr "Valitse Lompakkotyyppi"
+
+#: src/components/did/WalletDIDRecovery.tsx:90
+msgid "Selected recovery file:"
+msgstr "Valittu palautustiedosto:"
+
+#: src/components/WalletHeader.tsx:59
+#: src/components/WalletSend.tsx:200
+#: src/components/cat/WalletCATSend.tsx:255
+#: src/components/rateLimited/WalletRateLimited.jsx:747
+msgid "Send"
+msgstr "Lähetä"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:459
+msgid "Send this info packet to your Rate Limited Wallet user who must use it to complete setup of their wallet:"
+msgstr "Lähetä tämä infopaketti Siirtorajoitetun Lompakon käyttäjälle, joka voi käyttää sitä oman lompakkonsa perustamiseen:"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:278
+msgid "Send your pubkey to your Rate Limited Wallet admin:"
+msgstr "Lähetä julkinen avaimesi Siirtorajoitetun Lompakon pääkäyttäjälle:"
+
+#: src/components/cat/WalletCAT.tsx:116
+msgid "Show Asset Id"
+msgstr "Näytä Assetin tunniste"
+
+#: src/components/create/createRLAdmin.jsx:229
+msgid "Spendable Amount"
+msgstr "Käytettävissä"
+
+#: src/components/create/createRLAdmin.jsx:201
+msgid "Spendable Amount Per Interval"
+msgstr "Käytettävissä Ajanjaksoa Kohti"
+
+#: src/components/card/WalletCardSpendableBalance.tsx:37
+#: src/components/rateLimited/WalletRateLimited.jsx:547
+msgid "Spendable Balance"
+msgstr "Saldo Käytettävissä"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:395
+#: src/components/rateLimited/WalletRateLimited.jsx:442
+msgid "Spending Interval (number of blocks): {interval}"
+msgstr "Käyttöajanjakso (lohkojen lukum.): {interval}"
+
+#: src/components/create/createRLAdmin.jsx:196
+msgid "Spending Interval Length (number of blocks)"
+msgstr "Käyttöajanjakson pituus (lohkojen määrä)"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:400
+#: src/components/rateLimited/WalletRateLimited.jsx:447
+msgid "Spending Limit (maize per interval): {0}"
+msgstr "Käyttöraja (Maizea/ajanjakso):{0}"
+
+#: src/constants/WalletName.ts:5
+msgid "Standard Wallet"
+msgstr "Vakiolompakko"
+
+#: src/components/cat/WalletDID.tsx:886
+#: src/components/did/WalletDID.tsx:886
+#: src/components/rateLimited/WalletRateLimited.jsx:346
+msgid "Submit"
+msgstr "Lähetä"
+
+#: src/components/WalletSendTransactionResultDialog.tsx:15
+msgid "Success"
+msgstr "Onnistui"
+
+#: src/components/WalletHeader.tsx:58
+msgid "Summary"
+msgstr "Yhteenveto"
+
+#: src/components/WalletStatus.tsx:69
+msgid "Synced"
+msgstr "Synkronissa"
+
+#: src/components/WalletStatus.tsx:81
+msgid "Syncing"
+msgstr "Synkronoi"
+
+#: src/components/card/WalletCardTotalBalance.tsx:65
+msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for XMZ, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
+msgstr "Derivaatioindeksi asettaa lompakon osoitteiden määrän, jota lompakko skannaa lohkoketjusta. Tämä luku on yleensä suurempi, jos sinulla on paljon tapahtumia tai peruutettuja tarjouksia XMZ-, CAT- tai NFT-kolikoille. Jos uskot, että saldo on väärä, nosta derivaatioindeksiä, mikä auttaa lompakkoa sisällyttämään puuttuvat kolikot saldoon."
+
+#: src/components/cat/WalletDID.tsx:789
+#: src/components/did/WalletDID.tsx:789
+#: src/components/did/WalletDIDCreate.tsx:88
+msgid "The number of Backup IDs needed for recovery cannot exceed the number of Backup IDs added."
+msgstr "Varmuuskopiotunnusten määrä ei voi ylittää lisättyjen varmuuskopioitunnusten määrää."
+
+#: src/components/WalletSendTransactionResultDialog.tsx:34
+msgid "The transaction could not be immediately included in the mempool because the specified fee is too low. The transaction will be retried periodically, and may be included in the mempool once fees are lower, or if space becomes available."
+msgstr "Tapahtumaa ei voitu välittömästi sisällyttää mempooliin, koska määritetty transaktiomaksu on liian alhainen. Transaktiota yritetään uudelleen säännöllisesti, ja se voidaan sisällyttää mempooliin sen jälkeen, kun maksut ovat pienemmät tai kun tilaa tulee saataville."
+
+#: src/components/WalletBadge.tsx:26
+msgid "This access token is verified"
+msgstr "Tämä käyttöoikeustoken on vahvistettu"
+
+#: src/components/WalletHistory.tsx:130
+msgid "This is not a valid address for sending funds to"
+msgstr "Tämä ei ole kelvollinen osoite varojen lähettämiseen"
+
+#: src/components/standard/WalletStandardCards.tsx:23
+msgid "This is the amount of Maize that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Maize that you have just spent but is not yet in the blockchain."
+msgstr "Transaktioihin käytettävissä oleva Chiojen määrä. Ei sisällä avoimia farmarin palkkioita, avoimia saapuvia transaktioita eikä lähetettyjä, mutta vahvistamattomia transaktioita."
+
+#: src/components/standard/WalletStandardCards.tsx:44
+msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
+msgstr "Avoimet vaihtorahat ovat kolikoita, jotka olet siirtänyt, mutta joiden siirtoa ei ole vielä vahvistettu loppuun."
+
+#: src/components/standard/WalletStandardCards.tsx:37
+msgid "This is the sum of the incoming and outgoing pending transactions (not yet included into the blockchain). This does not include farming rewards."
+msgstr "Lähtevien ja saapuvien avointen transaktioiden summa (ei vielä lohkoketjussa). Ei sisällä farmarin palkkioita."
+
+#: src/components/standard/WalletStandardCards.tsx:16
+msgid "This is the total amount of maize in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr "Yksityisten avaimiesi hallinoimien Chiojen kokonaissumma lohkoketjussa. Sisälytää jäädytetyt palkkiot, mutta ei keskeneräisiä tulevia tai lähteviä transaktioita."
+
+#: src/components/standard/WalletStandardCards.tsx:31
+msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
+msgstr "Nykyinen saldo + avoin saldo, eli tuleva saldo avointen transaktioiden jälkeen."
+
+#: src/components/WalletHistory.tsx:191
+msgid "To"
+msgstr "Osoitteeseen"
+
+#: src/components/cat/WalletCATCreateExisting.tsx:85
+msgid "Token and Asset Issuance Limitations"
+msgstr "Tokenin ja assettien liikkeeseenlaskun rajoitukset"
+
+#: src/components/cat/WalletCATCreateSimple.tsx:45
+msgid "Token has empty asset id"
+msgstr "Tokenilla on tyhjä assettitunnus"
+
+#: src/components/cat/WalletCATCreateSimple.tsx:41
+msgid "Token has empty name"
+msgstr "Tokenilla on tyhjä nimi"
+
+#: src/components/WalletsSidebar.tsx:216
+msgid "Tokens"
+msgstr "Tokenit"
+
+#: src/components/card/WalletCardTotalBalance.tsx:56
+#: src/components/rateLimited/WalletRateLimited.jsx:542
+msgid "Total Balance"
+msgstr "Kokonaissaldo"
+
+#: src/components/WalletSendTransactionResultDialog.tsx:27
+msgid "Transaction has successfully been sent to a full node and included in the mempool."
+msgstr "Transaktio on onnistuneesti lähetetty noodille ja sisällytetty mempooliin."
+
+#: src/components/WalletHistory.tsx:308
+msgid "Transactions"
+msgstr "Transaktiot"
+
+#: src/components/create/createRLAdmin.jsx:280
+#: src/components/rateLimited/WalletRateLimited.jsx:292
+msgid "User Pubkey"
+msgstr "Käyttäjän julkinen avain"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:561
+msgid "View pending balances"
+msgstr "Näytä avoimet saldot"
+
+#: src/components/WalletConnections.tsx:80
+msgid "Wallet Connections"
+msgstr ""
+
+#: src/components/cat/WalletCAT.tsx:75
+#: src/components/cat/WalletDID.tsx:1118
+#: src/components/did/WalletDID.tsx:1118
+msgid "Wallet does not exists"
+msgstr "Lompakkoa ei löydy"
+
+#: src/components/Wallet.tsx:50
+msgid "Wallet with type {0} not supported"
+msgstr "Lompakkotyyppiä {0} ei tueta"
+
+#: src/components/Wallet.tsx:23
+msgid "Wallet {walletId} not found"
+msgstr "Lompakkoa {walletId} ei löydy"
+
+#: src/components/WalletsSidebar.tsx:157
+msgid "Want to see your old balance for yourself?"
+msgstr "Haluatko nähdä vanhan saldosi?"
+
+#: src/components/WalletsSidebar.tsx:119
+msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
+msgstr "Olemme tehneet päivityksen CAT-standardiin, joka edellyttää, että kaikki CAT:t annetaan uudelleen. Sinulle airdropataan uudet tokenit, koska ne ovat uudelleen liikkeeseenlaskettuja. Airdropatut tokenit perustuvat saldoon lohkokorkeudessa:<0/><1/><2/>(likimääräinen aika: 26 heinäkuu, 2022 @ 17:00 UTC)"
+
+#: src/components/WalletAdd.tsx:76
+msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
+msgstr "Tervetuloa! Seuraavia muistisanoja käytetään lompakon varmuuskopiointiin. Ilman niitä sinulla ei ole pääsyä lompakkoosi. Pidä ne tallessa! Kirjoita ylös sanat ja niiden järjestysnumerot. (Oikea järjestys on tärkeää)"
+
+#: src/components/rateLimited/WalletRateLimited.jsx:315
+msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
+msgstr "Kun saat infopaketin pääkäyttäjältä, lisää se alle viimeistelläksesi Siirtorajoitetun Lompakon asennuksen:"
+
+#: src/components/WalletsSidebar.tsx:115
+msgid "Your CAT tokens have been upgraded!"
+msgstr "CAT-tokenisi ovat päivitetty."
+
+#: src/components/cat/WalletDID.tsx:326
+#: src/components/did/WalletDID.tsx:326
+msgid "Your DID requires at least {dids_num_req} attestation file{0} for recovery. Please upload additional files."
+msgstr "DID vaatii vähintään {dids_num_req} todistustiedosto{0} palautusta varten. Lataa lisää tiedostoja."
+
+#: src/components/WalletImport.tsx:71
+msgid "Your pasted list does not include 24 valid mnemonic words."
+msgstr "Liittämäsi lista ei sisällä 24 kelvollista muistisanaa."

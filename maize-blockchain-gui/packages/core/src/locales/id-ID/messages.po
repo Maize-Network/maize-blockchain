@@ -1,0 +1,365 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-02-08 18:51+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: id_ID\n"
+"Project-Id-Version: maize-blockchain\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-07-27 18:41\n"
+"Last-Translator: \n"
+"Language-Team: Indonesian\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: maize-blockchain\n"
+"X-Crowdin-Project-ID: 440660\n"
+"X-Crowdin-Language: id\n"
+"X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
+"X-Crowdin-File-ID: 1886\n"
+
+#: src/components/Amount/Amount.tsx:116
+msgid "Amount"
+msgstr "Jumlah"
+
+#: src/components/Settings/SettingsApp.tsx:76
+msgid "Appearance"
+msgstr "Tampilan"
+
+#: src/components/FormBackButton/FormBackButton.tsx:47
+#: src/screens/SelectKey/SelectKey.tsx:79
+#: src/screens/SelectKey/SelectKeyItem.tsx:93
+msgid "Back"
+msgstr "Kembali"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:147
+msgid "Can be backed up to mnemonic seed"
+msgstr "Dapat dibackup ke mnemonic seed"
+
+#: src/components/ConfirmDialog/ConfirmDialog.tsx:105
+#: src/hooks/useKeyringMigrationPrompt.tsx:17
+msgid "Cancel"
+msgstr "Batal"
+
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:51
+msgid "Connected"
+msgstr "Tersambung"
+
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:42
+msgid "Copied"
+msgstr "Disalin"
+
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:44
+msgid "Copy to Clipboard"
+msgstr "Salin ke Clipboard"
+
+#: src/screens/SelectKey/SelectKey.tsx:180
+msgid "Create a new private key"
+msgstr "Buat sebuah private key baru"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:163
+msgid "DANGER: permanently delete private key"
+msgstr "BAHAYA: menghapus permanen private key"
+
+#: src/components/Settings/SettingsApp.tsx:83
+msgid "Dark"
+msgstr "Gelap"
+
+#: src/screens/SelectKey/SelectKey.tsx:78
+#: src/screens/SelectKey/SelectKeyItem.tsx:92
+msgid "Delete"
+msgstr "Hapus"
+
+#: src/screens/SelectKey/SelectKey.tsx:202
+#: src/screens/SelectKey/SelectKey.tsx:77
+msgid "Delete all keys"
+msgstr "Hapus semua key"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:91
+msgid "Delete key {fingerprint}"
+msgstr "Hapus Kunci {fingerprint}"
+
+#: src/screens/SelectKey/SelectKey.tsx:83
+msgid "Deleting all keys will permanently remove the keys from your computer, make sure you have backups. Are you sure you want to continue?"
+msgstr "Menghapus semua kunci akan menghilangkan kunci-kunci tersebut dari komputer anda, pastikan anda telah memiliki cadangan. Apa anda yakin ingin melanjutkan?"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:124
+msgid "Deleting the key will permanently remove the key from your computer, make sure you have backups. Are you sure you want to continue?"
+msgstr "Menghapus semua kunci akan menghilangkan kunci-kunci tersebut dari komputer anda, pastikan anda telah memiliki cadangan. Apa anda yakin ingin melanjutkan?"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:68
+msgid "Disable"
+msgstr "Nonaktifkan"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:67
+msgid "Disable Passphrase Protection"
+msgstr "Nonaktifkan proteksi sandi"
+
+#: src/components/Back/Back.tsx:35
+#: src/components/FormBackButton/FormBackButton.tsx:27
+msgid "Discard"
+msgstr "Buang"
+
+#: src/components/CardSimple/CardSimple.tsx:63
+#: src/hooks/useShowError.tsx:11
+msgid "Error"
+msgstr "Error"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:78
+msgid "Error:"
+msgstr ""
+
+#: src/components/LayoutMain/LayoutFooter.tsx:50
+msgid "FAQ"
+msgstr "Pertanyaan Umum"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:67
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:67
+msgid "Farmer public key:"
+msgstr "Kunci Publik Farmer:"
+
+#: src/components/Settings/SettingsApp.tsx:66
+msgid "Farming"
+msgstr "Farming"
+
+#: src/components/Fee/Fee.tsx:52
+msgid "Fee"
+msgstr "Biaya"
+
+#: src/components/Settings/SettingsApp.tsx:105
+msgid "Frequently Asked Questions"
+msgstr "Pertanyaan Umum"
+
+#: src/components/Settings/SettingsApp.tsx:101
+msgid "Help"
+msgstr "Bantuan"
+
+#: src/components/LocaleToggle/LocaleToggle.tsx:71
+msgid "Help translate"
+msgstr "Bantu menterjemahkan"
+
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:75
+msgid "Hide Advanced Options"
+msgstr "Sembunyikan Opsi Tingkat Lanjut"
+
+#: src/screens/SelectKey/SelectKey.tsx:191
+msgid "Import from Mnemonics (24 words)"
+msgstr "Impor dari Mnemonic (24 kata)"
+
+#: src/components/Fee/Fee.tsx:40
+msgid "Incorrect value"
+msgstr "Nilai Salah"
+
+#: src/components/Settings/SettingsApp.tsx:90
+msgid "Language"
+msgstr "Bahasa"
+
+#: src/components/Settings/SettingsApp.tsx:80
+msgid "Light"
+msgstr "Terang"
+
+#: src/screens/SelectKey/SelectKey.tsx:116
+msgid "Loading list of the keys"
+msgstr "Memuat Daftar dompet"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+msgid "Log Out"
+msgstr "Keluar"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+msgid "Logout"
+msgstr "Keluar"
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:16
+msgid "Migrate"
+msgstr "Migrasi"
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:15
+msgid "Migration required"
+msgstr "Migrasi di wajibkan"
+
+#: src/components/Settings/SettingsApp.tsx:62
+msgid "Mode"
+msgstr "Modus"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:49
+msgid "New passphrase is the same as your current passphrase"
+msgstr "Kalimat sandi baru sama dengan kalimat sandi yang sekarang"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:93
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:93
+msgid "No 24 word seed, since this key is imported."
+msgstr "Tidak ada benih 24 kata, sejak kunci ini di impor."
+
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:52
+msgid "Not connected"
+msgstr "Tidak terhubung"
+
+#: src/components/ConfirmDialog/ConfirmDialog.tsx:106
+msgid "OK"
+msgstr "OK"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:75
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:75
+msgid "Pool public key:"
+msgstr "Kunci Publik Pool:"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:142
+msgid "Private key with public fingerprint {fingerprint}"
+msgstr "Kunci privat dengan sidik jari publik {fingerprint}"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:28
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:40
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:28
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:40
+msgid "Private key {fingerprint}"
+msgstr "Kunci privat {fingerprint}"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:51
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:51
+msgid "Private key:"
+msgstr "Kunci privat:"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:59
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:59
+msgid "Public key:"
+msgstr "Kunci publik:"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:91
+msgid "Reload Application"
+msgstr ""
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:87
+msgid "Report an Issue"
+msgstr ""
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:151
+msgid "See private key"
+msgstr "Lihat kata kunci pribadi"
+
+#: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:85
+#: src/screens/SelectKey/SelectKeyDetailDialog.tsx:85
+msgid "Seed:"
+msgstr "Benih:"
+
+#: src/screens/SelectKey/SelectKey.tsx:135
+msgid "Select Key"
+msgstr "Pilih kunci"
+
+#: src/components/Dropdown/Dropdown.tsx:85
+msgid "Select..."
+msgstr "Pilih..."
+
+#: src/components/LayoutMain/LayoutFooter.tsx:53
+#: src/components/Settings/SettingsApp.tsx:108
+msgid "Send Feedback"
+msgstr "Kirim Masukan"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:61
+msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
+msgstr "Mengaktifkan opsi kata kunci sangat di ajurkan untuk melindungi kunci dompet anda. Apa anda yakin mau melewati pengaktifan kata kunci?"
+
+#: src/components/Settings/Settings.tsx:48
+#: src/components/Settings/Settings.tsx:58
+msgid "Settings"
+msgstr "Pengaturan"
+
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:74
+msgid "Show Advanced Options"
+msgstr "Lihat opsi lanjutan"
+
+#: src/screens/SelectKey/SelectKey.tsx:140
+msgid "Sign In"
+msgstr "Log Masuk"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:59
+msgid "Skip"
+msgstr "Lewati"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:58
+msgid "Skip Passphrase Protection"
+msgstr "Lewati perlindungan kata kunci"
+
+#: src/components/ErrorBoundary/ErrorBoundary.tsx:73
+msgid "Something went wrong"
+msgstr ""
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:31
+msgid "The provided passphrase and confirmation do not match"
+msgstr "Kata sandi yang dimasukan tidak sama dengan konfirmasi"
+
+#: src/utils/getTransactionResult.ts:15
+msgid "Transaction has not been sent to node yet"
+msgstr "Tansaksi belum dinkirim ke node"
+
+#: src/utils/getTransactionResult.ts:33
+msgid "Transaction has sent to a full node and is pending inclusion into the mempool. {0}"
+msgstr "Transaksi sudah di kirim ke full node dan sedang menunggu di tambahkan ke mempool. {0}"
+
+#: src/utils/getTransactionResult.ts:24
+msgid "Transaction has successfully been sent to a full node and included in the mempool."
+msgstr "Transaksi sudah sukses di kirimkan ke node utama dan sudah tercatat di mempool."
+
+#: src/screens/SelectKey/SelectKey.tsx:123
+msgid "Try Again"
+msgstr "Coba Lagi"
+
+#: src/screens/SelectKey/SelectKey.tsx:127
+msgid "Unable to load the list of the keys"
+msgstr "Tisak bisa menampilkan daftar kunci dompet"
+
+#: src/components/LocaleToggle/LocaleToggle.tsx:48
+msgid "Unknown"
+msgstr "Diketahui"
+
+#: src/components/Back/Back.tsx:34
+#: src/components/FormBackButton/FormBackButton.tsx:26
+msgid "Unsaved Changes"
+msgstr "Perubahan yang belum disimpan"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:70
+msgid "Using a passphrase is strongly recommended to protect your keys. Are you sure you want to disable passphrase protection?"
+msgstr "Mengaktifkan opsi kalimat kunci sangat di ajurkan untuk melindungi kunci dompet anda. Apa anda yakin mau melewati pengaktifan kalimat kunci?"
+
+#: src/components/Fee/Fee.tsx:32
+msgid "Value seems high"
+msgstr "Nilai Kelihatan terlalu tinggi"
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/Settings/SettingsApp.tsx:69
+msgid "Wallet"
+msgstr "Dompet"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:117
+msgid "Warning: This key is used for a wallet that may have a non-zero balance. By deleting this key you may lose access to this wallet"
+msgstr "Perhatian: Kunci ini di gunakan oleh dompet yang mungkin tidak kosong. Dengan menghapus kunci ini anda akan kehilangan akses ke dompet"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:99
+msgid "Warning: This key is used for your farming rewards address. By deleting this key you may lose access to any future farming rewards"
+msgstr "Perhatian: Kunci ini digunakan sebagai alamat dari penghasilan farming. Dengan menghapus kunci ini anda akan kehilangan penhasilan farming di masa depan"
+
+#: src/screens/SelectKey/SelectKeyItem.tsx:108
+msgid "Warning: This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
+msgstr "Perhatian: Kunci ini di gunakan untuk pengasilan pool. Dengan menghapus kunci ini anda akan kehilangan akses ke pengasilan pool di masa depan"
+
+#: src/screens/SelectKey/SelectKey.tsx:143
+msgid "Welcome to Maize. Please log in with an existing key, or create a new key."
+msgstr "Selamat datang di Maize. Silahkan masuk dengan key eksisting atau dengan membuat key baru."
+
+#: src/components/Back/Back.tsx:38
+#: src/components/FormBackButton/FormBackButton.tsx:30
+msgid "You have made changes. Do you want to discard them?"
+msgstr "Ada perubahan yang belum disimpan. Apakah kamu ingin membuangnya?"
+
+#: src/hooks/useKeyringMigrationPrompt.tsx:20
+msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
+msgstr "Kunci anda belum migrasi ke penyimpanan kunci baru. Anda tidak akan bisa membuat kunci baru atau menghapus kunci yang ada sampai dengan migrasi selesai. Apa anda mau migrasi kunci anda sekarang?"
+
+#: src/components/Amount/Amount.tsx:98
+msgid "{0, plural, one {mojo} other {mojos}}"
+msgstr "{0, plural,one {mojo} other {mojos}}"
+
+#: src/hooks/useValidateChangePassphraseParams.tsx:39
+msgid "{minPassphraseLength, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
+msgstr "{minPassphraseLength, plural, one {Kata kunci harus paling sedikit # karakter panjang nya} other {Kata kunci harus paling sedikit # karakter panjang nya}}"
