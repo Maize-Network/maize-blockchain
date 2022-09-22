@@ -3,5 +3,4 @@
 
 set -e
 
-ln -s /usr/lib/maize-blockchain/resources/app.asar.unpacked/daemon/maize /usr/bin/maize || true
-ln -s /usr/lib/maize-blockchain/resources/app.asar.unpacked/daemon /opt/maize || true
+ln -s /opt/maize/resources/app.asar.unpacked/daemon/maize /usr/bin/maize || true

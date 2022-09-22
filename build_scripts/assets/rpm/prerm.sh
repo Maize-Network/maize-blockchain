@@ -4,4 +4,3 @@
 set -e
 
 unlink /usr/bin/maize || true
-unlink /opt/maize || true

@@ -12,7 +12,7 @@ npm ci
 $Env:Path = $(npm bin) + ";" + $Env:Path
 
 Set-Location -Path "..\..\" -PassThru
-# git submodule update --init maize-blockchain-gui
+git submodule update --init maize-blockchain-gui
 
 Set-Location -Path ".\maize-blockchain-gui" -PassThru
 
