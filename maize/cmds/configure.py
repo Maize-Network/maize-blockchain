@@ -3,7 +3,7 @@ from typing import Optional
 
 import click
 
-from maize.util.config import lock_and_load_config, save_config, str2bool
+from maize.util.config import load_defaults_for_missing_services, lock_and_load_config, save_config, str2bool
 
 
 def configure(
@@ -22,8 +22,12 @@ def configure(
     crawler_minimum_version_count: Optional[int],
     seeder_domain_name: str,
     seeder_nameserver: str,
+    enable_data_server: str = "",
 ):
-    with lock_and_load_config(root_path, "config.yaml") as config:
+    config_yaml = "config.yaml"
+    with lock_and_load_config(root_path, config_yaml, fill_missing_services=True) as config:
+        config.update(load_defaults_for_missing_services(config=config, config_name=config_yaml))
+
         change_made = False
         if set_node_introducer:
             try:
@@ -92,13 +96,20 @@ def configure(
             config["full_node"]["target_peer_count"] = int(set_peer_count)
             print("Target peer count updated")
             change_made = True
+        if enable_data_server:
+            config["data_layer"]["run_server"] = str2bool(enable_data_server)
+            if str2bool(enable_data_server):
+                print("Data Server enabled.")
+            else:
+                print("Data Server disabled.")
+            change_made = True
         if testnet:
             if testnet == "true" or testnet == "t":
                 print("Setting Testnet")
                 testnet_port = "58444"
-                testnet_introducer = "introducer-testnet10.maize.farm"
-                testnet_dns_introducer = "dns-introducer-testnet10.maize.farm"
-                bootstrap_peers = ["testnet10-node.maize.farm"]
+                testnet_introducer = "introducer-testnet10.maize.net"
+                testnet_dns_introducer = "dns-introducer-testnet10.maize.net"
+                bootstrap_peers = ["testnet10-node.maize.net"]
                 testnet = "testnet10"
                 config["full_node"]["port"] = int(testnet_port)
                 if config["full_node"]["introducer_peer"] is None:
@@ -126,6 +137,7 @@ def configure(
                 config["ui"]["selected_network"] = testnet
                 config["introducer"]["selected_network"] = testnet
                 config["wallet"]["selected_network"] = testnet
+                config["data_layer"]["selected_network"] = testnet
 
                 if "seeder" in config:
                     config["seeder"]["port"] = int(testnet_port)
@@ -139,9 +151,9 @@ def configure(
             elif testnet == "false" or testnet == "f":
                 print("Setting Mainnet")
                 mainnet_port = "8444"
-                mainnet_introducer = "introducer.maize.farm"
-                mainnet_dns_introducer = "dns-introducer.maize.farm"
-                bootstrap_peers = ["node.maize.farm"]
+                mainnet_introducer = "introducer.maize.net"
+                mainnet_dns_introducer = "dns-introducer.maize.net"
+                bootstrap_peers = ["node.maize.net"]
                 net = "mainnet"
                 config["full_node"]["port"] = int(mainnet_port)
                 config["full_node"]["introducer_peer"]["port"] = int(mainnet_port)
@@ -163,6 +175,7 @@ def configure(
                 config["ui"]["selected_network"] = net
                 config["introducer"]["selected_network"] = net
                 config["wallet"]["selected_network"] = net
+                config["data_layer"]["selected_network"] = net
 
                 if "seeder" in config:
                     config["seeder"]["port"] = int(mainnet_port)
@@ -260,6 +273,11 @@ def configure(
     help="configures the seeder nameserver setting. Ex: `example.com.`",
     type=str,
 )
+@click.option(
+    "--enable-data-server",
+    help="Enable or disable data propagation server for your data layer",
+    type=click.Choice(["true", "t", "false", "f"]),
+)
 @click.pass_context
 def configure_cmd(
     ctx,
@@ -277,6 +295,7 @@ def configure_cmd(
     crawler_minimum_version_count,
     seeder_domain_name,
     seeder_nameserver,
+    enable_data_server,
 ):
     configure(
         ctx.obj["root_path"],
@@ -294,4 +313,5 @@ def configure_cmd(
         crawler_minimum_version_count,
         seeder_domain_name,
         seeder_nameserver,
+        enable_data_server,
     )

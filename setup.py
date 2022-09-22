@@ -1,14 +1,16 @@
+import os
+
 from setuptools import setup
 
 dependencies = [
     "aiofiles==0.7.0",  # Async IO for files
-    "blspy==1.0.13",  # Signature library
+    "blspy==1.0.15",  # Signature library
     "chiavdf==1.0.6",  # timelord and vdf verification
     "chiabip158==1.1",  # bip158-style wallet filters
     "chiapos==1.0.10",  # proof of space
     "clvm==0.9.7",
     "clvm_tools==0.4.5",  # Currying, Program.to, other conveniences
-    "chia_rs==0.1.5",
+    "chia_rs==0.1.10",
     "clvm-tools-rs==0.1.19",  # Rust implementation of clvm_tools' compiler
     "aiohttp==3.8.1",  # HTTP server for full node rpc
     "aiosqlite==0.17.0",  # asyncio wrapper for sqlite, to store blocks
@@ -31,8 +33,9 @@ dependencies = [
     "watchdog==2.1.9",  # Filesystem event watching - watches keyring.yaml
     "dnslib==0.9.17",  # dns lib
     "typing-extensions==4.3.0",  # typing backports like Protocol and TypedDict
-    "zstd==1.5.0.4",
+    "zstd==1.5.2.6",
     "packaging==21.3",
+    "psutil==5.9.1",
 ]
 
 upnp_dependencies = [
@@ -42,11 +45,13 @@ upnp_dependencies = [
 dev_dependencies = [
     "build",
     "coverage",
+    "diff-cover",
     "pre-commit",
     "py3createtorrent",
     "pylint",
     "pytest",
     "pytest-asyncio>=0.18.1",  # require attribute 'fixture'
+    "pytest-cov",
     "pytest-monitor; sys_platform == 'linux'",
     "pytest-xdist",
     "twine",
@@ -57,9 +62,9 @@ dev_dependencies = [
     "black==21.12b0",
     "aiohttp_cors",  # For blackd
     "ipython",  # For asyncio debugging
-    "pyinstaller==5.0",
+    "pyinstaller==5.3",
     "types-aiofiles",
-    "types-click",
+    "types-click~=7.1",
     "types-cryptography",
     "types-pkg_resources",
     "types-pyyaml",
@@ -68,8 +73,8 @@ dev_dependencies = [
 
 kwargs = dict(
     name="maize-blockchain",
-    author="Mariano Sorgente",
-    author_email="mariano@maize.farm",
+    author="Maize Network",
+    author_email="hello@maize.farm",
     description="Maize blockchain full node, farmer, timelord, and wallet.",
     url="https://maize.farm/",
     license="Apache License",
@@ -88,6 +93,7 @@ kwargs = dict(
         "maize.clvm",
         "maize.consensus",
         "maize.daemon",
+        "maize.data_layer",
         "maize.full_node",
         "maize.timelord",
         "maize.farmer",
@@ -106,8 +112,8 @@ kwargs = dict(
         "maize.types",
         "maize.util",
         "maize.wallet",
+        "maize.wallet.db_wallet",
         "maize.wallet.puzzles",
-        "maize.wallet.rl_wallet",
         "maize.wallet.cat_wallet",
         "maize.wallet.did_wallet",
         "maize.wallet.nft_wallet",
@@ -131,6 +137,8 @@ kwargs = dict(
             "maize_timelord = maize.server.start_timelord:main",
             "maize_timelord_launcher = maize.timelord.timelord_launcher:main",
             "maize_full_node_simulator = maize.simulator.start_simulator:main",
+            "maize_data_layer = maize.server.start_data_layer:main",
+            "maize_data_layer_http = maize.data_layer.data_layer_server:main",
         ]
     },
     package_data={
@@ -144,11 +152,11 @@ kwargs = dict(
     long_description_content_type="text/markdown",
     zip_safe=False,
     project_urls={
-        "Source": "https://github.com/Maize-Network/maize-blockchain/",
-        "Changelog": "https://github.com/Maize-Network/maize-blockchain/blob/main/CHANGELOG.md",
+        "Source": "https://github.com/Chia-Network/maize-blockchain/",
+        "Changelog": "https://github.com/Chia-Network/maize-blockchain/blob/main/CHANGELOG.md",
     },
 )
 
 
-if __name__ == "__main__":
+if len(os.environ.get("MAIZE_SKIP_SETUP", "")) < 1:
     setup(**kwargs)  # type: ignore

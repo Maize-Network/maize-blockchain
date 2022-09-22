@@ -8,7 +8,6 @@ from maize.consensus.blockchain import Blockchain, ReceiveBlockResult
 from maize.consensus.coinbase import create_farmer_coin, create_pool_coin
 from maize.full_node.block_store import BlockStore
 from maize.full_node.coin_store import CoinStore
-from maize.full_node.hint_store import HintStore
 from maize.full_node.mempool_check_conditions import get_name_puzzle_conditions
 from maize.types.blockchain_format.coin import Coin
 from maize.types.coin_record import CoinRecord
@@ -323,8 +322,7 @@ class TestCoinStoreWithBlocks:
             blocks = bt.get_consecutive_blocks(initial_block_count)
             coin_store = await CoinStore.create(db_wrapper)
             store = await BlockStore.create(db_wrapper)
-            hint_store = await HintStore.create(db_wrapper)
-            b: Blockchain = await Blockchain.create(coin_store, store, test_constants, hint_store, tmp_dir, 2)
+            b: Blockchain = await Blockchain.create(coin_store, store, test_constants, tmp_dir, 2)
             try:
 
                 records: List[Optional[CoinRecord]] = []
@@ -388,8 +386,7 @@ class TestCoinStoreWithBlocks:
             )
             coin_store = await CoinStore.create(db_wrapper)
             store = await BlockStore.create(db_wrapper)
-            hint_store = await HintStore.create(db_wrapper)
-            b: Blockchain = await Blockchain.create(coin_store, store, test_constants, hint_store, tmp_dir, 2)
+            b: Blockchain = await Blockchain.create(coin_store, store, test_constants, tmp_dir, 2)
             for block in blocks:
                 await _validate_and_add_block(b, block)
             peak = b.get_peak()

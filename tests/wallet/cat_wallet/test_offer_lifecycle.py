@@ -12,11 +12,11 @@ from maize.types.mempool_inclusion_status import MempoolInclusionStatus
 from maize.types.spend_bundle import SpendBundle
 from maize.util.ints import uint64
 from maize.wallet.cat_wallet.cat_utils import (
-    CAT_MOD,
     construct_cat_puzzle,
     SpendableCAT,
     unsigned_spend_bundle_for_spendable_cats,
 )
+from maize.wallet.puzzles.cat_loader import CAT_MOD
 from maize.wallet.outer_puzzles import AssetType
 from maize.wallet.puzzle_drivers import PuzzleInfo
 from maize.wallet.payment import Payment

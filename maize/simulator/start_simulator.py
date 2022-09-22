@@ -13,7 +13,6 @@ from maize.util.bech32m import decode_puzzle_hash
 from maize.util.maize_logging import initialize_logging
 from maize.util.config import load_config_cli, override_config, load_config
 from maize.util.default_root import DEFAULT_ROOT_PATH
-from maize.util.path import path_from_root
 from maize.simulator.block_tools import BlockTools, test_constants
 from maize.util.ints import uint16
 from maize.simulator.full_node_simulator import FullNodeSimulator
@@ -35,7 +34,6 @@ def create_full_node_simulator_service(
     override_capabilities: List[Tuple[uint16, str]] = None,
 ) -> Service:
     service_config = config[SERVICE_NAME]
-    path_from_root(root_path, service_config["database_path"]).parent.mkdir(parents=True, exist_ok=True)
     constants = bt.constants
 
     node = FullNode(
@@ -102,7 +100,7 @@ async def async_main(test_mode: bool = False, automated_testing: bool = False, r
     initialize_logging(
         service_name=SERVICE_NAME,
         logging_config=service_config["logging"],
-        root_path=DEFAULT_ROOT_PATH,
+        root_path=root_path,
     )
     service = create_full_node_simulator_service(root_path, override_config(config, overrides), bt)
     if test_mode:

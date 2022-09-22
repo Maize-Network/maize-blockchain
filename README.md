@@ -1,34 +1,54 @@
 # maize-blockchain
 
-Hello! We are Maize! Fork of Chia.
-Every 25 petabytes of the network, we present 300 coins to 1 lucky!
-We have updated our roadmap! Please see our website!
+![Alt text](https://www.maize.farm/img/maize_logo.svg)
 
-Attention! New promotion from Maize! Allnewbies and those who have 0 coins will get 30 maize coins! Details in our discord channel: https://discord.gg/H5Rv8GgSsw
+| Current Release/main | Development Branch/dev |
+|         :---:          |          :---:         |
+| [![Ubuntu Core Tests](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-test-ubuntu-core.yml/badge.svg)](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-test-ubuntu-core.yml) [![MacOS Core Tests](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-test-macos-core.yml/badge.svg)](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-test-macos-core.yml) [![Windows Installer on Windows 10 and Python 3.7](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-windows-installer.yml/badge.svg)](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-windows-installer.yml)  |  [![Ubuntu Core Tests](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-test-ubuntu-core.yml/badge.svg?branch=dev)](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-test-ubuntu-core.yml) [![MacOS Core Tests](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-test-macos-core.yml/badge.svg?branch=dev)](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-test-macos-core.yml) [![Windows Installer on Windows 10 and Python 3.7](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-windows-installer.yml/badge.svg?branch=dev)](https://github.com/Maize-Network/maize-blockchain/actions/workflows/build-windows-installer.yml) |
 
- Maize online casino is launched! https://casino.maize.farm
- 
- We have launched development NFT-MAIZE game Hungry Birds!
+![GitHub contributors](https://img.shields.io/github/contributors/Maize-Network/maize-blockchain?logo=GitHub)
 
+Maize is a modern cryptocurrency built from scratch, designed to be efficient, decentralized, and secure. Here are some of the features and benefits:
+* [Proof of space and time](https://docs.google.com/document/d/1tmRIb7lgi4QfKkNaxuKOBHRmwbVlGL4f7EsBDr_5xZE/edit) based consensus which allows anyone to farm with commodity hardware
+* Very easy to use full node and farmer GUI and cli (thousands of nodes active on mainnet)
+* [Maize seeder](https://github.com/Maize-Network/maize-blockchain/wiki/Maize-Seeder-User-Guide), which maintains a list of reliable nodes within the Maize Network via a built-in DNS server.
+* Simplified UTXO based transaction model, with small on-chain state
+* Lisp-style Turing-complete functional [programming language](https://chialisp.com/) for money related use cases
+* BLS keys and aggregate signatures (only one signature per block)
+* [Pooling protocol](https://github.com/Maize-Network/maize-blockchain/wiki/Pooling-User-Guide) that allows farmers to have control of making blocks
+* Support for light clients with fast, objective syncing
+* A growing community of farmers and developers around the world
 
-Warning! The new Tranzact fork has created a port conflict with Maize. If you install Maize while Tranzact is running and Maize does not start. Change port 8655 to 8677 in the Maize config file.
+Please check out the [wiki](https://github.com/Maize-Network/maize-blockchain/wiki)
+and [FAQ](https://github.com/Maize-Network/maize-blockchain/wiki/FAQ) for
+information on this project.
 
+Python 3.7+ is required. Make sure your default python version is >=3.7
+by typing `python3`.
 
-We opened our own c2c exchanger! https://chiaforks.exchange
-Our Big thanks to dev Andrewfbd https://discord.gg/jksEDC56V7
+If you are behind a NAT, it can be difficult for peers outside your subnet to
+reach you when they start up. You can enable
+[UPnP](https://www.homenethowto.com/ports-and-nat/upnp-automatic-port-forward/)
+on your router or add a NAT (for IPv4 but not IPv6) and firewall rules to allow
+TCP port 8444 access to your peer.
+These methods tend to be router make/model specific.
 
-Our project - realtime blockchain databases! Download and start farming instantly! https://chiaforksblockchain.com
+Most users should only install harvesters, farmers, plotter, full nodes, and wallets.
+Setting up a seeder is best left to more advanced users.
+Building Timelords and VDFs is for sophisticated users, in most environments.
+Maize Network and additional volunteers are running sufficient Timelords
+for consensus.
 
-Website https://maize.farm
+## Installing
 
-Our maize discord https://discord.gg/2WHH7yGaT9
+Install instructions are available in the
+[INSTALL](https://github.com/Maize-Network/maize-blockchain/wiki/INSTALL)
+section of the
+[maize-blockchain repository wiki](https://github.com/Maize-Network/maize-blockchain/wiki).
 
-Maize Telegram https://t.me/maizecoin
+## Running
 
-Maize Twitter https://twitter.com/coinmaize
-
-Return 7/8 NFT Reward https://chiaforksblockchain.com or https://maize.farm
-
-
-Maize recommends! Very useful app for all forks Forkfarmer
-https://github.com/ForkFarmer/ForkFarmer/releases
+Once installed, a
+[Quick Start Guide](https://github.com/Maize-Network/maize-blockchain/wiki/Quick-Start-Guide)
+is available from the repository
+[wiki](https://github.com/Maize-Network/maize-blockchain/wiki).

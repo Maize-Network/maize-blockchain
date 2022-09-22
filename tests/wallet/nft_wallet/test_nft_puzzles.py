@@ -15,6 +15,7 @@ from maize.wallet.nft_wallet.nft_puzzles import (
 from maize.wallet.outer_puzzles import match_puzzle
 from maize.wallet.puzzles.load_clvm import load_clvm
 from maize.wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import puzzle_for_pk, solution_for_conditions
+from maize.wallet.uncurried_puzzle import uncurry_puzzle
 from tests.core.make_block_generator import int_to_public_key
 
 SINGLETON_MOD = load_clvm("singleton_top_layer_v1_1.clvm")
@@ -39,7 +40,7 @@ def test_nft_transfer_puzzle_hashes():
     maker_did = Program.to("maker did").get_tree_hash()
     # maker_did_inner_hash = Program.to("maker did inner hash").get_tree_hash()
     metadata = [
-        ("u", ["https://www.maize.farm/img/branding/maize-logo.svg"]),
+        ("u", ["https://www.maize.net/img/branding/maize-logo.svg"]),
         ("h", 0xD4584AD463139FA8C0D9F68F4B59F185),
     ]
     metadata_updater_hash = NFT_METADATA_UPDATER_DEFAULT.get_tree_hash()
@@ -64,7 +65,7 @@ def test_nft_transfer_puzzle_hashes():
 
     nft_puz = SINGLETON_MOD.curry(SINGLETON_STRUCT, metadata_puz)
 
-    nft_info = match_puzzle(nft_puz)
+    nft_info = match_puzzle(uncurry_puzzle(nft_puz))
     assert nft_info.also().also() is not None
 
     unft = uncurry_nft.UncurriedNFT.uncurry(*nft_puz.uncurry())
@@ -168,7 +169,7 @@ def get_updated_nft_puzzle(puzzle: Program, solution: Program) -> bytes32:
 
 def test_transfer_puzzle_builder() -> None:
     metadata = [
-        ("u", ["https://www.maize.farm/img/branding/maize-logo.svg"]),
+        ("u", ["https://www.maize.net/img/branding/maize-logo.svg"]),
         ("h", 0xD4584AD463139FA8C0D9F68F4B59F185),
     ]
     sp2_puzzle, solution = make_a_new_solution()

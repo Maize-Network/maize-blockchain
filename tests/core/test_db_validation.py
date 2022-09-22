@@ -13,7 +13,6 @@ from maize.consensus.default_constants import DEFAULT_CONSTANTS
 from maize.consensus.multiprocess_validation import PreValidationResult
 from maize.full_node.block_store import BlockStore
 from maize.full_node.coin_store import CoinStore
-from maize.full_node.hint_store import HintStore
 from maize.types.blockchain_format.sized_bytes import bytes32
 from maize.types.full_block import FullBlock
 from maize.util.db_wrapper import DBWrapper2
@@ -140,9 +139,8 @@ async def make_db(db_file: Path, blocks: List[FullBlock]) -> None:
 
         block_store = await BlockStore.create(db_wrapper)
         coin_store = await CoinStore.create(db_wrapper)
-        hint_store = await HintStore.create(db_wrapper)
 
-        bc = await Blockchain.create(coin_store, block_store, test_constants, hint_store, Path("."), reserved_cores=0)
+        bc = await Blockchain.create(coin_store, block_store, test_constants, Path("."), reserved_cores=0)
 
         for block in blocks:
             results = PreValidationResult(None, uint64(1), None, False)

@@ -3,7 +3,6 @@ from typing import List
 
 from maize.consensus.cost_calculator import NPCResult
 from maize.types.blockchain_format.coin import Coin
-from maize.types.blockchain_format.program import SerializedProgram
 from maize.types.blockchain_format.sized_bytes import bytes32
 from maize.types.spend_bundle import SpendBundle
 from maize.util.ints import uint64
@@ -20,7 +19,6 @@ class MempoolItem(Streamable):
     spend_bundle_name: bytes32
     additions: List[Coin]
     removals: List[Coin]
-    program: SerializedProgram
 
     def __lt__(self, other):
         return self.fee_per_cost < other.fee_per_cost

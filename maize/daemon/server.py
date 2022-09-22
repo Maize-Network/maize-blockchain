@@ -12,7 +12,7 @@ import uuid
 from concurrent.futures import ThreadPoolExecutor
 from enum import Enum
 from pathlib import Path
-from typing import Any, Dict, List, Optional, TextIO, Tuple, cast
+from typing import Any, Dict, List, Optional, TextIO, Tuple
 
 from maize import __version__
 from maize.cmds.init_funcs import check_keys, maize_init, maize_full_version_str
@@ -23,7 +23,8 @@ from maize.plotters.plotters import get_available_plotters
 from maize.plotting.util import add_plot_directory
 from maize.server.server import ssl_context_for_root, ssl_context_for_server
 from maize.ssl.create_ssl import get_mozilla_ca_crt
-from maize.util.maize_logging import initialize_logging
+from maize.util.beta_metrics import BetaMetricsLogger
+from maize.util.maize_logging import initialize_service_logging
 from maize.util.config import load_config
 from maize.util.errors import KeychainRequiresMigration, KeychainCurrentPassphraseIsInvalid
 from maize.util.json_util import dict_to_json_str
@@ -83,6 +84,8 @@ class PlotEvent(str, Enum):
 if getattr(sys, "frozen", False):
     name_map = {
         "maize": "maize",
+        "maize_data_layer": "start_data_layer",
+        "maize_data_layer_http": "start_data_layer_http",
         "maize_wallet": "start_wallet",
         "maize_full_node": "start_full_node",
         "maize_harvester": "start_harvester",
@@ -167,15 +170,6 @@ class WebSocketServer:
                 ssl.OPENSSL_VERSION,
             )
 
-        def master_close_cb():
-            asyncio.create_task(self.stop())
-
-        try:
-            asyncio.get_running_loop().add_signal_handler(signal.SIGINT, master_close_cb)
-            asyncio.get_running_loop().add_signal_handler(signal.SIGTERM, master_close_cb)
-        except NotImplementedError:
-            self.log.info("Not implemented")
-
         app = web.Application(client_max_size=self.daemon_max_message_size)
         app.add_routes([web.get("/", self.incoming_connection)])
         self.websocket_runner = web.AppRunner(app, access_log=None, logger=self.log, keepalive_timeout=300)
@@ -189,6 +183,16 @@ class WebSocketServer:
             ssl_context=self.ssl_context,
         )
         await site.start()
+
+    async def setup_process_global_state(self) -> None:
+        try:
+            asyncio.get_running_loop().add_signal_handler(signal.SIGINT, self._accept_signal)
+            asyncio.get_running_loop().add_signal_handler(signal.SIGTERM, self._accept_signal)
+        except NotImplementedError:
+            self.log.info("Not implemented")
+
+    def _accept_signal(self, signal_number: int, stack_frame=None):
+        asyncio.create_task(self.stop())
 
     def cancel_task_safe(self, task: Optional[asyncio.Task]):
         if task is not None:
@@ -318,35 +322,37 @@ class WebSocketServer:
         elif command == "ping":
             response = await ping()
         elif command == "start_service":
-            response = await self.start_service(cast(Dict[str, Any], data))
+            response = await self.start_service(data)
         elif command == "start_plotting":
-            response = await self.start_plotting(cast(Dict[str, Any], data))
+            response = await self.start_plotting(data)
         elif command == "stop_plotting":
-            response = await self.stop_plotting(cast(Dict[str, Any], data))
+            response = await self.stop_plotting(data)
         elif command == "stop_service":
-            response = await self.stop_service(cast(Dict[str, Any], data))
+            response = await self.stop_service(data)
+        elif command == "running_services":
+            response = await self.running_services(data)
         elif command == "is_running":
-            response = await self.is_running(cast(Dict[str, Any], data))
+            response = await self.is_running(data)
         elif command == "is_keyring_locked":
             response = await self.is_keyring_locked()
         elif command == "keyring_status":
             response = await self.keyring_status()
         elif command == "unlock_keyring":
-            response = await self.unlock_keyring(cast(Dict[str, Any], data))
+            response = await self.unlock_keyring(data)
         elif command == "validate_keyring_passphrase":
-            response = await self.validate_keyring_passphrase(cast(Dict[str, Any], data))
+            response = await self.validate_keyring_passphrase(data)
         elif command == "migrate_keyring":
-            response = await self.migrate_keyring(cast(Dict[str, Any], data))
+            response = await self.migrate_keyring(data)
         elif command == "set_keyring_passphrase":
-            response = await self.set_keyring_passphrase(cast(Dict[str, Any], data))
+            response = await self.set_keyring_passphrase(data)
         elif command == "remove_keyring_passphrase":
-            response = await self.remove_keyring_passphrase(cast(Dict[str, Any], data))
+            response = await self.remove_keyring_passphrase(data)
         elif command == "notify_keyring_migration_completed":
-            response = await self.notify_keyring_migration_completed(cast(Dict[str, Any], data))
+            response = await self.notify_keyring_migration_completed(data)
         elif command == "exit":
             response = await self.stop()
         elif command == "register_service":
-            response = await self.register_service(websocket, cast(Dict[str, Any], data))
+            response = await self.register_service(websocket, data)
         elif command == "get_status":
             response = self.get_status()
         elif command == "get_version":
@@ -514,7 +520,6 @@ class WebSocketServer:
             Keychain.set_master_passphrase(
                 current_passphrase,
                 new_passphrase,
-                allow_migration=False,
                 passphrase_hint=passphrase_hint,
                 save_passphrase=save_passphrase,
             )
@@ -1101,17 +1106,10 @@ class WebSocketServer:
         response = {"success": result, "service_name": service_name}
         return response
 
-    async def is_running(self, request: Dict[str, Any]) -> Dict[str, Any]:
-        service_name = request["service"]
-
+    def is_service_running(self, service_name: str) -> bool:
         if service_name == service_plotter:
             processes = self.services.get(service_name)
             is_running = processes is not None and len(processes) > 0
-            response = {
-                "success": True,
-                "service_name": service_name,
-                "is_running": is_running,
-            }
         else:
             process = self.services.get(service_name)
             is_running = process is not None and process.poll() is None
@@ -1121,13 +1119,18 @@ class WebSocketServer:
                 service_connections = self.connections.get(service_name)
                 if service_connections is not None:
                     is_running = len(service_connections) > 0
-            response = {
-                "success": True,
-                "service_name": service_name,
-                "is_running": is_running,
-            }
+        return is_running
 
-        return response
+    async def running_services(self, request: Dict[str, Any]) -> Dict[str, Any]:
+        services = list({*self.services.keys(), *self.connections.keys()})
+        running_services = [service_name for service_name in services if self.is_service_running(service_name)]
+
+        return {"success": True, "running_services": running_services}
+
+    async def is_running(self, request: Dict[str, Any]) -> Dict[str, Any]:
+        service_name = request["service"]
+        is_running = self.is_service_running(service_name)
+        return {"success": True, "service_name": service_name, "is_running": is_running}
 
     async def exit(self) -> None:
         if self.websocket_runner is not None:
@@ -1240,8 +1243,6 @@ def launch_service(root_path: Path, service_command) -> Tuple[subprocess.Popen, 
     # we need to pass on the possibly altered MAIZE_ROOT
     os.environ["MAIZE_ROOT"] = str(root_path)
 
-    log.debug(f"Launching service with MAIZE_ROOT: {os.environ['MAIZE_ROOT']}")
-
     # Insert proper e
     service_array = service_command.split()
     service_executable = executable_for_service(service_array[0])
@@ -1252,6 +1253,8 @@ def launch_service(root_path: Path, service_command) -> Tuple[subprocess.Popen, 
         startupinfo = subprocess.STARTUPINFO()
         startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
 
+    log.debug(f"Launching service {service_array} with MAIZE_ROOT: {os.environ['MAIZE_ROOT']}")
+
     # CREATE_NEW_PROCESS_GROUP allows graceful shutdown on windows, by CTRL_BREAK_EVENT signal
     if sys.platform == "win32" or sys.platform == "cygwin":
         creationflags = subprocess.CREATE_NEW_PROCESS_GROUP
@@ -1261,6 +1264,7 @@ def launch_service(root_path: Path, service_command) -> Tuple[subprocess.Popen, 
     process = subprocess.Popen(
         service_array, shell=False, startupinfo=startupinfo, creationflags=creationflags, env=environ_copy
     )
+
     pid_path = pid_path_for_service(root_path, service_command)
     try:
         pid_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1329,7 +1333,7 @@ async def async_run_daemon(root_path: Path, wait_for_unlock: bool = False) -> in
     maize_init(root_path, should_check_keys=(not wait_for_unlock))
     config = load_config(root_path, "config.yaml")
     setproctitle("maize_daemon")
-    initialize_logging("daemon", config["logging"], root_path)
+    initialize_service_logging("daemon", config)
     crt_path = root_path / config["daemon_ssl"]["private_crt"]
     key_path = root_path / config["daemon_ssl"]["private_key"]
     ca_crt_path = root_path / config["private_ssl_ca"]["crt"]
@@ -1350,6 +1354,11 @@ async def async_run_daemon(root_path: Path, wait_for_unlock: bool = False) -> in
         with Lockfile.create(daemon_launch_lock_path(root_path), timeout=1):
             log.info(f"maize-blockchain version: {maize_full_version_str()}")
 
+            beta_metrics: Optional[BetaMetricsLogger] = None
+            if config.get("beta", {}).get("enabled", False):
+                beta_metrics = BetaMetricsLogger(root_path)
+                beta_metrics.start_logging()
+
             shutdown_event = asyncio.Event()
 
             ws_server = WebSocketServer(
@@ -1361,10 +1370,15 @@ async def async_run_daemon(root_path: Path, wait_for_unlock: bool = False) -> in
                 shutdown_event,
                 run_check_keys_on_unlock=wait_for_unlock,
             )
+            await ws_server.setup_process_global_state()
             await ws_server.start()
             await shutdown_event.wait()
+
+            if beta_metrics is not None:
+                await beta_metrics.stop_logging()
+
             log.info("Daemon WebSocketServer closed")
-            # sys.stdout.close()
+            sys.stdout.close()
             return 0
     except LockfileError:
         print("daemon: already launching")
