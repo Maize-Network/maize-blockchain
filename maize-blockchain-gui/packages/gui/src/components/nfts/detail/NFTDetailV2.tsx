@@ -1,5 +1,6 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useEffect, useRef } from 'react';
 import { Trans } from '@lingui/macro';
+import styled from 'styled-components';
 import {
   Back,
   Flex,
@@ -8,40 +9,94 @@ import {
   useOpenDialog,
 } from '@maize/core';
 import type { NFTInfo } from '@maize/api';
-import { useGetNFTWallets } from '@maize/api-react';
-import { Box, Grid, Typography, IconButton } from '@mui/material';
+import { useGetNFTWallets, useGetNFTInfoQuery } from '@maize/api-react';
+import {
+  Box,
+  Grid,
+  Typography,
+  IconButton,
+  Dialog,
+  Paper,
+  Button,
+} from '@mui/material';
 import { MoreVert } from '@mui/icons-material';
 import { useParams } from 'react-router-dom';
 import NFTPreview from '../NFTPreview';
 import NFTProperties from '../NFTProperties';
 import NFTRankings from '../NFTRankings';
 import NFTDetails from '../NFTDetails';
-import useFetchNFTs from '../../../hooks/useFetchNFTs';
 import useNFTMetadata from '../../../hooks/useNFTMetadata';
 import NFTContextualActions, {
   NFTContextualActionTypes,
 } from '../NFTContextualActions';
 import NFTPreviewDialog from '../NFTPreviewDialog';
+import NFTProgressBar from '../NFTProgressBar';
+import { launcherIdFromNFTId } from '../../../util/nfts';
+
+const ipcRenderer = (window as any).ipcRenderer;
 
 export default function NFTDetail() {
   const { nftId } = useParams();
-  const { wallets: nftWallets, isLoading: isLoadingWallets } =
-    useGetNFTWallets();
   const openDialog = useOpenDialog();
-  const { nfts, isLoading: isLoadingNFTs } = useFetchNFTs(
-    nftWallets.map((wallet: Wallet) => wallet.id),
-  );
 
-  const nft: NFTInfo | undefined = useMemo(() => {
-    if (!nfts) {
-      return;
+  const [progressBarWidth, setProgressBarWidth] = React.useState(-1);
+  const [validated, setValidated] = React.useState(0);
+  const nftRef = React.useRef(null);
+
+  useEffect(() => {
+    validateSha256Remote(false); // false parameter means only validate files smaller than MAX_FILE_SIZE
+    ipcRenderer.on('sha256DownloadProgress', progressListener);
+    ipcRenderer.on('sha256hash', gotHash);
+    return () => {
+      ipcRenderer.off('sha256DownloadProgress', progressListener);
+      ipcRenderer.off('sha256hash', gotHash);
+    };
+  }, []);
+
+  const launcherId = launcherIdFromNFTId(nftId ?? '');
+  const { data: nft, isLoading: isLoadingNFTInfo } = useGetNFTInfoQuery({
+    coinId: launcherId,
+  });
+
+  nftRef.current = nft;
+
+  function progressListener(_event, progressObject: any) {
+    const nft = nftRef.current;
+    if (
+      nft &&
+      nft.dataUris &&
+      Array.isArray(nft.dataUris) &&
+      nft.dataUris[0] === progressObject.uri
+    ) {
+      setProgressBarWidth(progressObject.progress);
+      if (progressObject.progress === 1) {
+        setProgressBarWidth(-1);
+      }
     }
-    return nfts.find((nft: NFTInfo) => nft.$nftId === nftId);
-  }, [nfts]);
+  }
 
-  const { metadata, isLoading: isLoadingMetadata } = useNFTMetadata(nft);
+  function gotHash(_event, hash) {
+    if (nftRef.current) {
+      if (`0x${hash}` === nftRef.current.dataHash) {
+        setValidated(1);
+      } else {
+        setValidated(-1);
+      }
+    }
+  }
 
-  const isLoading = isLoadingWallets || isLoadingNFTs || isLoadingMetadata;
+  const { metadata, isLoading: isLoadingMetadata, error } = useNFTMetadata(nft);
+
+  const ValidateContainer = styled.div`
+    padding-top: 25px;
+    text-align: center;
+  `;
+
+  const ErrorMessage = styled.div`
+    color: red;
+  `;
+
+  const isLoading = isLoadingNFTInfo || isLoadingMetadata;
 
   if (isLoading) {
     return <Loading center />;
@@ -49,6 +104,40 @@ export default function NFTDetail() {
 
   function handleShowFullScreen() {
     openDialog(<NFTPreviewDialog nft={nft} />);
+  }
+
+  function validateSha256Remote(force: boolean) {
+    const ipcRenderer = (window as any).ipcRenderer;
+    if (nft && Array.isArray(nft.dataUris) && nft.dataUris[0]) {
+      ipcRenderer.invoke('validateSha256Remote', {
+        uri: nft.dataUris[0],
+        force,
+      });
+    }
+  }
+
+  function renderValidationState() {
+    if (progressBarWidth > 0 && progressBarWidth < 1) {
+      return <Trans>Validating hash...</Trans>;
+    } else if (validated === 1) {
+      return <Trans>Hash is validated.</Trans>;
+    } else if (validated === -1) {
+      return (
+        <ErrorMessage>
+          <Trans>Hash mismatch.</Trans>
+        </ErrorMessage>
+      );
+    } else {
+      return (
+        <Button
+          onClick={() => validateSha256Remote(true)}
+          variant="outlined"
+          size="large"
+        >
+          <Trans>Validate SHA256 SUM</Trans>
+        </Button>
+      );
+    }
   }
 
   return (
@@ -75,14 +164,18 @@ export default function NFTDetail() {
             position="relative"
           >
             {nft && (
-              <Box onClick={handleShowFullScreen} sx={{ cursor: 'pointer' }}>
-                <NFTPreview
-                  nft={nft}
-                  width="100%"
-                  height="412px"
-                  fit="contain"
-                />
-              </Box>
+              <Flex flexDirection="column">
+                <Box onClick={handleShowFullScreen} sx={{ cursor: 'pointer' }}>
+                  <NFTPreview
+                    nft={nft}
+                    width="100%"
+                    height="412px"
+                    fit="contain"
+                  />
+                </Box>
+                <ValidateContainer>{renderValidationState()}</ValidateContainer>
+                <NFTProgressBar percentage={progressBarWidth} />
+              </Flex>
             )}
           </Box>
           <Box position="absolute" left={1} top={1}>
@@ -122,7 +215,7 @@ export default function NFTDetail() {
                     <Trans>Description</Trans>
                   </Typography>
 
-                  <Typography overflow="hidden">
+                  <Typography sx={{ whiteSpace: 'pre-line' }} overflow="hidden">
                     {metadata?.description ?? <Trans>Not Available</Trans>}
                   </Typography>
                 </Flex>

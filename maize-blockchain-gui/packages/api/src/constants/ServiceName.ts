@@ -9,6 +9,8 @@ enum ServiceName {
   TIMELORD = 'maize_timelord',
   INTRODUCER = 'maize_introducer',
   EVENTS = 'wallet_ui',
-};
+  DATALAYER = 'maize_data_layer',
+  DATALAYER_SERVER = 'maize_data_layer_http',
+}
 
 export default ServiceName;

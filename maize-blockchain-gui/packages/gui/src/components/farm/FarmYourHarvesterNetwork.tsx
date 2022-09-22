@@ -3,13 +3,11 @@ import { Trans } from '@lingui/macro';
 import styled from 'styled-components';
 import { Typography, Tooltip, IconButton } from '@mui/material';
 import { Delete as DeleteIcon } from '@mui/icons-material';
+import { Table, FormatBytes, FormatConnectionStatus, Card } from '@maize/core';
 import {
-  Table,
-  FormatBytes,
-  FormatConnectionStatus,
-  Card,
-} from '@maize/core';
-import { useIsServiceRunningQuery, useGetHarvesterConnectionsQuery } from '@maize/api-react';
+  useIsServiceRunningQuery,
+  useGetHarvesterConnectionsQuery,
+} from '@maize/api-react';
 import type { Connection } from '@maize/api';
 import { ServiceName } from '@maize/api';
 import FarmCloseConnection from './FarmCloseConnection';
@@ -81,11 +79,14 @@ const cols = [
 export default function FarmYourHarvesterNetwork() {
   const { data: connections = [] } = useGetHarvesterConnectionsQuery();
 
-  const { data: isRunning, isLoading } = useIsServiceRunningQuery({
-    service: ServiceName.HARVESTER,
-  }, {
-    pollingInterval: 1000,
-  });
+  const { data: isRunning, isLoading } = useIsServiceRunningQuery(
+    {
+      service: ServiceName.HARVESTER,
+    },
+    {
+      pollingInterval: 1000,
+    },
+  );
 
   return (
     <Card
@@ -100,7 +101,6 @@ export default function FarmYourHarvesterNetwork() {
           Learn more
         </Trans>
       }
-      interactive
       transparent
     >
       <Typography variant="caption" color="textSecondary">

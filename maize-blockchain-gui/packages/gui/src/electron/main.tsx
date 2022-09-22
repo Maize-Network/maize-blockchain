@@ -17,6 +17,7 @@ import url from 'url';
 // import installExtension, { REDUX_DEVTOOLS, REACT_DEVELOPER_TOOLS } from 'electron-devtools-installer';
 import ReactDOMServer from 'react-dom/server';
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
+import fs from 'fs';
 // handle setupevents as quickly as possible
 import '../config/env';
 import handleSquirrelEvent from './handleSquirrelEvent';
@@ -29,7 +30,9 @@ import About from '../components/about/About';
 import packageJson from '../../package.json';
 import AppIcon from '../assets/img/maize64x64.png';
 import windowStateKeeper from 'electron-window-state';
+import validateSha256 from './validateSha256';
 
+const isPlaywrightTesting = process.env.PLAYWRIGHT_TESTS === 'true';
 const NET = 'mainnet';
 
 app.disableHardwareAcceleration();
@@ -37,6 +40,11 @@ app.disableHardwareAcceleration();
 initialize();
 
 const appIcon = nativeImage.createFromPath(path.join(__dirname, AppIcon));
+const thumbCacheFolder = app.getPath('cache') + path.sep + app.getName();
+if (!fs.existsSync(thumbCacheFolder)) {
+  fs.mkdirSync(thumbCacheFolder);
+}
+const validatingProgress = {};
 
 // Set the userData directory to its location within MAIZE_ROOT/gui
 setUserDataDir();
@@ -122,7 +130,7 @@ if (!handleSquirrelEvent()) {
     return true;
   };
 
-  let mainWindow = null;
+  let mainWindow: BrowserWindow | null = null;
 
   const createMenu = () => Menu.buildFromTemplate(getMenuTemplate());
 
@@ -137,6 +145,7 @@ if (!handleSquirrelEvent()) {
      ************************************************************ */
     let decidedToClose = false;
     let isClosing = false;
+    let mainWindowLaunchTasks: ((window: BrowserWindow) => void)[] = [];
 
     const createWindow = async () => {
       if (manageDaemonLifetime(NET)) {
@@ -299,7 +308,20 @@ if (!handleSquirrelEvent()) {
       });
 
       ipcMain.handle('download', async (_event, options) => {
-        return await mainWindow.webContents.downloadURL(options.url);
+        if(mainWindow){
+          return mainWindow.webContents.downloadURL(options.url);
+        }
+        else{
+          console.error("mainWindow was not initialized");
+        }
+      });
+
+      ipcMain.handle('processLaunchTasks', async(_event) => {
+        const tasks = [...mainWindowLaunchTasks];
+
+        mainWindowLaunchTasks = [];
+
+        tasks.forEach((task) => task(mainWindow!));
       });
 
       decidedToClose = false;
@@ -315,12 +337,13 @@ if (!handleSquirrelEvent()) {
         minWidth: 500,
         minHeight: 500,
         backgroundColor: '#ffffff',
-        show: false,
+        show: isPlaywrightTesting,
         webPreferences: {
           preload: `${__dirname}/preload.js`,
           nodeIntegration: true,
           contextIsolation: false,
           nativeWindowOpen: true,
+          webSecurity: true,
         },
       });
 
@@ -412,6 +435,36 @@ if (!handleSquirrelEvent()) {
       app.quit();
     });
 
+    app.on('open-file', (event, path) => {
+      event.preventDefault();
+
+      // App may have been launched with a file to open. Make sure we have a
+      // main window before trying to open a file.
+      if (!mainWindow) {
+        mainWindowLaunchTasks.push((window: BrowserWindow) => {
+          window.webContents.send('open-file', path);
+        });
+      }
+      else {
+        mainWindow?.webContents.send('open-file', path);
+      }
+    });
+
+    app.on('open-url', (event, url) => {
+      event.preventDefault();
+
+      // App may have been launched with a URL to open. Make sure we have a
+      // main window before trying to open a URL.
+      if (!mainWindow) {
+        mainWindowLaunchTasks.push((window: BrowserWindow) => {
+          window.webContents.send('open-url', url);
+        });
+      }
+      else {
+        mainWindow?.webContents.send('open-url', url);
+      }
+    });
+
     ipcMain.on('load-page', (_, arg: { file: string; query: string }) => {
       mainWindow.loadURL(
         require('url').format({
@@ -427,6 +480,27 @@ if (!handleSquirrelEvent()) {
       app.applicationMenu = createMenu();
     });
   }
+
+  function validatingInProgress(uri: string, action: string) {
+    if (action === 'stop') {
+      delete validatingProgress[uri];
+    }
+    if (action === 'start') {
+      validatingProgress[uri] = true;
+    }
+  }
+
+  ipcMain.handle('validateSha256Remote', (_event, options) => {
+    if (!validatingProgress[options.uri]) {
+      validateSha256(
+        thumbCacheFolder,
+        mainWindow,
+        options.uri,
+        options.force,
+        validatingInProgress,
+      );
+    }
+  });
 
   const getMenuTemplate = () => {
     const template = [

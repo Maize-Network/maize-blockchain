@@ -3,13 +3,11 @@ import { Trans } from '@lingui/macro';
 import styled from 'styled-components';
 import { Link, Typography, Tooltip, IconButton } from '@mui/material';
 import { Delete as DeleteIcon } from '@mui/icons-material';
+import { Table, Card, FormatBytes, FormatConnectionStatus } from '@maize/core';
 import {
-  Table,
-  Card,
-  FormatBytes,
-  FormatConnectionStatus,
-} from '@maize/core';
-import { useGetFarmerFullNodeConnectionsQuery, useIsServiceRunningQuery } from '@maize/api-react';
+  useGetFarmerFullNodeConnectionsQuery,
+  useIsServiceRunningQuery,
+} from '@maize/api-react';
 import type { Connection } from '@maize/api';
 import { ServiceName } from '@maize/api';
 import FarmCloseConnection from './FarmCloseConnection';
@@ -80,11 +78,14 @@ const cols = [
 
 export default function FarmFullNodeConnections() {
   const { data: connections = [] } = useGetFarmerFullNodeConnectionsQuery();
-  const { data: isRunning, isLoading } = useIsServiceRunningQuery({
-    service: ServiceName.FARMER,
-  }, {
-    pollingInterval: 1000,
-  });
+  const { data: isRunning, isLoading } = useIsServiceRunningQuery(
+    {
+      service: ServiceName.FARMER,
+    },
+    {
+      pollingInterval: 1000,
+    },
+  );
 
   return (
     <Card
@@ -102,7 +103,6 @@ export default function FarmFullNodeConnections() {
           </Link>
         </Trans>
       }
-      interactive
       transparent
     >
       <Typography variant="caption" color="textSecondary">

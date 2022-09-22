@@ -70,7 +70,7 @@ export default function PlotNFTGetPoolLoginLinkDialog(props: Props) {
                 </Trans>{' '}
                 <Link
                   target="_blank"
-                  href="https://github.com/Chia-Network/pool-reference/blob/main/SPECIFICATION.md#get-login"
+                  href="https://github.com/Maize-Network/pool-reference/blob/main/SPECIFICATION.md#get-login"
                   noWrap
                 >
                   <Trans>Learn More</Trans>
