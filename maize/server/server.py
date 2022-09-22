@@ -123,6 +123,7 @@ class MaizeServer:
 
         self.connection_by_type: Dict[NodeType, Dict[bytes32, WSMaizeConnection]] = {
             NodeType.FULL_NODE: {},
+            NodeType.DATA_LAYER: {},
             NodeType.WALLET: {},
             NodeType.HARVESTER: {},
             NodeType.FARMER: {},
@@ -759,7 +760,7 @@ class MaizeServer:
         try:
             timeout = ClientTimeout(total=15)
             async with ClientSession(timeout=timeout) as session:
-                async with session.get("https://ip.maize.farm/") as resp:
+                async with session.get("https://ip.maize.net/") as resp:
                     if resp.status == 200:
                         ip = str(await resp.text())
                         ip = ip.rstrip()

@@ -1,7 +1,13 @@
 from typing import KeysView, Generator
 
 SERVICES_FOR_GROUP = {
-    "all": "maize_harvester maize_timelord_launcher maize_timelord maize_farmer maize_full_node maize_wallet".split(),
+    "all": (
+        "maize_harvester maize_timelord_launcher maize_timelord maize_farmer "
+        "maize_full_node maize_wallet maize_data_layer maize_data_layer_http"
+    ).split(),
+    # TODO: should this be `data_layer`?
+    "data": "maize_wallet maize_data_layer".split(),
+    "data_layer_http": "maize_data_layer_http".split(),
     "node": "maize_full_node".split(),
     "harvester": "maize_harvester".split(),
     "farmer": "maize_harvester maize_farmer maize_full_node maize_wallet".split(),

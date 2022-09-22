@@ -1,9 +1,10 @@
 from typing import Optional
 
 import maize.server.ws_connection as ws
-from maize.full_node.full_node import full_node_protocol, wallet_protocol
+from maize.protocols import full_node_protocol, wallet_protocol
 from maize.seeder.crawler import Crawler
 from maize.server.outbound_message import Message
+from maize.server.server import MaizeServer
 from maize.util.api_decorators import api_request, peer_required
 
 
@@ -20,7 +21,8 @@ class CrawlerAPI:
         return invoke
 
     @property
-    def server(self):
+    def server(self) -> MaizeServer:
+        assert self.crawler.server is not None
         return self.crawler.server
 
     @property

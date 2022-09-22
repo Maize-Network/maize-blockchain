@@ -55,6 +55,7 @@ version_data = copy_metadata(get_distribution("maize-blockchain"))[0]
 block_cipher = None
 
 SERVERS = [
+    "data_layer",
     "wallet",
     "full_node",
     "harvester",
@@ -192,6 +193,7 @@ for server in SERVERS:
 
 add_binary("start_crawler", f"{ROOT}/maize/seeder/start_crawler.py", COLLECT_ARGS)
 add_binary("start_seeder", f"{ROOT}/maize/seeder/dns_server.py", COLLECT_ARGS)
+add_binary("start_data_layer_http", f"{ROOT}/maize/data_layer/data_layer_server.py", COLLECT_ARGS)
 
 COLLECT_KWARGS = dict(
     strip=False,

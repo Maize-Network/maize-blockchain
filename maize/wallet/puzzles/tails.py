@@ -9,11 +9,11 @@ from maize.wallet.cat_wallet.lineage_store import CATLineageStore
 from maize.wallet.lineage_proof import LineageProof
 from maize.wallet.puzzles.load_clvm import load_clvm
 from maize.wallet.cat_wallet.cat_utils import (
-    CAT_MOD,
     construct_cat_puzzle,
     unsigned_spend_bundle_for_spendable_cats,
     SpendableCAT,
 )
+from maize.wallet.puzzles.cat_loader import CAT_MOD
 from maize.wallet.cat_wallet.cat_info import CATInfo
 from maize.wallet.transaction_record import TransactionRecord
 

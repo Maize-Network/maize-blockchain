@@ -14,11 +14,11 @@ from maize.types.spend_bundle import SpendBundle
 from maize.util.errors import Err
 from maize.util.ints import uint64
 from maize.wallet.cat_wallet.cat_utils import (
-    CAT_MOD,
     SpendableCAT,
     construct_cat_puzzle,
     unsigned_spend_bundle_for_spendable_cats,
 )
+from maize.wallet.puzzles.cat_loader import CAT_MOD
 from maize.wallet.lineage_proof import LineageProof
 from maize.wallet.puzzles.tails import (
     GenesisById,

@@ -2,12 +2,15 @@ from io import TextIOWrapper
 import click
 
 from maize import __version__
+from maize.cmds.beta import beta_cmd
 from maize.cmds.configure import configure_cmd
 from maize.cmds.farm import farm_cmd
+from maize.cmds.data import data_cmd
 from maize.cmds.init import init_cmd
 from maize.cmds.keys import keys_cmd
 from maize.cmds.netspace import netspace_cmd
 from maize.cmds.passphrase import passphrase_cmd
+from maize.cmds.peer import peer_cmd
 from maize.cmds.plots import plots_cmd
 from maize.cmds.rpc import rpc_cmd
 from maize.cmds.show import show_cmd
@@ -47,7 +50,7 @@ def monkey_patch_click() -> None:
 
 @click.group(
     help=f"\n  Manage maize blockchain infrastructure ({__version__})\n",
-    epilog="Try 'maize start node', 'maize.farmspace -d 192', or 'maize show -s'",
+    epilog="Try 'maize start node', 'maize netspace -d 192', or 'maize show -s'",
     context_settings=CONTEXT_SETTINGS,
 )
 @click.option("--root-path", default=DEFAULT_ROOT_PATH, help="Config file root", type=click.Path(), show_default=True)
@@ -58,7 +61,7 @@ def monkey_patch_click() -> None:
 @click.option(
     "--force-legacy-keyring-migration/--no-force-legacy-keyring-migration",
     default=True,
-    help="Force legacy keyring migration. Legacy keyring support will be dropped in 1.5.2!",
+    help="Force legacy keyring migration. Legacy keyring support will be removed in an upcoming version!",
 )
 @click.pass_context
 def cli(
@@ -139,7 +142,10 @@ cli.add_command(netspace_cmd)
 cli.add_command(farm_cmd)
 cli.add_command(plotters_cmd)
 cli.add_command(db_cmd)
+cli.add_command(peer_cmd)
+cli.add_command(data_cmd)
 cli.add_command(passphrase_cmd)
+cli.add_command(beta_cmd)
 
 
 def main() -> None:
